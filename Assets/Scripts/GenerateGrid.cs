@@ -1,4 +1,3 @@
-using Mono.Cecil;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEditor;
@@ -11,17 +10,11 @@ public class GenerateGrid : MonoBehaviour
     [SerializeField] private GameObject _gridPrefab;
     [SerializeField] private float _gridBoxSize;
     [SerializeField] private Transform _gridPointsParent;
-
-    private Transform _gridOrigin;
-    private BoxCollider2D _spawnBounds;
+    [SerializeField] private BoxCollider2D _spawnBounds;
+    [SerializeField] private Transform _gridOrigin;
 
     private readonly List<GameObject> cells = new();
 
-    private void Awake()
-    {
-        _gridOrigin = transform;
-        _spawnBounds = GetComponent<BoxCollider2D>();
-    }
 
     /// <summary>
     /// Generate a new grid within the bounds of the box collider, Will generate cells as children of a specified transform and store them within a list
@@ -46,9 +39,9 @@ public class GenerateGrid : MonoBehaviour
         Vector2 newSpawnPosition = Vector2.zero;
         GameObject newGridPoint = null;
         //for each coordinate:
-        for (int y = 0; y < numRows; y++)
+        for (int y = 0; y < numRows + 1; y++)
         {
-            for(int x = 0; x < numCols; x++)
+            for(int x = 0; x < numCols + 1; x++)
             {
                 //calculate the position of the new point
                 newSpawnPosition = origin + new Vector2(x * _gridBoxSize, y * _gridBoxSize);
