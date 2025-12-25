@@ -5,6 +5,7 @@ using UnityEngine.UIElements;
 public class GridMakerWindow : EditorWindow
 {
     GenerateGrid generator;
+    EnemyBehavior enemy;
     
     [MenuItem("Grid/Grid Window")]
     public static void ShowExample()
@@ -20,6 +21,8 @@ public class GridMakerWindow : EditorWindow
             generator,
             typeof(GenerateGrid),
             true);
+
+        enemy = (EnemyBehavior)EditorGUILayout.ObjectField("Test Enemy", enemy, typeof(EnemyBehavior), true);
         
         if(GUILayout.Button("Remake Grid"))
         {
@@ -29,6 +32,11 @@ public class GridMakerWindow : EditorWindow
         if(GUILayout.Button("Delete Grid"))
         {
             generator.ClearGrid();
+        }
+
+        if(GUILayout.Button("Make Path"))
+        {
+            enemy.TestCalculationOfPath();
         }
     }
 }
