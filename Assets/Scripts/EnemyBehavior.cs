@@ -5,8 +5,8 @@ using System;
 public class EnemyBehavior : MonoBehaviour
 {
     [Header("Walkable Grid")]
-    public GenerateGrid Grid;
-    public Transform[] TestPath;
+    public Grid GridScript;
+    public List<Transform> TestPath;
     public Transform currentTarget;
     public int CurrentTargetIndex;
     private Transform currentCell;
@@ -16,9 +16,9 @@ public class EnemyBehavior : MonoBehaviour
     public float epsilonDistance;
 
     [Header("Test of Path Construction")]
-    public List<GameObject> ConstructedPath;
     public CellStats StartingCell;
     public CellStats EndingCell;
+    public LineRenderer VisualOfPath;
 
     Rigidbody2D _rb2D;
     bool reachedObjective = false;
@@ -32,31 +32,12 @@ public class EnemyBehavior : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        CurrentTargetIndex = 0;
-        currentTarget = TestPath[CurrentTargetIndex];
-        currentCell = currentTarget; //start the enemy at the first cell in the path
+        TestCalculationOfPath();
     }
 
     private void FixedUpdate()
     {
-        if (!reachedObjective && TestPath.Length > 0)
-        {
-            MoveToPoint(currentTarget);
-            if (DetermineReachedPosition(currentTarget))
-            {
-                currentCell = currentTarget;
-                CurrentTargetIndex++;
-                if (CurrentTargetIndex == TestPath.Length)
-                {
-                    reachedObjective = true;
-                }
-                else
-                {
-                    currentTarget = TestPath[CurrentTargetIndex];
-                }
-            }
-        }
-        
+        TestCalculationOfPath();
     }
 
     public void MoveToPoint(Transform target)
@@ -72,18 +53,17 @@ public class EnemyBehavior : MonoBehaviour
 
     public void TestCalculationOfPath()
     {
-        ConstructedPath = CalculatePath(StartingCell, EndingCell);
-        ConstructedPath.Reverse();
-        TestPath = new Transform[ConstructedPath.Count + 1];
-        TestPath[0] = StartingCell.transform;
-        for(int i = 0; i < ConstructedPath.Count; i++)
+        TestPath = CalculatePath(StartingCell, EndingCell);
+        VisualOfPath.positionCount = TestPath.Count + 1;
+        for(int i = 0; i < TestPath.Count; i++)
         {
-            TestPath[i + 1] = ConstructedPath[i].transform;
+            VisualOfPath.SetPosition(i + 1, TestPath[i].position);
         }
+        VisualOfPath.SetPosition(0, StartingCell.gameObject.transform.position);
     }
-    private List<GameObject> CalculatePath(CellStats start, CellStats end)
+    private List<Transform> CalculatePath(CellStats start, CellStats end)
     {
-        List<GameObject> answer = new();
+        List<Transform> answer = new();
         List<CellStats> openSet = new();
         List<CellStats> closedSet = new();
         openSet.Add(start);
@@ -93,7 +73,7 @@ public class EnemyBehavior : MonoBehaviour
         {
             openSet.Sort(Comparer<CellStats>.Create((s1, s2) => s1.F.CompareTo(s2.F)));
             currentNode = openSet[0];
-            Debug.Log(currentNode.gameObject.name);
+            //Debug.Log(currentNode.gameObject.name);
             openSet.RemoveAt(0);
 
             closedSet.Add(currentNode);
@@ -103,17 +83,25 @@ public class EnemyBehavior : MonoBehaviour
             {
                 while(currentNode != start)
                 {
-                    answer.Add(currentNode.gameObject);
+                    answer.Add(currentNode.gameObject.transform);
                     currentNode = currentNode.parent;
                 }
-
+                answer.Reverse(); 
                 return answer;
             }
+            if(currentNode == null)
+            {
+                Debug.Log("Current Node is null");
+            }
+            if(GridScript == null)
+            {
+                Debug.Log("GridScript is null");
+            }
 
-            List<CellStats> neighbors = Grid.GetNeighborsOfCell(currentNode);
+            List<CellStats> neighbors = GridScript.GetNeighborsOfCell(currentNode);
             foreach(CellStats neighbor in neighbors)
             {
-                if(!Grid.IsWalkable(Grid.GetCoordsOfCell(neighbor).Item1, Grid.GetCoordsOfCell(neighbor).Item2) || closedSet.Contains(neighbor))
+                if(!GridScript.IsWalkable(GridScript.GetCoordsOfCell(neighbor).Item1, GridScript.GetCoordsOfCell(neighbor).Item2) || closedSet.Contains(neighbor))
                 {
                     
                     continue;
@@ -144,8 +132,8 @@ public class EnemyBehavior : MonoBehaviour
 
     private int HeuristicCostEstimate(CellStats cell1, CellStats cell2)
     {
-        Tuple<int, int> cellOneCoords = Grid.GetCoordsOfCell(cell1);
-        Tuple<int, int> cellTwoCoords = Grid.GetCoordsOfCell(cell2);
+        Tuple<int, int> cellOneCoords = GridScript.GetCoordsOfCell(cell1);
+        Tuple<int, int> cellTwoCoords = GridScript.GetCoordsOfCell(cell2);
 
         return Mathf.Abs(cellTwoCoords.Item1 - cellOneCoords.Item1) + Mathf.Abs(cellTwoCoords.Item2 - cellOneCoords.Item1);
 
