@@ -5,11 +5,10 @@ using System;
 public class EnemyBehavior : MonoBehaviour
 {
     [Header("Walkable Grid")]
-    public Grid GridScript;
+    public Griddy GridScript;
     public List<Transform> TestPath;
     public Transform currentTarget;
     public int CurrentTargetIndex;
-    private Transform currentCell;
 
     [Header("Physics values")]
     public float Speed;
@@ -22,6 +21,7 @@ public class EnemyBehavior : MonoBehaviour
 
     Rigidbody2D _rb2D;
     bool reachedObjective = false;
+    bool firstPathCalc = true;
     //
     private void Awake()
     {
@@ -33,11 +33,23 @@ public class EnemyBehavior : MonoBehaviour
     void Start()
     {
         TestCalculationOfPath();
+        currentTarget = TestPath[0];
+        firstPathCalc = false;
     }
 
     private void FixedUpdate()
     {
+        if (!reachedObjective)
+        {
+            if (currentTarget == null)
+            {
+                Debug.Log("Current Target is null");
+            }
+            MoveToPoint(currentTarget);
+        }
+
         TestCalculationOfPath();
+            
     }
 
     public void MoveToPoint(Transform target)
@@ -53,9 +65,19 @@ public class EnemyBehavior : MonoBehaviour
 
     public void TestCalculationOfPath()
     {
-        TestPath = CalculatePath(StartingCell, EndingCell);
+        List<Transform> newPath = CalculatePath(StartingCell, EndingCell);
+        TestPath = newPath;
+
+        UpdateLine();
+
+
+
+    }
+
+    private void UpdateLine()
+    {
         VisualOfPath.positionCount = TestPath.Count + 1;
-        for(int i = 0; i < TestPath.Count; i++)
+        for (int i = 0; i < TestPath.Count; i++)
         {
             VisualOfPath.SetPosition(i + 1, TestPath[i].position);
         }
@@ -108,7 +130,7 @@ public class EnemyBehavior : MonoBehaviour
                 }
 
                 /*Debug.Log($"Did not Continued on {Grid.GetCoordsOfCell(neighbor).Item1}, {Grid.GetCoordsOfCell(neighbor).Item2}");*/
-                int cost = currentNode.G + HeuristicCostEstimate(currentNode, neighbor);
+                float cost = currentNode.G + HeuristicCostEstimate(currentNode, neighbor);
                 if(cost < neighbor.G || !openSet.Contains(neighbor))
                 {
                     neighbor.G = cost;
@@ -130,12 +152,29 @@ public class EnemyBehavior : MonoBehaviour
 
     }
 
-    private int HeuristicCostEstimate(CellStats cell1, CellStats cell2)
+    private float HeuristicCostEstimate(CellStats cell1, CellStats cell2)
     {
         Tuple<int, int> cellOneCoords = GridScript.GetCoordsOfCell(cell1);
         Tuple<int, int> cellTwoCoords = GridScript.GetCoordsOfCell(cell2);
 
-        return Mathf.Abs(cellTwoCoords.Item1 - cellOneCoords.Item1) + Mathf.Abs(cellTwoCoords.Item2 - cellOneCoords.Item1);
+        return Mathf.Sqrt(Mathf.Pow((cellTwoCoords.Item1 - cellOneCoords.Item1), 2) + Mathf.Pow((cellTwoCoords.Item2 - cellOneCoords.Item2), 2));
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.layer == LayerMask.NameToLayer("Grid"))
+        {
+            Debug.Log("Hit new grid point");
+            StartingCell = collision.gameObject.GetComponent<CellStats>();
+            if(StartingCell == EndingCell)
+            {
+                Debug.Log("Target Reached!");
+                reachedObjective = true;
+                return;
+            }
+            TestCalculationOfPath();
+            currentTarget = TestPath[0];
+        }
     }
 }

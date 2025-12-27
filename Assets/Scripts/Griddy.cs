@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Grid : MonoBehaviour
+public class Griddy : MonoBehaviour
 {
     [SerializeField] private Transform _gridObjectParent;
     [SerializeField] private GenerateGrid _gridGenerator;
@@ -82,10 +82,10 @@ public class Grid : MonoBehaviour
 
         //Debug.Log($"Current Cell?: {coordinatesOfCell.Item1}, {coordinatesOfCell.Item2}");
         List<CellStats> answer = new();
-        Tuple<int, int>[] dxdy = { new Tuple<int, int>(1,0),
-                                   new Tuple<int, int>(-1,0),
-                                   new Tuple<int, int>(0,1),
-                                   new Tuple<int, int>(0,-1)};
+        Tuple<int, int>[] dxdy = { new Tuple<int, int>(0,1),
+                                   new Tuple<int, int>(0,-1),
+                                   new Tuple<int, int>(1,0),
+                                   new Tuple<int, int>(-1,0)};
 
         string debugStatement = "";
         for (int i = 0; i < dxdy.Length; i++)
