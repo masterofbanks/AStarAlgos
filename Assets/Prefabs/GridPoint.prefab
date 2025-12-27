@@ -49,6 +49,7 @@ MonoBehaviour:
   F: 0
   G: 0
   H: 0
+  Walkable: 1
 --- !u!58 &2278264710399770651
 CircleCollider2D:
   m_ObjectHideFlags: 0
