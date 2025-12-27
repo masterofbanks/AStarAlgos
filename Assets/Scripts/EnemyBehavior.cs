@@ -14,10 +14,12 @@ public class EnemyBehavior : MonoBehaviour
     public float Speed;
     public float epsilonDistance;
 
-    [Header("Test of Path Construction")]
+    [Header("Path Construction")]
     public CellStats StartingCell;
-    public CellStats EndingCell;
     public LineRenderer VisualOfPath;
+    public MoveableObject PlayerTarget;
+
+    private CellStats EndingCell;
 
     Rigidbody2D _rb2D;
     bool reachedObjective = false;
@@ -32,13 +34,16 @@ public class EnemyBehavior : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        EndingCell = PlayerTarget.currentCell;
         TestCalculationOfPath();
         currentTarget = TestPath[0];
         firstPathCalc = false;
+        
     }
 
     private void FixedUpdate()
     {
+        EndingCell = PlayerTarget.currentCell;
         if (!reachedObjective)
         {
             if (currentTarget == null)

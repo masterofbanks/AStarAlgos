@@ -125,7 +125,7 @@ public class Griddy : MonoBehaviour
         return (xCoord >= 0 && xCoord < cellGrid.GetLength(0)) && (yCoord >= 0 && yCoord < cellGrid.GetLength(1));
     }
 
-    private Tuple<int, int> AddTuples(Tuple<int, int> t1, Tuple<int, int> t2)
+    public Tuple<int, int> AddTuples(Tuple<int, int> t1, Tuple<int, int> t2)
     {
         //Debug.Log($"{t1.Item1 + t2.Item1}, {t1.Item2 + t2.Item2}");
         return new Tuple<int, int>(t1.Item1 + t2.Item1, t1.Item2 + t2.Item2);
