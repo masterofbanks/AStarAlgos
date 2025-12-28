@@ -115,9 +115,7 @@ public class Griddy : MonoBehaviour
             return false;
         }
 
-        //add walkability later 
         return GetCellData(xCoord, yCoord).Walkable;
-        //return true;
     }
 
     private bool IsValidCoordinate(int xCoord, int yCoord)

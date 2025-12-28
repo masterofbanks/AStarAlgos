@@ -53,7 +53,7 @@ public class EnemyBehavior : MonoBehaviour
             MoveToPoint(currentTarget);
         }
 
-        TestCalculationOfPath();
+        //TestCalculationOfPath();
             
     }
 

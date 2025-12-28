@@ -84,6 +84,9 @@ public class MoveableObject : MonoBehaviour
         _down.performed += MoveDown;
     }
 
+    
+
+
 
 
 
