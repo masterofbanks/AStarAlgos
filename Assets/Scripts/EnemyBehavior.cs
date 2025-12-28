@@ -170,7 +170,7 @@ public class EnemyBehavior : MonoBehaviour
     {
         if(collision.gameObject.layer == LayerMask.NameToLayer("Grid"))
         {
-            Debug.Log("Hit new grid point");
+            //Debug.Log("Hit new grid point");
             StartingCell = collision.gameObject.GetComponent<CellStats>();
             if(StartingCell == EndingCell)
             {
