@@ -80,7 +80,6 @@ public class Griddy : MonoBehaviour
             return null;
         }
 
-        //Debug.Log($"Current Cell?: {coordinatesOfCell.Item1}, {coordinatesOfCell.Item2}");
         List<CellStats> answer = new();
         Tuple<int, int>[] dxdy = { new Tuple<int, int>(0,1),
                                    new Tuple<int, int>(0,-1),
@@ -101,6 +100,11 @@ public class Griddy : MonoBehaviour
             {
                 //Debug.Log($"{prospectiveCoordinate.Item1}, {prospectiveCoordinate.Item2}");
             }
+        }
+
+        if(cell.exitCell != null)
+        {
+            answer.Add(cell.exitCell);
         }
 
         //Debug.Log(debugStatement);

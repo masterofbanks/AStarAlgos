@@ -7,6 +7,7 @@ public class CellStats : MonoBehaviour
     public float G;
     public float H;
     public bool Walkable;
+    public CellStats exitCell;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

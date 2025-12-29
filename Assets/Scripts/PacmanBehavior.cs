@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-public class MoveableObject : MonoBehaviour
+public class PacmanBehavior : MonoBehaviour
 {
 
     /*
@@ -18,6 +18,8 @@ If the intended move direction checks out, the player is re-aligned to the grid 
     [Header("Movement Fields")]
     public Vector2 CurrentDirection = Vector2.right;
     public Vector2 IntendedDirection = Vector2.right;
+    public Vector3 CurrentOrientation = Vector3.zero;
+    public Vector3 IntendedOrientation = Vector3.zero;
     public float MovementSpeed;
     private float _currentMoveSpeed;
 
@@ -26,6 +28,8 @@ If the intended move direction checks out, the player is re-aligned to the grid 
     public Griddy GridReference;
     public CellStats currentCell;
     private Rigidbody2D _rb2D;
+    private Animator anime;
+
 
     //Input Actions
     private InputAction _right;
@@ -37,6 +41,7 @@ If the intended move direction checks out, the player is re-aligned to the grid 
         ISAs = new InputSystem_Actions();
         _currentMoveSpeed = MovementSpeed;
         _rb2D = GetComponent<Rigidbody2D>();
+        anime = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -49,25 +54,29 @@ If the intended move direction checks out, the player is re-aligned to the grid 
     private void MoveRight(InputAction.CallbackContext cxt)
     {
         IntendedDirection = Vector2.right;
+        IntendedOrientation = new Vector3(0, 0, 0);
         
     }
 
     private void MoveLeft(InputAction.CallbackContext cxt)
     {
         IntendedDirection = Vector2.left;
-        
+        IntendedOrientation = new Vector3(0, 0, 180);
+
     }
 
     private void MoveUp(InputAction.CallbackContext cxt)
     {
         IntendedDirection = Vector2.up;
-        
+        IntendedOrientation = new Vector3(0, 0, 90);
+
     }
 
     private void MoveDown(InputAction.CallbackContext cxt)
     {
         IntendedDirection = Vector2.down;
-        
+        IntendedOrientation = new Vector3(0, 0, 270);
+
     }
 
     private void OnEnable()
@@ -93,24 +102,24 @@ If the intended move direction checks out, the player is re-aligned to the grid 
         if(collision.gameObject.layer == LayerMask.NameToLayer("Grid"))
         {
             currentCell = collision.gameObject.GetComponent<CellStats>();
+
+            if(currentCell.exitCell != null)
+            {
+                transform.position = currentCell.exitCell.transform.position;
+            }
             TestForNewDirection();
 
             //Debug.Log("Grid!");
         }
 
-        else if(collision.gameObject.layer == LayerMask.NameToLayer("Terrain"))
-        {
-            Debug.Log("HIT TERRAIN");
-            //_currentMoveSpeed = 0;
-            //transform.position = currentCell.transform.position;
-        }
+       
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Terrain"))
         {
-            Debug.Log("Hit hard terrain!");
+            anime.speed = 0;
         }
     }
 
@@ -119,6 +128,14 @@ If the intended move direction checks out, the player is re-aligned to the grid 
         if (collision.gameObject.CompareTag("Terrain"))
         {
             TestForNewDirection();
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Terrain"))
+        {
+            anime.speed = 1;
         }
     }
 
@@ -154,6 +171,8 @@ If the intended move direction checks out, the player is re-aligned to the grid 
             transform.position = currentCell.gameObject.transform.position;
             //Debug.Log("Hello here");
             CurrentDirection = IntendedDirection;
+            CurrentOrientation = IntendedOrientation;
+            transform.eulerAngles = CurrentOrientation;
         }
 
 

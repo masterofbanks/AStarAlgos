@@ -17,7 +17,7 @@ public class EnemyBehavior : MonoBehaviour
     [Header("Path Construction")]
     public CellStats StartingCell;
     public LineRenderer VisualOfPath;
-    public MoveableObject PlayerTarget;
+    public PacmanBehavior PlayerTarget;
 
     private CellStats EndingCell;
 
@@ -170,8 +170,12 @@ public class EnemyBehavior : MonoBehaviour
     {
         if(collision.gameObject.layer == LayerMask.NameToLayer("Grid"))
         {
-            //Debug.Log("Hit new grid point");
+            
             StartingCell = collision.gameObject.GetComponent<CellStats>();
+            if(StartingCell.exitCell != null)
+            {
+                transform.position = StartingCell.exitCell.transform.position;
+            }
             if(StartingCell == EndingCell)
             {
                 Debug.Log("Target Reached!");
