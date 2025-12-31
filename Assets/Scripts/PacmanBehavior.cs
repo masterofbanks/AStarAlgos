@@ -16,12 +16,13 @@ If the intended move direction checks out, the player is re-aligned to the grid 
      */
 
     [Header("Movement Fields")]
-    public Vector2 CurrentDirection = Vector2.right;
-    public Vector2 IntendedDirection = Vector2.right;
-    public Vector3 CurrentOrientation = Vector3.zero;
-    public Vector3 IntendedOrientation = Vector3.zero;
     public float MovementSpeed;
-    private float _currentMoveSpeed;
+
+
+    private Vector2 CurrentDirection = Vector2.right;
+    private Vector2 IntendedDirection = Vector2.right;
+    private Vector3 CurrentOrientation = Vector3.zero;
+    private Vector3 IntendedOrientation = Vector3.zero;
 
     [Header("Outside Scripts")]
     public InputSystem_Actions ISAs;
@@ -39,7 +40,6 @@ If the intended move direction checks out, the player is re-aligned to the grid 
     private void Awake()
     {
         ISAs = new InputSystem_Actions();
-        _currentMoveSpeed = MovementSpeed;
         _rb2D = GetComponent<Rigidbody2D>();
         anime = GetComponent<Animator>();
     }
@@ -109,7 +109,6 @@ If the intended move direction checks out, the player is re-aligned to the grid 
             }
             TestForNewDirection();
 
-            //Debug.Log("Grid!");
         }
 
        
@@ -167,9 +166,7 @@ If the intended move direction checks out, the player is re-aligned to the grid 
 
         if(IntendedDirection != CurrentDirection && GridReference.IsWalkable(coordsOfNewCell.Item1, coordsOfNewCell.Item2))
         {
-            _currentMoveSpeed = MovementSpeed;
             transform.position = currentCell.gameObject.transform.position;
-            //Debug.Log("Hello here");
             CurrentDirection = IntendedDirection;
             CurrentOrientation = IntendedOrientation;
             transform.eulerAngles = CurrentOrientation;

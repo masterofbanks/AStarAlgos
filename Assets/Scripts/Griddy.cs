@@ -10,23 +10,19 @@ public class Griddy : MonoBehaviour
 
     private void Awake()
     {
-
-    }
-
-    private void Start()
-    {
         Tuple<int, int> gridDimensions = _gridGenerator.GetGridDimensions();
         cellGrid = new CellStats[gridDimensions.Item1, gridDimensions.Item2];
         int i = 0;
-        for(int y = 0; y < cellGrid.GetLength(0); y++)
+        for (int y = 0; y < cellGrid.GetLength(0); y++)
         {
-            for(int x = 0; x < cellGrid.GetLength(1); x++)
+            for (int x = 0; x < cellGrid.GetLength(1); x++)
             {
                 cellGrid[y, x] = _gridObjectParent.GetChild(i).gameObject.GetComponent<CellStats>();
                 i++;
             }
         }
     }
+
 
     //to add:
     //1. helper method to find the x and y coord of a given cell stat
@@ -81,15 +77,22 @@ public class Griddy : MonoBehaviour
         }
 
         List<CellStats> answer = new();
-        Tuple<int, int>[] dxdy = { new Tuple<int, int>(0,1),
-                                   new Tuple<int, int>(0,-1),
-                                   new Tuple<int, int>(1,0),
-                                   new Tuple<int, int>(-1,0)};
+        HashSet<Tuple<int, int>> dxdySet = new HashSet<Tuple<int, int>>{    new Tuple<int, int>(0,1),
+                                                                            new Tuple<int, int>(0,-1),
+                                                                            new Tuple<int, int>(1,0),
+                                                                            new Tuple<int, int>(-1,0)};
 
-        string debugStatement = "";
-        for (int i = 0; i < dxdy.Length; i++)
+        /*Tuple<int, int> backwardsMoveDirection = new Tuple<int, int>(-1 * currentMoveDirection.Item1, -1 * currentMoveDirection.Item2);
+
+        //Debug.Log(backwardsMoveDirection);
+        if (dxdySet.Contains(backwardsMoveDirection))
         {
-            Tuple<int, int> prospectiveCoordinate = AddTuples(dxdy[i], coordinatesOfCell);
+            dxdySet.Remove(backwardsMoveDirection);
+        }*/
+        string debugStatement = "";
+        foreach(Tuple<int,int> dxdyCoord in dxdySet)
+        {
+            Tuple<int, int> prospectiveCoordinate = AddTuples(dxdyCoord, coordinatesOfCell);
             if (IsValidCoordinate(prospectiveCoordinate.Item1, prospectiveCoordinate.Item2))
             {
                 answer.Add(GetCellData(prospectiveCoordinate.Item1, prospectiveCoordinate.Item2));
@@ -101,6 +104,7 @@ public class Griddy : MonoBehaviour
                 //Debug.Log($"{prospectiveCoordinate.Item1}, {prospectiveCoordinate.Item2}");
             }
         }
+        
 
         if(cell.exitCell != null)
         {

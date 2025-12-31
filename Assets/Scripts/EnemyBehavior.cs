@@ -2,59 +2,70 @@ using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
 using System;
+using System.Threading;
 public class EnemyBehavior : MonoBehaviour
 {
+    public enum State
+    {
+        Scatter,
+        Chase
+    }
+    [Header("State")]
+    public State state;
+    public float time;
+
+    [Header("Scatter Parameters")]
+    public float TimeInScatterState = 7f;
+    public CellStats[] ScatterPosition;
+    public int CurrentScatterIndex = 0;
+
+    [Header("Chase Parameters")]
+    public float TimeInChaseState = 20f;
+
     [Header("Walkable Grid")]
     public Griddy GridScript;
-    public List<Transform> TestPath;
     public Transform currentTarget;
-    public int CurrentTargetIndex;
+    public Tuple<int, int> CurrentMovementDirection;
+    public CellStats currentTargetCell;
+    public List<Transform> TestPath;
 
     [Header("Physics values")]
     public float Speed;
-    public float epsilonDistance;
 
     [Header("Path Construction")]
     public CellStats StartingCell;
+    public CellStats EndingCell;
     public LineRenderer VisualOfPath;
     public PacmanBehavior PlayerTarget;
 
-    private CellStats EndingCell;
 
     Rigidbody2D _rb2D;
-    bool reachedObjective = false;
-    bool firstPathCalc = true;
-    //
     private void Awake()
     {
         _rb2D = GetComponent<Rigidbody2D>();
 
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
-        EndingCell = PlayerTarget.currentCell;
+        state = State.Scatter;
+        CalculateTarget();
+        CurrentMovementDirection = new Tuple<int, int>(0, 0);
+        EndingCell = currentTargetCell;
         TestCalculationOfPath();
         currentTarget = TestPath[0];
-        firstPathCalc = false;
+        UpdateCurrentMovementDirection();
         
     }
 
     private void FixedUpdate()
     {
-        EndingCell = PlayerTarget.currentCell;
-        if (!reachedObjective)
-        {
-            if (currentTarget == null)
-            {
-                Debug.Log("Current Target is null");
-            }
-            MoveToPoint(currentTarget);
-        }
+        CalculateTarget();
+        MoveToPoint(currentTarget);
 
-        //TestCalculationOfPath();
-            
+
+
     }
 
     public void MoveToPoint(Transform target)
@@ -63,19 +74,41 @@ public class EnemyBehavior : MonoBehaviour
         _rb2D.MovePosition(_rb2D.position + directionOfMovement * Speed * Time.fixedDeltaTime);
     }
 
-    private bool DetermineReachedPosition(Transform target)
-    {
-        return Vector2.Distance((Vector2)target.position, _rb2D.position) < epsilonDistance;
-    }
 
     public void TestCalculationOfPath()
     {
-        List<Transform> newPath = CalculatePath(StartingCell, EndingCell);
-        TestPath = newPath;
-
+        TestPath = CalculatePath(StartingCell, EndingCell);
         UpdateLine();
 
 
+
+    }
+
+    public virtual void CalculateTarget()
+    {
+        if(state == State.Scatter)
+        {
+            currentTargetCell = ScatterPosition[CurrentScatterIndex];
+            time += Time.fixedDeltaTime;
+            if(time > TimeInScatterState)
+            {
+                time = 0f;
+                state = State.Chase;
+            }
+        }
+
+        else if(state == State.Chase)
+        {
+            currentTargetCell = PlayerTarget.currentCell;
+            time += Time.fixedDeltaTime;
+            if(time > TimeInChaseState)
+            {
+                time = 0f;
+                state = State.Scatter;
+            }
+        }
+
+        EndingCell = currentTargetCell;
 
     }
 
@@ -94,13 +127,21 @@ public class EnemyBehavior : MonoBehaviour
         List<CellStats> openSet = new();
         List<CellStats> closedSet = new();
         openSet.Add(start);
+
+        //add cell behind to closed set  
+        Tuple<int, int> currentCoordinates = GridScript.GetCoordsOfCell(start);
+        Tuple<int, int> behindDirection = new Tuple<int, int>(CurrentMovementDirection.Item2 * -1, CurrentMovementDirection.Item1 * -1);
+        Tuple<int, int> behindCoordinates = GridScript.AddTuples(currentCoordinates, behindDirection);
+        //Debug.Log(behindCoordinates);
+        closedSet.Add(GridScript.GetCellData(behindCoordinates.Item1, behindCoordinates.Item2));
+
+
         CellStats currentNode = null;
 
         while(openSet.Count > 0)
         {
             openSet.Sort(Comparer<CellStats>.Create((s1, s2) => s1.F.CompareTo(s2.F)));
             currentNode = openSet[0];
-            //Debug.Log(currentNode.gameObject.name);
             openSet.RemoveAt(0);
 
             closedSet.Add(currentNode);
@@ -124,9 +165,11 @@ public class EnemyBehavior : MonoBehaviour
             {
                 Debug.Log("GridScript is null");
             }
+            
+            List<CellStats> neighbors;
+            neighbors = GridScript.GetNeighborsOfCell(currentNode);
 
-            List<CellStats> neighbors = GridScript.GetNeighborsOfCell(currentNode);
-            foreach(CellStats neighbor in neighbors)
+            foreach (CellStats neighbor in neighbors)
             {
                 if(!GridScript.IsWalkable(GridScript.GetCoordsOfCell(neighbor).Item1, GridScript.GetCoordsOfCell(neighbor).Item2) || closedSet.Contains(neighbor))
                 {
@@ -134,7 +177,6 @@ public class EnemyBehavior : MonoBehaviour
                     continue;
                 }
 
-                /*Debug.Log($"Did not Continued on {Grid.GetCoordsOfCell(neighbor).Item1}, {Grid.GetCoordsOfCell(neighbor).Item2}");*/
                 float cost = currentNode.G + HeuristicCostEstimate(currentNode, neighbor);
                 if(cost < neighbor.G || !openSet.Contains(neighbor))
                 {
@@ -166,6 +208,16 @@ public class EnemyBehavior : MonoBehaviour
 
     }
 
+    private void UpdateCurrentMovementDirection()
+    {
+        Tuple<int, int> targetCoords = GridScript.GetCoordsOfCell(currentTarget.gameObject.GetComponent<CellStats>());
+        Tuple<int, int> currentCoords = GridScript.GetCoordsOfCell(StartingCell);
+        int currXVelo = targetCoords.Item2 - currentCoords.Item2;
+        int currYVelo = targetCoords.Item1 - currentCoords.Item1;
+        CurrentMovementDirection = new Tuple<int, int>(currXVelo, currYVelo);
+        //Debug.Log(CurrentMovementDirection);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.layer == LayerMask.NameToLayer("Grid"))
@@ -179,11 +231,27 @@ public class EnemyBehavior : MonoBehaviour
             if(StartingCell == EndingCell)
             {
                 Debug.Log("Target Reached!");
-                reachedObjective = true;
-                return;
+                //reachedObjective = true;
+                if(state == State.Scatter)
+                {
+                    CurrentScatterIndex++;
+                    if (CurrentScatterIndex == ScatterPosition.Length)
+                    {
+                        CurrentScatterIndex = 0;
+                    }
+                }
+
+                else if(state == State.Chase)
+                {
+                    state = State.Scatter;
+                    //return;
+                }
+                CalculateTarget();
+                //return;
             }
             TestCalculationOfPath();
             currentTarget = TestPath[0];
+            UpdateCurrentMovementDirection();
         }
     }
 }

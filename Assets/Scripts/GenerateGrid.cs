@@ -46,7 +46,6 @@ public class GenerateGrid : MonoBehaviour
                 //spawn a grid point there and name it
                 newGridPoint = Instantiate(_gridPrefab, newSpawnPosition, Quaternion.identity, _gridPointsParent);
                 newGridPoint.name = $"Cell ({y},{x})";
-                //add that object to the 2D array of grid points
 
             }
         }
@@ -96,6 +95,11 @@ public class GenerateGrid : MonoBehaviour
         
     }
 
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns>The dimensions of the constructed grid as a Tuple of ints</returns>
     public Tuple<int, int> GetGridDimensions()
     {
         return new Tuple<int, int>(Mathf.FloorToInt(_spawnBounds.size.y / _gridBoxSize), Mathf.FloorToInt(_spawnBounds.size.x / _gridBoxSize));
