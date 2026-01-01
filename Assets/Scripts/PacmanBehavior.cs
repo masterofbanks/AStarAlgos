@@ -24,9 +24,11 @@ If the intended move direction checks out, the player is re-aligned to the grid 
     private Vector3 CurrentOrientation = Vector3.zero;
     private Vector3 IntendedOrientation = Vector3.zero;
 
-    [Header("Outside Scripts")]
     public InputSystem_Actions ISAs;
+
+    [Header("Outside Scripts")]
     public Griddy GridReference;
+    public GameManager GameScript;
     public CellStats currentCell;
     private Rigidbody2D _rb2D;
     private Animator anime;
@@ -114,6 +116,13 @@ If the intended move direction checks out, the player is re-aligned to the grid 
         else if (collision.gameObject.CompareTag("Enemy"))
         {
             Debug.Log($"Pacman hit an enemy named {collision.gameObject.name}");
+        }
+
+        else if (collision.gameObject.CompareTag("PowerPellet"))
+        {
+            Debug.Log($"Pacman hit {collision.gameObject.name}");
+            GameScript.MakeEveryGhostScared();
+            Destroy(collision.gameObject);
         }
 
        

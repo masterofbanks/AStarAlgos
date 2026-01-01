@@ -64,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -78,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -102,7 +102,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -130,10 +130,10 @@ TextureImporter:
       name: PacManAssets-Items_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 17
-        width: 13
-        height: 14
+        x: 0
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,10 +152,10 @@ TextureImporter:
       name: PacManAssets-Items_1
       rect:
         serializedVersion: 2
-        x: 18
-        y: 17
-        width: 12
-        height: 14
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,10 +174,10 @@ TextureImporter:
       name: PacManAssets-Items_2
       rect:
         serializedVersion: 2
-        x: 33
-        y: 17
-        width: 14
-        height: 12
+        x: 32
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,10 +196,10 @@ TextureImporter:
       name: PacManAssets-Items_3
       rect:
         serializedVersion: 2
-        x: 49
-        y: 17
-        width: 14
-        height: 14
+        x: 48
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,7 +220,7 @@ TextureImporter:
         serializedVersion: 2
         x: 64
         y: 16
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -240,9 +240,9 @@ TextureImporter:
       name: PacManAssets-Items_5
       rect:
         serializedVersion: 2
-        x: 79
+        x: 80
         y: 16
-        width: 18
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -262,10 +262,10 @@ TextureImporter:
       name: PacManAssets-Items_6
       rect:
         serializedVersion: 2
-        x: 97
-        y: 17
-        width: 14
-        height: 15
+        x: 96
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,9 +284,9 @@ TextureImporter:
       name: PacManAssets-Items_7
       rect:
         serializedVersion: 2
-        x: 115
+        x: 112
         y: 16
-        width: 10
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -306,10 +306,10 @@ TextureImporter:
       name: PacManAssets-Items_8
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
-        width: 8
-        height: 8
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,10 +328,10 @@ TextureImporter:
       name: PacManAssets-Items_9
       rect:
         serializedVersion: 2
-        x: 18
-        y: 2
-        width: 12
-        height: 12
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -350,7 +350,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b8892f9d68635b149a03b8e2bf22d132
     internalID: 0
     vertices: []
     indices: 
@@ -359,7 +359,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PacManAssets-Items_0: 3082458939611257269
+      PacManAssets-Items_1: -1718779583060232415
+      PacManAssets-Items_2: 3898176578424635808
+      PacManAssets-Items_3: 2209565153049176054
+      PacManAssets-Items_4: -3909505319742487442
+      PacManAssets-Items_5: -7902421652165770666
+      PacManAssets-Items_6: -5546617881374722626
+      PacManAssets-Items_7: -7022886020688393867
+      PacManAssets-Items_8: -3321708683245245967
+      PacManAssets-Items_9: -161028118716208644
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

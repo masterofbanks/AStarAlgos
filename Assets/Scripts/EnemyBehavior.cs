@@ -322,6 +322,7 @@ public class EnemyBehavior : MonoBehaviour
 
     public void ForceGhostIntoFrightenedState()
     {
+        time = 0;
         state = State.Frightened;
         CalculateTarget();
         TestCalculationOfPath(true);
