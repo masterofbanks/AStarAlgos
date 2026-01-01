@@ -111,6 +111,11 @@ If the intended move direction checks out, the player is re-aligned to the grid 
 
         }
 
+        else if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log($"Pacman hit an enemy named {collision.gameObject.name}");
+        }
+
        
     }
 

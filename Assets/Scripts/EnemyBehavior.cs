@@ -3,12 +3,16 @@ using UnityEngine;
 using System.Collections.Generic;
 using System;
 using System.Threading;
+using System.Runtime.CompilerServices;
+using System.Collections;
+using NUnit.Framework.Constraints;
 public class EnemyBehavior : MonoBehaviour
 {
     public enum State
     {
         Scatter,
-        Chase
+        Chase,
+        Frightened
     }
     [Header("State")]
     public State state;
@@ -21,6 +25,9 @@ public class EnemyBehavior : MonoBehaviour
 
     [Header("Chase Parameters")]
     public float TimeInChaseState = 20f;
+
+    [Header("Frightened Parameters")]
+    public float TimeInFrightenedState = 6f;
 
     [Header("Walkable Grid")]
     public Griddy GridScript;
@@ -35,6 +42,7 @@ public class EnemyBehavior : MonoBehaviour
     [Header("Path Construction")]
     public CellStats StartingCell;
     public CellStats EndingCell;
+    public CellStats RandomCell;
     public LineRenderer VisualOfPath;
     public PacmanBehavior PlayerTarget;
 
@@ -49,14 +57,22 @@ public class EnemyBehavior : MonoBehaviour
 
     void Start()
     {
-        state = State.Scatter;
+        //state = State.Scatter;
         CalculateTarget();
         CurrentMovementDirection = new Tuple<int, int>(0, 0);
         EndingCell = currentTargetCell;
         TestCalculationOfPath();
         currentTarget = TestPath[0];
         UpdateCurrentMovementDirection();
+        StartCoroutine(FindRandomRoutine());
         
+    }
+
+    IEnumerator FindRandomRoutine()
+    {
+        yield return new WaitForSeconds(Time.fixedDeltaTime);
+        RandomCell = GridScript.FindARandomWalkableGridPoint(StartingCell);
+
     }
 
     private void FixedUpdate()
@@ -75,9 +91,9 @@ public class EnemyBehavior : MonoBehaviour
     }
 
 
-    public void TestCalculationOfPath()
+    public void TestCalculationOfPath(bool turnAround = false)
     {
-        TestPath = CalculatePath(StartingCell, EndingCell);
+        TestPath = CalculatePath(StartingCell, EndingCell, turnAround);
         UpdateLine();
 
 
@@ -108,20 +124,35 @@ public class EnemyBehavior : MonoBehaviour
             }
         }
 
+        else if(state == State.Frightened)
+        {
+            currentTargetCell = RandomCell;
+            time += Time.fixedDeltaTime;
+            if(time > TimeInFrightenedState)
+            {
+                time = 0f;
+                state = State.Chase;
+            }
+        }
+
         EndingCell = currentTargetCell;
 
     }
 
     private void UpdateLine()
     {
-        VisualOfPath.positionCount = TestPath.Count + 1;
-        for (int i = 0; i < TestPath.Count; i++)
+        if(TestPath != null)
         {
-            VisualOfPath.SetPosition(i + 1, TestPath[i].position);
+            VisualOfPath.positionCount = TestPath.Count + 1;
+            for (int i = 0; i < TestPath.Count; i++)
+            {
+                VisualOfPath.SetPosition(i + 1, TestPath[i].position);
+            }
+            VisualOfPath.SetPosition(0, StartingCell.gameObject.transform.position);
         }
-        VisualOfPath.SetPosition(0, StartingCell.gameObject.transform.position);
+        
     }
-    private List<Transform> CalculatePath(CellStats start, CellStats end)
+    private List<Transform> CalculatePath(CellStats start, CellStats end, bool turnAround = false)
     {
         List<Transform> answer = new();
         List<CellStats> openSet = new();
@@ -133,7 +164,8 @@ public class EnemyBehavior : MonoBehaviour
         Tuple<int, int> behindDirection = new Tuple<int, int>(CurrentMovementDirection.Item2 * -1, CurrentMovementDirection.Item1 * -1);
         Tuple<int, int> behindCoordinates = GridScript.AddTuples(currentCoordinates, behindDirection);
         //Debug.Log(behindCoordinates);
-        closedSet.Add(GridScript.GetCellData(behindCoordinates.Item1, behindCoordinates.Item2));
+        if(!turnAround)
+            closedSet.Add(GridScript.GetCellData(behindCoordinates.Item1, behindCoordinates.Item2));
 
 
         CellStats currentNode = null;
@@ -166,19 +198,25 @@ public class EnemyBehavior : MonoBehaviour
                 Debug.Log("GridScript is null");
             }
             
-            List<CellStats> neighbors;
-            neighbors = GridScript.GetNeighborsOfCell(currentNode);
+            List<CellStats> neighbors = new();
+            if(!turnAround)
+                neighbors = GridScript.GetNeighborsOfCell(currentNode);
+            else
+            {
+                neighbors.Add(GridScript.GetCellData(behindCoordinates.Item1, behindCoordinates.Item2));
+                turnAround = false;
+            }
 
             foreach (CellStats neighbor in neighbors)
             {
-                if(!GridScript.IsWalkable(GridScript.GetCoordsOfCell(neighbor).Item1, GridScript.GetCoordsOfCell(neighbor).Item2) || closedSet.Contains(neighbor))
+                if (!GridScript.IsWalkable(GridScript.GetCoordsOfCell(neighbor).Item1, GridScript.GetCoordsOfCell(neighbor).Item2) || closedSet.Contains(neighbor))
                 {
-                    
+
                     continue;
                 }
 
                 float cost = currentNode.G + HeuristicCostEstimate(currentNode, neighbor);
-                if(cost < neighbor.G || !openSet.Contains(neighbor))
+                if (cost < neighbor.G || !openSet.Contains(neighbor))
                 {
                     neighbor.G = cost;
                     neighbor.H = HeuristicCostEstimate(neighbor, end);
@@ -228,30 +266,73 @@ public class EnemyBehavior : MonoBehaviour
             {
                 transform.position = StartingCell.exitCell.transform.position;
             }
+
+            //the ghost has reached its target cell
             if(StartingCell == EndingCell)
             {
-                Debug.Log("Target Reached!");
-                //reachedObjective = true;
-                if(state == State.Scatter)
-                {
-                    CurrentScatterIndex++;
-                    if (CurrentScatterIndex == ScatterPosition.Length)
-                    {
-                        CurrentScatterIndex = 0;
-                    }
-                }
-
-                else if(state == State.Chase)
-                {
-                    state = State.Scatter;
-                    //return;
-                }
-                CalculateTarget();
-                //return;
+                ChooseNewEndingCell();
             }
             TestCalculationOfPath();
+            
+            //in the edge case where no path can be found to a target, force the ghost into its scatter state and direct the ghost to the next available scatter position
+            if(TestPath == null)
+            {
+                state = State.Scatter;
+                CurrentScatterIndex++;
+                if (CurrentScatterIndex == ScatterPosition.Length)
+                {
+                    CurrentScatterIndex = 0;
+                }
+                CalculateTarget();
+                TestCalculationOfPath();
+            }
+
+
             currentTarget = TestPath[0];
             UpdateCurrentMovementDirection();
+
         }
+
+
+    }
+
+    private void ChooseNewEndingCell()
+    {
+        Debug.Log("Target Reached!");
+        if (state == State.Scatter)
+        {
+            CurrentScatterIndex++;
+            if (CurrentScatterIndex == ScatterPosition.Length)
+            {
+                CurrentScatterIndex = 0;
+            }
+        }
+
+        else if (state == State.Chase)
+        {
+            state = State.Scatter;
+        }
+
+        else if (state == State.Frightened)
+        {
+            RandomCell = GridScript.FindARandomWalkableGridPoint(StartingCell);
+        }
+        CalculateTarget();
+    }
+
+    public void ForceGhostIntoFrightenedState()
+    {
+        state = State.Frightened;
+        CalculateTarget();
+        TestCalculationOfPath(true);
+        if(TestPath == null)
+        {
+            currentTarget = StartingCell.transform;
+        }
+        else
+        {
+            currentTarget = TestPath[0];
+        }
+        UpdateCurrentMovementDirection();
     }
 }

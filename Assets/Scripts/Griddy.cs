@@ -7,12 +7,16 @@ public class Griddy : MonoBehaviour
     [SerializeField] private Transform _gridObjectParent;
     [SerializeField] private GenerateGrid _gridGenerator;
     private CellStats[,] cellGrid;
+    public List<CellStats> _walkableGridPoints;
+    private System.Random rndGen;
 
     private void Awake()
     {
         Tuple<int, int> gridDimensions = _gridGenerator.GetGridDimensions();
         cellGrid = new CellStats[gridDimensions.Item1, gridDimensions.Item2];
         int i = 0;
+        rndGen = new System.Random();
+        _walkableGridPoints = new();
         for (int y = 0; y < cellGrid.GetLength(0); y++)
         {
             for (int x = 0; x < cellGrid.GetLength(1); x++)
@@ -22,6 +26,8 @@ public class Griddy : MonoBehaviour
             }
         }
     }
+
+
 
 
     //to add:
@@ -135,5 +141,22 @@ public class Griddy : MonoBehaviour
     {
         //Debug.Log($"{t1.Item1 + t2.Item1}, {t1.Item2 + t2.Item2}");
         return new Tuple<int, int>(t1.Item1 + t2.Item1, t1.Item2 + t2.Item2);
+    }
+
+    public CellStats FindARandomWalkableGridPoint(CellStats currentCell)
+    {
+        _walkableGridPoints.Clear();
+        for (int y = 0; y < cellGrid.GetLength(0); y++)
+        {
+            for (int x = 0; x < cellGrid.GetLength(1); x++)
+            {
+                if (cellGrid[y, x].Walkable && cellGrid[y,x] != currentCell)
+                {
+                    _walkableGridPoints.Add(cellGrid[y, x]);
+                }
+            }
+        }
+        int randIndex = rndGen.Next(0, _walkableGridPoints.Count);
+        return _walkableGridPoints[randIndex];
     }
 }
