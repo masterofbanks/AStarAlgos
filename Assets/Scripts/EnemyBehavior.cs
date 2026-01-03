@@ -47,13 +47,11 @@ public class EnemyBehavior : MonoBehaviour
     public PacmanBehavior PlayerTarget;
 
 
-
     Rigidbody2D _rb2D;
-    Animator anime;
     private void Awake()
     {
         _rb2D = GetComponent<Rigidbody2D>();
-        anime = GetComponent<Animator>();
+
     }
 
 
@@ -81,7 +79,7 @@ public class EnemyBehavior : MonoBehaviour
     {
         CalculateTarget();
         MoveToPoint(currentTarget);
-        anime.SetInteger("state", (int)state);
+
 
 
     }
@@ -326,13 +324,11 @@ public class EnemyBehavior : MonoBehaviour
     {
         time = 0;
         state = State.Frightened;
-        RandomCell = GridScript.FindARandomWalkableGridPoint(StartingCell);
         CalculateTarget();
         TestCalculationOfPath(true);
         if(TestPath == null)
         {
-            EndingCell = ScatterPosition[CurrentScatterIndex];
-            TestCalculationOfPath(true);
+            currentTarget = StartingCell.transform;
         }
         else
         {
