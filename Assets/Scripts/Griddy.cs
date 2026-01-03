@@ -143,14 +143,20 @@ public class Griddy : MonoBehaviour
         return new Tuple<int, int>(t1.Item1 + t2.Item1, t1.Item2 + t2.Item2);
     }
 
-    public CellStats FindARandomWalkableGridPoint(CellStats currentCell)
+    public CellStats FindARandomWalkableGridPoint(CellStats currentCell, CellStats[] ScatterCells)
     {
+        HashSet<CellStats> scatterSet = new();
+        for(int i = 0; i < ScatterCells.Length; i++)
+        {
+            scatterSet.Add(ScatterCells[i]);
+        }
+
         _walkableGridPoints.Clear();
         for (int y = 0; y < cellGrid.GetLength(0); y++)
         {
             for (int x = 0; x < cellGrid.GetLength(1); x++)
             {
-                if (cellGrid[y, x].Walkable && cellGrid[y,x] != currentCell)
+                if (cellGrid[y, x].Walkable && cellGrid[y,x] != currentCell && !scatterSet.Contains(cellGrid[y,x]))
                 {
                     _walkableGridPoints.Add(cellGrid[y, x]);
                 }

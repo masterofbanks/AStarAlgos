@@ -13,7 +13,7 @@ public class CellStats : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Terrain"))
         {
-            //GetComponent<SpriteRenderer>().enabled = true;
+            GetComponent<SpriteRenderer>().enabled = true;
             Walkable = false;
         }
     }

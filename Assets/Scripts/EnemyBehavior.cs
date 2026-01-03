@@ -1,11 +1,7 @@
-using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
 using System;
-using System.Threading;
-using System.Runtime.CompilerServices;
 using System.Collections;
-using NUnit.Framework.Constraints;
 public class EnemyBehavior : MonoBehaviour
 {
     public enum State
@@ -48,9 +44,11 @@ public class EnemyBehavior : MonoBehaviour
 
 
     Rigidbody2D _rb2D;
+    Animator anime;
     private void Awake()
     {
         _rb2D = GetComponent<Rigidbody2D>();
+        anime = GetComponent<Animator>();
 
     }
 
@@ -71,7 +69,7 @@ public class EnemyBehavior : MonoBehaviour
     IEnumerator FindRandomRoutine()
     {
         yield return new WaitForSeconds(Time.fixedDeltaTime);
-        RandomCell = GridScript.FindARandomWalkableGridPoint(StartingCell);
+        RandomCell = GridScript.FindARandomWalkableGridPoint(StartingCell, ScatterPosition);
 
     }
 
@@ -79,7 +77,7 @@ public class EnemyBehavior : MonoBehaviour
     {
         CalculateTarget();
         MoveToPoint(currentTarget);
-
+        anime.SetInteger("state", (int)state);
 
 
     }
@@ -315,7 +313,7 @@ public class EnemyBehavior : MonoBehaviour
 
         else if (state == State.Frightened)
         {
-            RandomCell = GridScript.FindARandomWalkableGridPoint(StartingCell);
+            RandomCell = GridScript.FindARandomWalkableGridPoint(StartingCell, ScatterPosition);
         }
         CalculateTarget();
     }
@@ -328,12 +326,22 @@ public class EnemyBehavior : MonoBehaviour
         TestCalculationOfPath(true);
         if(TestPath == null)
         {
-            currentTarget = StartingCell.transform;
-        }
-        else
-        {
-            currentTarget = TestPath[0];
+            Debug.Log(gameObject.name);
         }
         UpdateCurrentMovementDirection();
+    }
+
+    public CellStats FindFirstNeighboringWalkableCell(CellStats cell)
+    {
+        List<CellStats> neighboringCells = GridScript.GetNeighborsOfCell(cell);
+        for(int i = 0; i < neighboringCells.Count; i++)
+        {
+            if (neighboringCells[i].Walkable)
+            {
+                return neighboringCells[i];
+            }
+        }
+
+        return cell;
     }
 }
