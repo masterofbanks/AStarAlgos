@@ -141992,6 +141992,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlinkyLine
       objectReference: {fileID: 0}
+    - target: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3475157744390847949, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 

@@ -45,6 +45,7 @@ public class EnemyBehavior : MonoBehaviour
 
     Rigidbody2D _rb2D;
     Animator anime;
+    bool _isTurningAround = false;
     private void Awake()
     {
         _rb2D = GetComponent<Rigidbody2D>();
@@ -270,11 +271,32 @@ public class EnemyBehavior : MonoBehaviour
             {
                 ChooseNewEndingCell();
             }
-            TestCalculationOfPath();
-            
-            //in the edge case where no path can be found to a target, force the ghost into its scatter state and direct the ghost to the next available scatter position
-            if(TestPath == null)
+
+            if(state == State.Frightened)
             {
+                TestPath = null; 
+                while(TestPath == null)
+                {
+                    RandomCell = GridScript.FindARandomWalkableGridPoint(StartingCell, ScatterPosition);
+                    EndingCell = RandomCell;
+                    TestCalculationOfPath(_isTurningAround);
+                }
+
+            }
+            else
+            {
+                TestCalculationOfPath(_isTurningAround);
+            }
+            if (_isTurningAround)
+            {
+                _isTurningAround = false;
+            }
+
+
+            //in the edge case where no path can be found to a target, force the ghost into its scatter state and direct the ghost to the next available scatter position
+            if (TestPath == null)
+            {
+                Debug.Log($"{gameObject.name}'s TestPath is null after trying to find a new path");
                 state = State.Scatter;
                 CurrentScatterIndex++;
                 if (CurrentScatterIndex == ScatterPosition.Length)
@@ -322,26 +344,8 @@ public class EnemyBehavior : MonoBehaviour
     {
         time = 0;
         state = State.Frightened;
-        CalculateTarget();
-        TestCalculationOfPath(true);
-        if(TestPath == null)
-        {
-            Debug.Log(gameObject.name);
-        }
-        UpdateCurrentMovementDirection();
+        _isTurningAround = true;
     }
 
-    public CellStats FindFirstNeighboringWalkableCell(CellStats cell)
-    {
-        List<CellStats> neighboringCells = GridScript.GetNeighborsOfCell(cell);
-        for(int i = 0; i < neighboringCells.Count; i++)
-        {
-            if (neighboringCells[i].Walkable)
-            {
-                return neighboringCells[i];
-            }
-        }
-
-        return cell;
-    }
+   
 }
