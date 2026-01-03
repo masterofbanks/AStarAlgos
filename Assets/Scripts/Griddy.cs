@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Griddy : MonoBehaviour
@@ -46,6 +47,10 @@ public class Griddy : MonoBehaviour
     //2. reverse of the above
     public Tuple<int, int> GetCoordsOfCell(CellStats cell)
     {
+        if(cell == null)
+        {
+            return new Tuple<int, int>(0, 0);
+        }
         string cellName = cell.gameObject.name;
         int indexOfComma = cellName.IndexOf(',');
         int indexOfLeftParenthesis = cellName.IndexOf('(');

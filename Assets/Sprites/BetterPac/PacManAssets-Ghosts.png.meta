@@ -178,7 +178,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -192,7 +192,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -216,7 +216,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -244,10 +244,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 325
-        width: 22
-        height: 22
+        x: 0
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,10 +266,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_1
       rect:
         serializedVersion: 2
-        x: 37
-        y: 325
-        width: 22
-        height: 22
+        x: 32
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,10 +288,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_2
       rect:
         serializedVersion: 2
-        x: 69
-        y: 325
-        width: 22
-        height: 22
+        x: 64
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,10 +310,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_3
       rect:
         serializedVersion: 2
-        x: 101
-        y: 325
-        width: 22
-        height: 22
+        x: 96
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,10 +332,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_4
       rect:
         serializedVersion: 2
-        x: 5
-        y: 293
-        width: 22
-        height: 22
+        x: 0
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,10 +354,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_5
       rect:
         serializedVersion: 2
-        x: 37
-        y: 293
-        width: 22
-        height: 22
+        x: 32
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,10 +376,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_6
       rect:
         serializedVersion: 2
-        x: 69
-        y: 293
-        width: 22
-        height: 22
+        x: 64
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -398,10 +398,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_7
       rect:
         serializedVersion: 2
-        x: 101
-        y: 293
-        width: 22
-        height: 22
+        x: 96
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -420,10 +420,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_8
       rect:
         serializedVersion: 2
-        x: 5
-        y: 261
-        width: 22
-        height: 22
+        x: 0
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -442,10 +442,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_9
       rect:
         serializedVersion: 2
-        x: 37
-        y: 261
-        width: 22
-        height: 22
+        x: 32
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -464,10 +464,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_10
       rect:
         serializedVersion: 2
-        x: 69
-        y: 261
-        width: 22
-        height: 22
+        x: 64
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -486,10 +486,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_11
       rect:
         serializedVersion: 2
-        x: 101
-        y: 261
-        width: 22
-        height: 22
+        x: 96
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -508,10 +508,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_12
       rect:
         serializedVersion: 2
-        x: 5
-        y: 229
-        width: 22
-        height: 22
+        x: 0
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -530,10 +530,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_13
       rect:
         serializedVersion: 2
-        x: 37
-        y: 229
-        width: 22
-        height: 22
+        x: 32
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -552,10 +552,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_14
       rect:
         serializedVersion: 2
-        x: 69
-        y: 229
-        width: 22
-        height: 22
+        x: 64
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -574,10 +574,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_15
       rect:
         serializedVersion: 2
-        x: 101
-        y: 229
-        width: 22
-        height: 22
+        x: 96
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,10 +596,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_16
       rect:
         serializedVersion: 2
-        x: 5
-        y: 197
-        width: 22
-        height: 22
+        x: 0
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -618,10 +618,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_17
       rect:
         serializedVersion: 2
-        x: 37
-        y: 197
-        width: 22
-        height: 22
+        x: 32
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -640,10 +640,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_18
       rect:
         serializedVersion: 2
-        x: 69
-        y: 197
-        width: 22
-        height: 22
+        x: 64
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -662,10 +662,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_19
       rect:
         serializedVersion: 2
-        x: 101
-        y: 197
-        width: 22
-        height: 22
+        x: 96
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -684,10 +684,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_20
       rect:
         serializedVersion: 2
-        x: 5
-        y: 165
-        width: 22
-        height: 22
+        x: 0
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -706,10 +706,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_21
       rect:
         serializedVersion: 2
-        x: 37
-        y: 165
-        width: 22
-        height: 22
+        x: 32
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -728,10 +728,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_22
       rect:
         serializedVersion: 2
-        x: 69
-        y: 165
-        width: 22
-        height: 22
+        x: 64
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -750,10 +750,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_23
       rect:
         serializedVersion: 2
-        x: 101
-        y: 165
-        width: 22
-        height: 22
+        x: 96
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -772,10 +772,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_24
       rect:
         serializedVersion: 2
-        x: 5
-        y: 133
-        width: 22
-        height: 22
+        x: 0
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -794,10 +794,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_25
       rect:
         serializedVersion: 2
-        x: 37
-        y: 133
-        width: 22
-        height: 22
+        x: 32
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -816,10 +816,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_26
       rect:
         serializedVersion: 2
-        x: 69
-        y: 133
-        width: 22
-        height: 22
+        x: 64
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -838,10 +838,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_27
       rect:
         serializedVersion: 2
-        x: 101
-        y: 133
-        width: 22
-        height: 22
+        x: 96
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -860,10 +860,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_28
       rect:
         serializedVersion: 2
-        x: 5
-        y: 101
-        width: 22
-        height: 22
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -882,10 +882,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_29
       rect:
         serializedVersion: 2
-        x: 37
-        y: 101
-        width: 22
-        height: 22
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -904,10 +904,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_30
       rect:
         serializedVersion: 2
-        x: 69
-        y: 101
-        width: 22
-        height: 22
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -926,10 +926,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_31
       rect:
         serializedVersion: 2
-        x: 101
-        y: 101
-        width: 22
-        height: 22
+        x: 96
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -948,10 +948,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_32
       rect:
         serializedVersion: 2
-        x: 5
-        y: 69
-        width: 22
-        height: 22
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -970,10 +970,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_33
       rect:
         serializedVersion: 2
-        x: 37
-        y: 69
-        width: 22
-        height: 22
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -992,10 +992,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_34
       rect:
         serializedVersion: 2
-        x: 69
-        y: 69
-        width: 22
-        height: 22
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1014,10 +1014,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_35
       rect:
         serializedVersion: 2
-        x: 101
-        y: 69
-        width: 22
-        height: 22
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1036,10 +1036,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_36
       rect:
         serializedVersion: 2
-        x: 5
-        y: 37
-        width: 22
-        height: 22
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1058,10 +1058,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_37
       rect:
         serializedVersion: 2
-        x: 37
-        y: 37
-        width: 22
-        height: 22
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1080,10 +1080,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_38
       rect:
         serializedVersion: 2
-        x: 68
-        y: 19
-        width: 25
-        height: 40
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1102,10 +1102,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_39
       rect:
         serializedVersion: 2
-        x: 101
-        y: 37
-        width: 22
-        height: 22
+        x: 96
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1126,8 +1126,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1146,10 +1146,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_41
       rect:
         serializedVersion: 2
-        x: 16
+        x: 32
         y: 0
-        width: 16
-        height: 26
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1168,10 +1168,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_42
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1190,10 +1190,10 @@ TextureImporter:
       name: PacManAssets-Ghosts_43
       rect:
         serializedVersion: 2
-        x: 35
+        x: 96
         y: 0
-        width: 29
-        height: 26
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1208,99 +1208,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: PacManAssets-Ghosts_44
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 700218ea794160e40800000000000000
-      internalID: 5622203826518958087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PacManAssets-Ghosts_45
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cfd225a9e9c29e7f0800000000000000
-      internalID: -582885617062236676
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PacManAssets-Ghosts_46
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c5d7a1b53419ca360800000000000000
-      internalID: 7182275224226397532
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PacManAssets-Ghosts_47
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 0
-        width: 16
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 69bfab9014ed075d0800000000000000
-      internalID: -3066706975321818218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e5b174a2a745af441b3ed3957ce5b4c8
     internalID: 0
     vertices: []
     indices: 
@@ -1309,7 +1221,51 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PacManAssets-Ghosts_0: 381283623888017297
+      PacManAssets-Ghosts_1: -3253392175215830856
+      PacManAssets-Ghosts_10: 2719305359124891700
+      PacManAssets-Ghosts_11: 2099028147098913081
+      PacManAssets-Ghosts_12: -1359674866251954181
+      PacManAssets-Ghosts_13: -3869456757534930575
+      PacManAssets-Ghosts_14: 663515610487507017
+      PacManAssets-Ghosts_15: 3503921547693165213
+      PacManAssets-Ghosts_16: -1902678809454797475
+      PacManAssets-Ghosts_17: -2836586714727776925
+      PacManAssets-Ghosts_18: 8271353103963018224
+      PacManAssets-Ghosts_19: 1150403333416558531
+      PacManAssets-Ghosts_2: 7246146566921337503
+      PacManAssets-Ghosts_20: 1246077535054790755
+      PacManAssets-Ghosts_21: -2196241067784273306
+      PacManAssets-Ghosts_22: 4319305588754860323
+      PacManAssets-Ghosts_23: 3190873894957520992
+      PacManAssets-Ghosts_24: 7377520460679356930
+      PacManAssets-Ghosts_25: -5327991088993867797
+      PacManAssets-Ghosts_26: -7939137456659928805
+      PacManAssets-Ghosts_27: 2341013464854485983
+      PacManAssets-Ghosts_28: -6358511529289959377
+      PacManAssets-Ghosts_29: 5679542324688457836
+      PacManAssets-Ghosts_3: 307998135593467105
+      PacManAssets-Ghosts_30: -557796482903693206
+      PacManAssets-Ghosts_31: 919309189192511572
+      PacManAssets-Ghosts_32: 2792245117270376277
+      PacManAssets-Ghosts_33: -5759679951507691881
+      PacManAssets-Ghosts_34: 5087333952241970270
+      PacManAssets-Ghosts_35: 8325901679708724422
+      PacManAssets-Ghosts_36: 4729923248484099852
+      PacManAssets-Ghosts_37: 3558674217966680519
+      PacManAssets-Ghosts_38: -6793763387059298991
+      PacManAssets-Ghosts_39: 3691788628273630140
+      PacManAssets-Ghosts_4: -2303661810113249985
+      PacManAssets-Ghosts_40: -1834584773530405133
+      PacManAssets-Ghosts_41: -7639235448736627496
+      PacManAssets-Ghosts_42: -1902699380655275085
+      PacManAssets-Ghosts_43: -8898605176996530180
+      PacManAssets-Ghosts_5: -181716185359336551
+      PacManAssets-Ghosts_6: -1754333707212318202
+      PacManAssets-Ghosts_7: 3511476536034370308
+      PacManAssets-Ghosts_8: 6467407636116668806
+      PacManAssets-Ghosts_9: -1247623084937875608
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
