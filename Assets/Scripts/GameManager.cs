@@ -3,8 +3,11 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [Header("Entities")]
+    [Header("Ghosts")]
     public EnemyBehavior[] Ghosts;
+
+
+    [Header("Pacman Values")]
     public PacmanBehavior Pacman;
     public bool CharactersAreMoveable;
     public float EatenPauseTime = 0.5f;
@@ -14,10 +17,49 @@ public class GameManager : MonoBehaviour
     public GameObject PowerPellet;
     public CellStats[] PowerPelletSpawnLocations;
 
+    bool _soundLock = true;
+
     private void Start()
     {
         InitializeLevel();
         CharactersAreMoveable = true;
+        SoundManager.PlaySound(SoundType.MOVE);
+    }
+
+    private void FixedUpdate()
+    {
+        if (TestForAnyNormalGhosts() && !_soundLock)
+        {
+            _soundLock = true;
+            SoundManager.PlaySound(SoundType.MOVE);
+        }
+    }
+
+    //normal ghosts are ones in scatter or cha
+    private bool TestForAnyNormalGhosts()
+    {
+        for(int i = 0; i < Ghosts.Length; i++)
+        {
+            if (Ghosts[i].state == EnemyBehavior.State.Frightened || Ghosts[i].state == EnemyBehavior.State.Eaten)
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    private bool TestForEatenGhosts()
+    {
+        for(int i = 0; i < Ghosts.Length; i++)
+        {
+            if (Ghosts[i].state == EnemyBehavior.State.Eaten)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     public void MakeEveryGhostScared()
@@ -26,6 +68,8 @@ public class GameManager : MonoBehaviour
         {
             Ghosts[i].ForceGhostIntoFrightenedState();
         }
+        SoundManager.PlaySound(SoundType.FRIGHTENED, 1f, 0.1f);
+        _soundLock = false;
     }
 
     public void InitializeLevel()
