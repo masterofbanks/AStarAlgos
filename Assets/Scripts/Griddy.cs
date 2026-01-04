@@ -165,4 +165,21 @@ public class Griddy : MonoBehaviour
         int randIndex = rndGen.Next(0, _walkableGridPoints.Count);
         return _walkableGridPoints[randIndex];
     }
+
+    public List<Transform> FindDotSpawnLocations()
+    {
+        List<Transform> ans = new();
+        for(int y = 0; y < cellGrid.GetLength(0); y++)
+        {
+            for(int x = 0; x < cellGrid.GetLength(1); x++)
+            {
+                if (cellGrid[y,x].Walkable && !cellGrid[y, x].DontSpawnDotHere)
+                {
+                    ans.Add(cellGrid[y, x].transform);
+                }
+            }
+        }
+
+        return ans;
+    }
 }

@@ -261,6 +261,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &5734135
 GameObject:
@@ -404,6 +405,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &5920170
 GameObject:
@@ -547,6 +549,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &8284351
 GameObject:
@@ -690,6 +693,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &9929311
 GameObject:
@@ -833,6 +837,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &12149298
 GameObject:
@@ -976,6 +981,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &16975319
 GameObject:
@@ -1119,6 +1125,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &22224817
 GameObject:
@@ -1262,6 +1269,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &25711193
 GameObject:
@@ -1405,6 +1413,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &27268031
 GameObject:
@@ -1548,6 +1557,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &27819213
 GameObject:
@@ -1691,6 +1701,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &28164621
 GameObject:
@@ -1834,6 +1845,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &30158685
 GameObject:
@@ -1977,6 +1989,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &31961591
 GameObject:
@@ -2120,6 +2133,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &34363910
 GameObject:
@@ -2263,6 +2277,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &35299325
 GameObject:
@@ -2406,6 +2421,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &36615391
 GameObject:
@@ -2549,6 +2565,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &39794975
 GameObject:
@@ -2692,6 +2709,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &40917360
 GameObject:
@@ -2835,6 +2853,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &41650758
 GameObject:
@@ -2978,6 +2997,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &42740978
 GameObject:
@@ -3121,6 +3141,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &43547650
 GameObject:
@@ -3264,6 +3285,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &46834915
 GameObject:
@@ -3407,6 +3429,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &49963321
 GameObject:
@@ -3550,6 +3573,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &51283306
 GameObject:
@@ -3693,6 +3717,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &52351627
 GameObject:
@@ -3836,6 +3861,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &55619948
 GameObject:
@@ -3979,6 +4005,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &56521831
 GameObject:
@@ -4122,6 +4149,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &58518925
 GameObject:
@@ -4265,6 +4293,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &58694525
 GameObject:
@@ -4408,6 +4437,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &70966662
 GameObject:
@@ -4551,6 +4581,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &74230680
 GameObject:
@@ -4694,6 +4725,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &74398615
 GameObject:
@@ -4837,6 +4869,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &78089920
 GameObject:
@@ -4980,6 +5013,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &81520447
 GameObject:
@@ -5123,6 +5157,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &81697549
 GameObject:
@@ -5266,6 +5301,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &85599472
 GameObject:
@@ -5409,6 +5445,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &87509745
 GameObject:
@@ -5552,6 +5589,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &88055619
 GameObject:
@@ -5695,6 +5733,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &93521353
 GameObject:
@@ -5838,6 +5877,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &93799176
 GameObject:
@@ -6068,6 +6108,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &103373370
 GameObject:
@@ -6211,6 +6252,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &110543309
 GameObject:
@@ -6354,6 +6396,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &120825649
 GameObject:
@@ -6497,6 +6540,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &121953805
 GameObject:
@@ -6640,6 +6684,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &126628447
 GameObject:
@@ -6783,6 +6828,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &129400242
 GameObject:
@@ -6926,6 +6972,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &131222543
 GameObject:
@@ -7069,6 +7116,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &139254262
 GameObject:
@@ -7212,6 +7260,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &143953032
 GameObject:
@@ -7355,6 +7404,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &146347599
 GameObject:
@@ -7498,6 +7548,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &149356273
 GameObject:
@@ -7641,6 +7692,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &150215186
 GameObject:
@@ -7784,6 +7836,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &151379023
 GameObject:
@@ -7927,6 +7980,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &152012013
 GameObject:
@@ -8070,6 +8124,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &154643453
 GameObject:
@@ -8213,6 +8268,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &157730991
 GameObject:
@@ -8356,6 +8412,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &158910499
 GameObject:
@@ -8499,6 +8556,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &161113635
 GameObject:
@@ -8642,6 +8700,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &169307689
 GameObject:
@@ -8785,6 +8844,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &172481681
 GameObject:
@@ -8928,6 +8988,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &177232544
 GameObject:
@@ -9071,6 +9132,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &179758264
 GameObject:
@@ -9214,6 +9276,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &180611383
 GameObject:
@@ -9357,6 +9420,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &181748310
 GameObject:
@@ -9500,6 +9564,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &182031631
 GameObject:
@@ -9643,6 +9708,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &185342905
 GameObject:
@@ -9786,6 +9852,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &185463920
 GameObject:
@@ -9929,6 +9996,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &187903245
 GameObject:
@@ -10072,6 +10140,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &188232962
 GameObject:
@@ -10215,6 +10284,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &188982702
 GameObject:
@@ -10358,6 +10428,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &191139426
 GameObject:
@@ -10501,6 +10572,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &193444144
 GameObject:
@@ -10644,6 +10716,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &197809890
 GameObject:
@@ -10787,6 +10860,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &199611593
 GameObject:
@@ -10930,6 +11004,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &209529723
 GameObject:
@@ -11073,6 +11148,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &212319454
 GameObject:
@@ -11216,6 +11292,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &212344511
 GameObject:
@@ -11359,6 +11436,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &213478684
 GameObject:
@@ -11502,6 +11580,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &214525729
 GameObject:
@@ -11645,6 +11724,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 935399576}
 --- !u!1 &215468192
 GameObject:
@@ -11788,6 +11868,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &215755289
 GameObject:
@@ -11931,6 +12012,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &219807737
 GameObject:
@@ -12074,6 +12156,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &223783414
 GameObject:
@@ -12217,6 +12300,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &227958633
 GameObject:
@@ -12360,6 +12444,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &229997154
 GameObject:
@@ -12503,6 +12588,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &231283287
 GameObject:
@@ -12646,6 +12732,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &233252311
 GameObject:
@@ -12789,6 +12876,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &233717160
 GameObject:
@@ -12932,6 +13020,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &238022098
 GameObject:
@@ -13075,6 +13164,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &239335549
 GameObject:
@@ -13218,6 +13308,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &239592690
 GameObject:
@@ -13361,6 +13452,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &245003388
 GameObject:
@@ -13504,6 +13596,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &245350036
 GameObject:
@@ -13647,6 +13740,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &250659493
 GameObject:
@@ -13790,6 +13884,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &251593546
 GameObject:
@@ -13933,6 +14028,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &254715331
 GameObject:
@@ -14076,6 +14172,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!114 &255127857 stripped
 MonoBehaviour:
@@ -14230,6 +14327,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &261528994
 GameObject:
@@ -14373,6 +14471,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &268949517
 GameObject:
@@ -14516,6 +14615,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &271707380
 GameObject:
@@ -14659,6 +14759,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &271782782
 GameObject:
@@ -14802,6 +14903,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &286479164
 GameObject:
@@ -14945,6 +15047,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &288273125
 GameObject:
@@ -15088,6 +15191,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &288533989
 GameObject:
@@ -15231,6 +15335,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &294610200
 GameObject:
@@ -15374,6 +15479,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &295828392
 GameObject:
@@ -15517,6 +15623,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &296564116
 GameObject:
@@ -15660,6 +15767,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &300778960
 GameObject:
@@ -15803,6 +15911,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &308182557
 GameObject:
@@ -15946,6 +16055,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &309364562
 GameObject:
@@ -16089,6 +16199,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &312783251
 GameObject:
@@ -16232,6 +16343,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &314511898
 GameObject:
@@ -16375,6 +16487,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &315251453
 GameObject:
@@ -16518,6 +16631,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &315987493
 GameObject:
@@ -16661,6 +16775,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &328705147
 GameObject:
@@ -16804,6 +16919,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &329477721
 GameObject:
@@ -16947,6 +17063,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &333280559
 GameObject:
@@ -17090,6 +17207,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &336220837
 GameObject:
@@ -17233,6 +17351,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &337626151
 GameObject:
@@ -17376,6 +17495,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &343757256
 GameObject:
@@ -17519,6 +17639,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &343949767
 GameObject:
@@ -17662,6 +17783,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &345615070
 GameObject:
@@ -17805,6 +17927,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &346278630
 GameObject:
@@ -17948,6 +18071,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &346439296
 GameObject:
@@ -18091,6 +18215,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &349487034
 GameObject:
@@ -18234,6 +18359,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &351211878
 GameObject:
@@ -18377,6 +18503,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &354548876
 GameObject:
@@ -18520,6 +18647,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &355630119
 GameObject:
@@ -18663,6 +18791,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &356190866
 GameObject:
@@ -18806,6 +18935,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &359239875
 GameObject:
@@ -18949,6 +19079,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &360856466
 GameObject:
@@ -19092,6 +19223,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &363585646
 GameObject:
@@ -19235,6 +19367,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &368708642
 GameObject:
@@ -19378,6 +19511,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &369502710
 GameObject:
@@ -19521,6 +19655,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &370660842
 GameObject:
@@ -19664,6 +19799,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &372423880
 GameObject:
@@ -19807,6 +19943,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &378248396
 GameObject:
@@ -19950,6 +20087,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &381326970
 GameObject:
@@ -20093,6 +20231,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &388046506
 GameObject:
@@ -20236,6 +20375,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &392770086
 GameObject:
@@ -20379,6 +20519,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &394176386
 GameObject:
@@ -20522,6 +20663,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &394870446
 GameObject:
@@ -20665,6 +20807,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &401975839
 GameObject:
@@ -20808,6 +20951,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &403246221
 GameObject:
@@ -20951,6 +21095,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &403358108
 GameObject:
@@ -21094,6 +21239,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &405519793
 GameObject:
@@ -21237,6 +21383,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &406808696
 GameObject:
@@ -21380,6 +21527,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &407684008
 GameObject:
@@ -21523,6 +21671,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &411206161
 GameObject:
@@ -21666,6 +21815,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &412258836
 GameObject:
@@ -21809,6 +21959,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &414252506
 GameObject:
@@ -21952,6 +22103,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &419796210
 GameObject:
@@ -22095,6 +22247,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &424466207
 GameObject:
@@ -22238,6 +22391,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &430276721
 GameObject:
@@ -22381,6 +22535,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &433924347
 GameObject:
@@ -22524,6 +22679,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &434496067
 GameObject:
@@ -22667,6 +22823,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &443653295
 GameObject:
@@ -22810,6 +22967,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &444746918
 GameObject:
@@ -22953,6 +23111,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &446166813
 GameObject:
@@ -23096,6 +23255,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &446783284
 GameObject:
@@ -23239,6 +23399,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &447864627
 GameObject:
@@ -23382,6 +23543,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &448770540
 GameObject:
@@ -23525,6 +23687,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &455247526
 GameObject:
@@ -23668,6 +23831,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &456184596
 GameObject:
@@ -23811,6 +23975,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1001 &459510976
 PrefabInstance:
@@ -24052,6 +24217,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &465550883
 GameObject:
@@ -24195,6 +24361,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &474302268
 GameObject:
@@ -24338,6 +24505,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &474582360
 GameObject:
@@ -24481,6 +24649,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &479830150
 GameObject:
@@ -24624,6 +24793,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &486314821
 GameObject:
@@ -24767,6 +24937,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &488383605
 GameObject:
@@ -24910,6 +25081,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &490845592
 GameObject:
@@ -25053,6 +25225,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &494043358
 GameObject:
@@ -25196,6 +25369,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &495433294
 GameObject:
@@ -25339,6 +25513,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &499324487
 GameObject:
@@ -25482,6 +25657,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &502291295
 GameObject:
@@ -25625,6 +25801,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &505150173
 GameObject:
@@ -25768,6 +25945,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &507203579
 GameObject:
@@ -25911,6 +26089,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &508510661
 GameObject:
@@ -26054,6 +26233,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &517489606
 GameObject:
@@ -26197,6 +26377,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &517737347
 GameObject:
@@ -26340,6 +26521,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
@@ -26620,6 +26802,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &526375993
 GameObject:
@@ -26763,6 +26946,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &529225337
 GameObject:
@@ -26906,6 +27090,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &530155438
 GameObject:
@@ -27049,6 +27234,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &531149419
 GameObject:
@@ -27192,6 +27378,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &538201580
 GameObject:
@@ -27335,6 +27522,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &540472849
 GameObject:
@@ -27478,6 +27666,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &541008114
 GameObject:
@@ -27621,6 +27810,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &543567035
 GameObject:
@@ -27764,6 +27954,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &546304800
 GameObject:
@@ -27907,6 +28098,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &546864867
 GameObject:
@@ -28050,6 +28242,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &547480553
 GameObject:
@@ -28193,6 +28386,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &549913772
 GameObject:
@@ -28336,6 +28530,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &551770243
 GameObject:
@@ -28479,6 +28674,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &552374607
 GameObject:
@@ -28622,6 +28818,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &555762409
 GameObject:
@@ -28765,6 +28962,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &556023429
 GameObject:
@@ -28908,6 +29106,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &561107029
 GameObject:
@@ -29051,6 +29250,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &561906394
 GameObject:
@@ -29194,6 +29394,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &571237864
 GameObject:
@@ -29337,6 +29538,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &573149191
 GameObject:
@@ -29480,6 +29682,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &574453865
 GameObject:
@@ -29623,6 +29826,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &575201151
 GameObject:
@@ -29766,6 +29970,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &575847836
 GameObject:
@@ -29909,6 +30114,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &581740355
 GameObject:
@@ -30052,6 +30258,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &584926415
 GameObject:
@@ -30195,6 +30402,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &584986470
 GameObject:
@@ -30338,6 +30546,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &585774549
 GameObject:
@@ -30481,6 +30690,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &589253049
 GameObject:
@@ -30760,6 +30970,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &590543103
 GameObject:
@@ -30903,6 +31114,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &591178105
 GameObject:
@@ -31046,6 +31258,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &592655416
 GameObject:
@@ -31189,6 +31402,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &600564220
 GameObject:
@@ -31332,6 +31546,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &601954024
 GameObject:
@@ -31475,6 +31690,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &606321938
 GameObject:
@@ -31618,6 +31834,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &608181793
 GameObject:
@@ -31761,6 +31978,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &610095320
 GameObject:
@@ -31904,6 +32122,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &616956943
 GameObject:
@@ -32047,6 +32266,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &617704399
 GameObject:
@@ -32190,6 +32410,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &619241250
 GameObject:
@@ -32333,6 +32554,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &619394800
 GameObject:
@@ -32560,6 +32782,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &625918018
 GameObject:
@@ -32703,6 +32926,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &627549271
 GameObject:
@@ -32846,6 +33070,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &627669884
 GameObject:
@@ -32989,6 +33214,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &628517823
 GameObject:
@@ -33132,6 +33358,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &629423323
 GameObject:
@@ -33275,6 +33502,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &631027816
 GameObject:
@@ -33418,6 +33646,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &631142785
 GameObject:
@@ -33561,6 +33790,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &640188627
 GameObject:
@@ -34533,6 +34763,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &641717984
 GameObject:
@@ -34676,6 +34907,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &642195492
 GameObject:
@@ -34819,6 +35051,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &652888742
 GameObject:
@@ -34962,6 +35195,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &658028225
 GameObject:
@@ -35105,6 +35339,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!120 &659772624 stripped
 LineRenderer:
@@ -35253,6 +35488,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &672761368
 GameObject:
@@ -35396,6 +35632,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &672779732
 GameObject:
@@ -35539,6 +35776,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &675091573
 GameObject:
@@ -35682,6 +35920,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &677004788
 GameObject:
@@ -35825,6 +36064,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &677587744
 GameObject:
@@ -35968,6 +36208,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &678720662
 GameObject:
@@ -36111,6 +36352,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &680407099
 GameObject:
@@ -36254,6 +36496,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &684359086
 GameObject:
@@ -36397,6 +36640,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &685459064
 GameObject:
@@ -36540,6 +36784,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &685609475
 GameObject:
@@ -36683,6 +36928,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &688429960
 GameObject:
@@ -36826,6 +37072,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &690970066
 GameObject:
@@ -36969,6 +37216,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &696012650
 GameObject:
@@ -37112,6 +37360,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &696513345
 GameObject:
@@ -37255,6 +37504,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &699126917
 GameObject:
@@ -37398,6 +37648,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &700189289
 GameObject:
@@ -37541,6 +37792,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &713435918
 GameObject:
@@ -37684,6 +37936,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &716700134
 GameObject:
@@ -37827,6 +38080,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &717743241
 GameObject:
@@ -37970,6 +38224,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &718532515
 GameObject:
@@ -38113,6 +38368,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &719838881
 GameObject:
@@ -38256,6 +38512,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &720602511
 GameObject:
@@ -38399,6 +38656,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &722351837
 GameObject:
@@ -38542,6 +38800,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &732835209
 GameObject:
@@ -38685,6 +38944,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &733474588
 GameObject:
@@ -38828,6 +39088,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &737016744
 GameObject:
@@ -38971,6 +39232,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &739576474
 GameObject:
@@ -39114,6 +39376,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &743443211
 GameObject:
@@ -39257,6 +39520,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &744684707
 GameObject:
@@ -39400,6 +39664,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &744900419
 GameObject:
@@ -39543,6 +39808,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &749467283
 GameObject:
@@ -39686,6 +39952,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &750931006
 GameObject:
@@ -39829,6 +40096,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &756088712
 GameObject:
@@ -39972,6 +40240,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &761230800
 GameObject:
@@ -40115,6 +40384,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &767064502
 GameObject:
@@ -40258,6 +40528,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &768058143
 GameObject:
@@ -40401,6 +40672,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &771388034
 GameObject:
@@ -40544,6 +40816,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &773566446
 GameObject:
@@ -40687,6 +40960,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &775190143
 GameObject:
@@ -40830,6 +41104,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &778384609
 GameObject:
@@ -40973,6 +41248,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &779285470
 GameObject:
@@ -41116,6 +41392,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &788254030
 GameObject:
@@ -41259,6 +41536,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &788826947
 GameObject:
@@ -41402,6 +41680,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &791792695
 GameObject:
@@ -41545,6 +41824,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &794781229
 GameObject:
@@ -41688,6 +41968,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &795821547
 GameObject:
@@ -41831,6 +42112,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &806690380
 GameObject:
@@ -41974,6 +42256,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &811078645
 GameObject:
@@ -42117,6 +42400,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &812760620
 GameObject:
@@ -42260,6 +42544,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &816535924
 GameObject:
@@ -42403,6 +42688,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &816608971
 GameObject:
@@ -42546,6 +42832,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &817755635
 GameObject:
@@ -42689,6 +42976,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &818727447
 GameObject:
@@ -42832,6 +43120,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &822985622
 GameObject:
@@ -42975,6 +43264,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &824851747
 GameObject:
@@ -43118,6 +43408,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &825770031
 GameObject:
@@ -43261,6 +43552,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &830280412
 GameObject:
@@ -43404,6 +43696,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &830463298
 GameObject:
@@ -43547,6 +43840,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &832656471
 GameObject:
@@ -43690,6 +43984,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &833582261
 GameObject:
@@ -43833,6 +44128,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &836248161
 GameObject:
@@ -44073,6 +44369,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &841252876
 GameObject:
@@ -44216,6 +44513,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &845859303
 GameObject:
@@ -44359,6 +44657,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &850022721
 GameObject:
@@ -44502,6 +44801,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &850894231
 GameObject:
@@ -44645,6 +44945,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &850981121
 GameObject:
@@ -44788,6 +45089,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &851559947
 GameObject:
@@ -44931,6 +45233,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &858799836
 GameObject:
@@ -45074,6 +45377,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &860515487
 GameObject:
@@ -45264,6 +45568,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!114 &863124832 stripped
 MonoBehaviour:
@@ -45418,6 +45723,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &876785196
 GameObject:
@@ -45561,6 +45867,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &877284008
 GameObject:
@@ -45704,6 +46011,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &880263149
 GameObject:
@@ -45847,6 +46155,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &882633382
 GameObject:
@@ -45990,6 +46299,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &885248978
 GameObject:
@@ -46133,6 +46443,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &887028871
 GameObject:
@@ -46276,6 +46587,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &889365233
 GameObject:
@@ -46419,6 +46731,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &889862532
 GameObject:
@@ -46562,6 +46875,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &890448531
 GameObject:
@@ -46705,6 +47019,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &891750315
 GameObject:
@@ -46848,6 +47163,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &892138903
 GameObject:
@@ -46991,6 +47307,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &895850950
 GameObject:
@@ -47134,6 +47451,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &899455333
 GameObject:
@@ -47277,6 +47595,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &902924534
 GameObject:
@@ -47420,6 +47739,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &903117756
 GameObject:
@@ -47563,6 +47883,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &906985774
 GameObject:
@@ -47706,6 +48027,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &907229862
 GameObject:
@@ -47849,7 +48171,39 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
+--- !u!1 &918158428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 918158429}
+  m_Layer: 0
+  m_Name: Pellets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &918158429
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918158428}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.35421887, y: -3.4284067, z: -0.04840154}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &919408117
 GameObject:
   m_ObjectHideFlags: 0
@@ -47992,6 +48346,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &919456990
 GameObject:
@@ -48281,6 +48636,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &928672768
 GameObject:
@@ -48424,6 +48780,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &935399572
 GameObject:
@@ -48567,6 +48924,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &937390740
 GameObject:
@@ -48710,6 +49068,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &938277487
 GameObject:
@@ -48853,6 +49212,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &945088825
 GameObject:
@@ -48996,6 +49356,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &945607073
 GameObject:
@@ -49241,6 +49602,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &952564042
 GameObject:
@@ -49384,6 +49746,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &953112002
 GameObject:
@@ -49527,6 +49890,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &954643727
 GameObject:
@@ -49670,6 +50034,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &956518918
 GameObject:
@@ -49813,6 +50178,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &960598749
 GameObject:
@@ -49956,6 +50322,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &967345291
 GameObject:
@@ -50099,6 +50466,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &967885908
 GameObject:
@@ -50242,6 +50610,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &970425391
 GameObject:
@@ -50385,6 +50754,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &971928724
 GameObject:
@@ -50528,6 +50898,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &972354806
 GameObject:
@@ -50671,6 +51042,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &975118477
 GameObject:
@@ -50814,6 +51186,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &978038625
 GameObject:
@@ -50957,6 +51330,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &979327901
 GameObject:
@@ -51100,6 +51474,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &979957759
 GameObject:
@@ -51243,6 +51618,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &980562779
 GameObject:
@@ -51386,6 +51762,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &980693636
 GameObject:
@@ -51529,6 +51906,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &981220732
 GameObject:
@@ -51672,6 +52050,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &983345295
 GameObject:
@@ -51815,6 +52194,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &985665940
 GameObject:
@@ -51958,6 +52338,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &986789242
 GameObject:
@@ -52101,6 +52482,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &986935008
 GameObject:
@@ -52244,6 +52626,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &987178559
 GameObject:
@@ -52387,6 +52770,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &987195274
 GameObject:
@@ -52530,6 +52914,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &989077751
 GameObject:
@@ -52673,6 +53058,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &994419818
 GameObject:
@@ -52816,6 +53202,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &995773648
 GameObject:
@@ -52959,6 +53346,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &996395213
 GameObject:
@@ -53102,6 +53490,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1000653615
 GameObject:
@@ -53245,6 +53634,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1005938836
 GameObject:
@@ -53388,6 +53778,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1008109098
 GameObject:
@@ -53531,6 +53922,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1008483607
 GameObject:
@@ -53674,6 +54066,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1009258242
 GameObject:
@@ -53817,6 +54210,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1011585379
 GameObject:
@@ -53960,6 +54354,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1015105667
 GameObject:
@@ -54103,6 +54498,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1016502589
 GameObject:
@@ -54379,6 +54775,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1019507632
 GameObject:
@@ -54522,6 +54919,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1022190595
 GameObject:
@@ -54665,6 +55063,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1024242094
 GameObject:
@@ -54808,6 +55207,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1025776551
 GameObject:
@@ -54951,6 +55351,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1025969501
 GameObject:
@@ -55094,6 +55495,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1027362094
 GameObject:
@@ -55237,6 +55639,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1040706740
 GameObject:
@@ -55380,6 +55783,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1042474608
 GameObject:
@@ -55523,6 +55927,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1043203196
 GameObject:
@@ -55666,6 +56071,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1043220242
 GameObject:
@@ -55809,6 +56215,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1043307838
 GameObject:
@@ -55952,6 +56359,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1044025116
 GameObject:
@@ -56095,6 +56503,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1045315495
 GameObject:
@@ -56238,6 +56647,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1054090500
 GameObject:
@@ -56381,6 +56791,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1054238362
 GameObject:
@@ -56524,6 +56935,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1054888740
 GameObject:
@@ -56667,6 +57079,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1055527050
 GameObject:
@@ -56810,6 +57223,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1056535148
 GameObject:
@@ -56953,6 +57367,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1057954429
 GameObject:
@@ -57096,6 +57511,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1059294585
 GameObject:
@@ -57239,6 +57655,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1062845684
 GameObject:
@@ -57382,6 +57799,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1071432980
 GameObject:
@@ -57525,6 +57943,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1072609610
 GameObject:
@@ -57668,6 +58087,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1073020958
 GameObject:
@@ -57811,6 +58231,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1073268597
 GameObject:
@@ -57954,6 +58375,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1074166047
 GameObject:
@@ -58097,6 +58519,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1074317407
 GameObject:
@@ -58240,6 +58663,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1077195742
 GameObject:
@@ -58383,6 +58807,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1080107150
 GameObject:
@@ -58526,6 +58951,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1080242773
 GameObject:
@@ -58669,6 +59095,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1085514464
 GameObject:
@@ -58812,6 +59239,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1086851978
 GameObject:
@@ -58955,6 +59383,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1091960203
 GameObject:
@@ -59098,6 +59527,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1093034106
 GameObject:
@@ -59241,6 +59671,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1094090130
 GameObject:
@@ -59384,6 +59815,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1101029659
 GameObject:
@@ -59527,6 +59959,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1105948323
 GameObject:
@@ -59670,6 +60103,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1108538107
 GameObject:
@@ -59813,6 +60247,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1109375938
 GameObject:
@@ -59956,6 +60391,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1112432222
 GameObject:
@@ -60099,6 +60535,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1114495643
 GameObject:
@@ -60242,6 +60679,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1115774123
 GameObject:
@@ -60385,6 +60823,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1116629601
 GameObject:
@@ -60528,6 +60967,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1118119942
 GameObject:
@@ -60671,6 +61111,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1118502725
 GameObject:
@@ -60814,6 +61255,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1121211067
 GameObject:
@@ -60957,6 +61399,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1121953642
 GameObject:
@@ -61100,6 +61543,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1123155003
 GameObject:
@@ -61243,6 +61687,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1129405767
 GameObject:
@@ -61386,6 +61831,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1143686266
 GameObject:
@@ -61529,6 +61975,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1143882262
 GameObject:
@@ -61672,6 +62119,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1144813627
 GameObject:
@@ -61815,6 +62263,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1145150510
 GameObject:
@@ -61958,6 +62407,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1149329426
 GameObject:
@@ -62101,6 +62551,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1151443760
 GameObject:
@@ -62244,6 +62695,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1151788439
 GameObject:
@@ -62387,6 +62839,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1152824773
 GameObject:
@@ -62530,6 +62983,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1152918562
 GameObject:
@@ -62673,6 +63127,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1153845829
 GameObject:
@@ -62816,6 +63271,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1155636871
 GameObject:
@@ -62959,6 +63415,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1161089689
 GameObject:
@@ -63102,6 +63559,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1162211452
 GameObject:
@@ -63245,6 +63703,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1168436415
 GameObject:
@@ -63388,6 +63847,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1173733603
 GameObject:
@@ -63531,6 +63991,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1175546857
 GameObject:
@@ -63674,6 +64135,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1176151404
 GameObject:
@@ -63817,6 +64279,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1176340854
 GameObject:
@@ -63960,6 +64423,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1178494546
 GameObject:
@@ -64103,6 +64567,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1179063618
 GameObject:
@@ -64246,6 +64711,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1182614202
 GameObject:
@@ -64389,6 +64855,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1185691523
 GameObject:
@@ -64532,6 +64999,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1187674918
 GameObject:
@@ -64675,6 +65143,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1188718945
 GameObject:
@@ -64818,6 +65287,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1194446827
 GameObject:
@@ -64961,6 +65431,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1197909998
 GameObject:
@@ -65104,6 +65575,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!120 &1199990015 stripped
 LineRenderer:
@@ -65252,6 +65724,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1201235203
 GameObject:
@@ -65395,6 +65868,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1208913381
 GameObject:
@@ -65538,6 +66012,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1212408654
 GameObject:
@@ -65681,6 +66156,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1218183523
 GameObject:
@@ -65824,6 +66300,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1220584402
 GameObject:
@@ -65967,6 +66444,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!114 &1220804414 stripped
 MonoBehaviour:
@@ -66121,6 +66599,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1227134099
 GameObject:
@@ -66264,6 +66743,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1234409000
 GameObject:
@@ -66407,6 +66887,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1235093437
 GameObject:
@@ -66550,6 +67031,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1235126723
 GameObject:
@@ -66693,6 +67175,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1237219304
 GameObject:
@@ -66836,6 +67319,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1237286073
 GameObject:
@@ -66979,6 +67463,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1237291846
 GameObject:
@@ -67122,6 +67607,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1237434889
 GameObject:
@@ -67265,6 +67751,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1239361823
 GameObject:
@@ -67408,6 +67895,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1240452975
 GameObject:
@@ -67551,6 +68039,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1240754126
 GameObject:
@@ -67694,6 +68183,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1249247898
 GameObject:
@@ -67837,6 +68327,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1250772853
 GameObject:
@@ -67980,6 +68471,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1252258254
 GameObject:
@@ -68123,6 +68615,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1255006259
 GameObject:
@@ -68266,6 +68759,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1255401646
 GameObject:
@@ -68409,6 +68903,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1256968505
 GameObject:
@@ -68552,6 +69047,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 388046510}
 --- !u!1 &1265920647
 GameObject:
@@ -68695,6 +69191,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1273439988
 GameObject:
@@ -68838,6 +69335,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1274530864
 GameObject:
@@ -68981,6 +69479,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1274738065
 GameObject:
@@ -69124,6 +69623,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1281006427
 GameObject:
@@ -69267,6 +69767,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1285261583
 GameObject:
@@ -69410,6 +69911,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1285912552
 GameObject:
@@ -69553,6 +70055,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1286126112
 GameObject:
@@ -69696,6 +70199,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1288141035
 GameObject:
@@ -69839,6 +70343,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1296058705
 GameObject:
@@ -69982,6 +70487,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1296543513
 GameObject:
@@ -70125,6 +70631,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1296894558
 GameObject:
@@ -70268,6 +70775,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1302102709
 GameObject:
@@ -70411,6 +70919,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1305871450
 GameObject:
@@ -70554,6 +71063,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1306738611
 GameObject:
@@ -70697,6 +71207,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1310044543
 GameObject:
@@ -70840,6 +71351,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1314716176
 GameObject:
@@ -70983,6 +71495,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1322464227
 GameObject:
@@ -71126,6 +71639,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1325123202
 GameObject:
@@ -71269,6 +71783,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1326006076
 GameObject:
@@ -71412,6 +71927,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1332459096
 GameObject:
@@ -71555,6 +72071,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1334185612
 GameObject:
@@ -71698,6 +72215,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1335711748
 GameObject:
@@ -71841,6 +72359,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1338081599
 GameObject:
@@ -71984,6 +72503,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1344364391
 GameObject:
@@ -72127,6 +72647,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1345949345
 GameObject:
@@ -72270,6 +72791,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1347070366
 GameObject:
@@ -72413,6 +72935,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1353245023
 GameObject:
@@ -72556,6 +73079,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1354436933
 GameObject:
@@ -72699,6 +73223,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1358357169
 GameObject:
@@ -72842,6 +73367,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1360584866
 GameObject:
@@ -72985,6 +73511,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1361156051
 GameObject:
@@ -73128,6 +73655,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1363419814
 GameObject:
@@ -73271,6 +73799,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1364363807
 GameObject:
@@ -73414,6 +73943,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1365855085
 GameObject:
@@ -73557,6 +74087,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1370740558
 GameObject:
@@ -73700,6 +74231,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1372630716
 GameObject:
@@ -73843,6 +74375,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1379030233
 GameObject:
@@ -73986,6 +74519,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1381652200
 GameObject:
@@ -74129,6 +74663,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1384462377
 GameObject:
@@ -74272,6 +74807,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1384631809
 GameObject:
@@ -74415,6 +74951,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1385297305
 GameObject:
@@ -74558,6 +75095,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1388736902
 GameObject:
@@ -74701,6 +75239,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1393983596
 GameObject:
@@ -74844,6 +75383,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1397941068
 GameObject:
@@ -74987,6 +75527,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1406402570
 GameObject:
@@ -75130,6 +75671,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1406646855
 GameObject:
@@ -75273,6 +75815,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1409523786
 GameObject:
@@ -75416,6 +75959,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1409638435
 GameObject:
@@ -75559,6 +76103,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1412829558
 GameObject:
@@ -75702,6 +76247,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1418467069
 GameObject:
@@ -75845,6 +76391,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1420019611
 GameObject:
@@ -75890,6 +76437,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a74fea9bdb684b94a985c6cfeac5ff5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NumberOfDots: 9999
+  CanDie: 0
+  gameHasEnded: 1
+  WinAdmirationTime: 2.5
   Ghosts:
   - {fileID: 1220804414}
   - {fileID: 255127857}
@@ -75904,6 +76455,9 @@ MonoBehaviour:
   - {fileID: 2139224580}
   - {fileID: 1536775350}
   - {fileID: 1314716180}
+  NormalPellet: {fileID: 3355742673899311330, guid: 933fa45920972cd4bb5574e267b1d145, type: 3}
+  PelletParent: {fileID: 918158429}
+  CellGrid: {fileID: 1654363480}
 --- !u!1 &1422689841
 GameObject:
   m_ObjectHideFlags: 0
@@ -76046,6 +76600,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1423659865
 GameObject:
@@ -76189,6 +76744,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1424723322
 GameObject:
@@ -76332,6 +76888,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1425228062
 GameObject:
@@ -76475,6 +77032,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1425421792
 GameObject:
@@ -76618,6 +77176,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1428463220
 GameObject:
@@ -76761,6 +77320,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1429933453
 GameObject:
@@ -76904,6 +77464,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1445282920
 GameObject:
@@ -77047,6 +77608,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1448527972
 GameObject:
@@ -77190,6 +77752,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1449243940
 GameObject:
@@ -77333,6 +77896,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1451788471
 GameObject:
@@ -77476,6 +78040,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1452799208
 GameObject:
@@ -77619,6 +78184,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1454347807
 GameObject:
@@ -77762,6 +78328,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1455016251
 GameObject:
@@ -77905,6 +78472,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1455264154
 GameObject:
@@ -78048,6 +78616,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1458864456
 GameObject:
@@ -78191,6 +78760,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1467853013
 GameObject:
@@ -78334,6 +78904,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1468358180
 GameObject:
@@ -78477,6 +79048,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1470147326
 GameObject:
@@ -78620,6 +79192,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1474507561
 GameObject:
@@ -78763,6 +79336,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1474948903
 GameObject:
@@ -78906,6 +79480,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1475657922
 GameObject:
@@ -79049,6 +79624,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1477026514
 GameObject:
@@ -79192,6 +79768,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1477257466
 GameObject:
@@ -79335,6 +79912,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1477261758
 GameObject:
@@ -79478,6 +80056,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1478933439
 GameObject:
@@ -92092,6 +92671,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1482350700
 GameObject:
@@ -92235,6 +92815,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1484686799
 GameObject:
@@ -92378,6 +92959,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1490341035
 GameObject:
@@ -92521,6 +93103,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1490561221
 GameObject:
@@ -98382,6 +98965,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1496265811
 GameObject:
@@ -98525,6 +99109,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1497577472
 GameObject:
@@ -98668,6 +99253,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1499030894
 GameObject:
@@ -98811,6 +99397,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1499422095
 GameObject:
@@ -98954,6 +99541,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1499728166
 GameObject:
@@ -99097,6 +99685,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1507944682
 GameObject:
@@ -99240,6 +99829,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1509579326
 GameObject:
@@ -99383,6 +99973,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1511412737
 GameObject:
@@ -99526,6 +100117,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1513907443
 GameObject:
@@ -99669,6 +100261,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1520478743
 GameObject:
@@ -99812,6 +100405,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1521732396
 GameObject:
@@ -100034,6 +100628,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1524344490
 GameObject:
@@ -100177,6 +100772,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1525041322
 GameObject:
@@ -100320,6 +100916,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1530211013
 GameObject:
@@ -100463,6 +101060,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1532480057
 GameObject:
@@ -100606,6 +101204,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1536775346
 GameObject:
@@ -100749,6 +101348,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1537581637
 GameObject:
@@ -100892,6 +101492,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1538120206
 GameObject:
@@ -101035,6 +101636,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1541648002
 GameObject:
@@ -101178,6 +101780,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1551195750
 GameObject:
@@ -101321,6 +101924,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1553958310
 GameObject:
@@ -101464,6 +102068,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1556593188
 GameObject:
@@ -101607,6 +102212,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1558088239
 GameObject:
@@ -101750,6 +102356,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1559805871
 GameObject:
@@ -101893,6 +102500,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1560399532
 GameObject:
@@ -102036,6 +102644,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1561415768
 GameObject:
@@ -102179,6 +102788,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1561886640
 GameObject:
@@ -102322,6 +102932,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1564884803
 GameObject:
@@ -102465,6 +103076,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1565375064
 GameObject:
@@ -102608,6 +103220,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1565852305
 GameObject:
@@ -102751,6 +103364,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1569869205
 GameObject:
@@ -102894,6 +103508,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1573457425
 GameObject:
@@ -103037,6 +103652,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1575656304
 GameObject:
@@ -103180,6 +103796,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1579673184
 GameObject:
@@ -103323,6 +103940,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1581062058
 GameObject:
@@ -103466,6 +104084,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1001 &1585253148
 PrefabInstance:
@@ -103707,6 +104326,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1591568194
 GameObject:
@@ -103850,6 +104470,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1593961186
 GameObject:
@@ -103993,6 +104614,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1595258124
 GameObject:
@@ -104136,6 +104758,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1596130039
 GameObject:
@@ -104279,6 +104902,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1599611129
 GameObject:
@@ -104422,6 +105046,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1601800152
 GameObject:
@@ -104565,6 +105190,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1602197127
 GameObject:
@@ -104708,6 +105334,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1603837158
 GameObject:
@@ -104851,6 +105478,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1604261052
 GameObject:
@@ -104994,6 +105622,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1605556084
 GameObject:
@@ -105137,6 +105766,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1606586966
 GameObject:
@@ -105280,6 +105910,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1607905760
 GameObject:
@@ -112794,6 +113425,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1609361752
 GameObject:
@@ -112937,6 +113569,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1609990999
 GameObject:
@@ -113080,6 +113713,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1614327865
 GameObject:
@@ -113223,6 +113857,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1617081216
 GameObject:
@@ -113366,6 +114001,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1619095273
 GameObject:
@@ -113509,6 +114145,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1620196385
 GameObject:
@@ -113652,6 +114289,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1620991024
 GameObject:
@@ -113795,6 +114433,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1625690130
 GameObject:
@@ -113938,6 +114577,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1627323667
 GameObject:
@@ -114081,6 +114721,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1627868658
 GameObject:
@@ -114224,6 +114865,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1629396375
 GameObject:
@@ -114367,6 +115009,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1629405498
 GameObject:
@@ -114510,6 +115153,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1632287451
 GameObject:
@@ -114653,6 +115297,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1634782899
 GameObject:
@@ -114796,6 +115441,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1635781508
 GameObject:
@@ -114939,6 +115585,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1639365229
 GameObject:
@@ -115082,6 +115729,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1639831448
 GameObject:
@@ -115225,6 +115873,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1640758358
 GameObject:
@@ -115368,6 +116017,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1643513196
 GameObject:
@@ -115511,6 +116161,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1644030372
 GameObject:
@@ -115654,6 +116305,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1646974811
 GameObject:
@@ -115797,6 +116449,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1647618188
 GameObject:
@@ -115940,6 +116593,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1647817819
 GameObject:
@@ -116083,6 +116737,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1654307261
 GameObject:
@@ -116226,6 +116881,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1654363479
 GameObject:
@@ -116416,6 +117072,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1657363920
 GameObject:
@@ -116559,6 +117216,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1658350607
 GameObject:
@@ -116702,6 +117360,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1661669054
 GameObject:
@@ -116845,6 +117504,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1661733529
 GameObject:
@@ -116988,6 +117648,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1662843323
 GameObject:
@@ -117131,6 +117792,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1669873513
 GameObject:
@@ -117274,6 +117936,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1680351294
 GameObject:
@@ -117417,6 +118080,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1696357222
 GameObject:
@@ -117560,6 +118224,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1696693493
 GameObject:
@@ -117703,6 +118368,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1697482197
 GameObject:
@@ -117846,6 +118512,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1709406889
 GameObject:
@@ -117989,6 +118656,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!114 &1711093579 stripped
 MonoBehaviour:
@@ -118236,6 +118904,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1720686893
 GameObject:
@@ -118379,6 +119048,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1721355026
 GameObject:
@@ -118522,6 +119192,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1721420679
 GameObject:
@@ -118665,6 +119336,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!114 &1725521016 stripped
 MonoBehaviour:
@@ -118819,6 +119491,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1730122375
 GameObject:
@@ -118962,6 +119635,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1733852866
 GameObject:
@@ -119105,6 +119779,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1750527875
 GameObject:
@@ -119248,6 +119923,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1752523661
 GameObject:
@@ -119391,6 +120067,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1754085254
 GameObject:
@@ -119534,6 +120211,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1755084573
 GameObject:
@@ -119677,6 +120355,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1761458916
 GameObject:
@@ -119820,6 +120499,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1766014401
 GameObject:
@@ -119963,6 +120643,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1774833388
 GameObject:
@@ -120106,6 +120787,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1775063409
 GameObject:
@@ -120249,6 +120931,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1777013849
 GameObject:
@@ -120392,6 +121075,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1778202899
 GameObject:
@@ -120535,6 +121219,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1783266671
 GameObject:
@@ -120678,6 +121363,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1785168483
 GameObject:
@@ -120821,6 +121507,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1786803745
 GameObject:
@@ -120964,6 +121651,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1788800779
 GameObject:
@@ -121107,6 +121795,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1790702220
 GameObject:
@@ -121250,6 +121939,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1791346736
 GameObject:
@@ -121393,6 +122083,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1795444175
 GameObject:
@@ -121536,6 +122227,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1797049934
 GameObject:
@@ -121679,6 +122371,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1797962142
 GameObject:
@@ -121822,6 +122515,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1798058589
 GameObject:
@@ -121965,6 +122659,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1799585344
 GameObject:
@@ -122108,6 +122803,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1801060958
 GameObject:
@@ -122251,6 +122947,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1809764276
 GameObject:
@@ -122394,6 +123091,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1811525013
 GameObject:
@@ -122537,6 +123235,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1811692996
 GameObject:
@@ -122680,6 +123379,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1812399485
 GameObject:
@@ -122823,6 +123523,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1815479393
 GameObject:
@@ -122966,6 +123667,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1817799273
 GameObject:
@@ -123109,6 +123811,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1818193406
 GameObject:
@@ -123252,6 +123955,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1822251872
 GameObject:
@@ -123395,6 +124099,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1824614560
 GameObject:
@@ -123538,6 +124243,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1828320607
 GameObject:
@@ -123681,6 +124387,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1828759045
 GameObject:
@@ -123824,6 +124531,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1834712055
 GameObject:
@@ -123967,6 +124675,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1840634444
 GameObject:
@@ -124110,6 +124819,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1841044568
 GameObject:
@@ -124253,6 +124963,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1841403520
 GameObject:
@@ -124396,6 +125107,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1846942293
 GameObject:
@@ -124539,6 +125251,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1852340251
 GameObject:
@@ -124682,6 +125395,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1856031625
 GameObject:
@@ -124825,6 +125539,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1859317918
 GameObject:
@@ -124968,6 +125683,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1862001133
 GameObject:
@@ -125111,6 +125827,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1862006102
 GameObject:
@@ -125254,6 +125971,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1864155169
 GameObject:
@@ -125397,6 +126115,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1865508907
 GameObject:
@@ -125540,6 +126259,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1867403290
 GameObject:
@@ -125683,6 +126403,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1868663350
 GameObject:
@@ -125826,6 +126547,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1871507922
 GameObject:
@@ -125969,6 +126691,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1873937525
 GameObject:
@@ -126112,6 +126835,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1877115072
 GameObject:
@@ -126255,6 +126979,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1879407975
 GameObject:
@@ -126398,6 +127123,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1880501334
 GameObject:
@@ -126541,6 +127267,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1882771989
 GameObject:
@@ -126684,6 +127411,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1884769511
 GameObject:
@@ -126827,6 +127555,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1885445548
 GameObject:
@@ -126970,6 +127699,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1886565141
 GameObject:
@@ -127113,6 +127843,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1888280946
 GameObject:
@@ -127256,6 +127987,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1892773976
 GameObject:
@@ -127399,6 +128131,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1893983837
 GameObject:
@@ -127542,6 +128275,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1895270850
 GameObject:
@@ -127685,6 +128419,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1899203836
 GameObject:
@@ -127828,6 +128563,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1900518928
 GameObject:
@@ -127971,6 +128707,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1901156121
 GameObject:
@@ -128114,6 +128851,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1904924964
 GameObject:
@@ -128257,6 +128995,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1905161216
 GameObject:
@@ -128400,6 +129139,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1905277723
 GameObject:
@@ -128543,6 +129283,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1912666935
 GameObject:
@@ -128686,6 +129427,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1919186831
 GameObject:
@@ -128829,6 +129571,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1919738914
 GameObject:
@@ -128972,6 +129715,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1920545036
 GameObject:
@@ -129115,6 +129859,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1921181813
 GameObject:
@@ -129258,6 +130003,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1921795560
 GameObject:
@@ -129401,6 +130147,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1931640484
 GameObject:
@@ -129544,6 +130291,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1932963603
 GameObject:
@@ -129687,6 +130435,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1935004371
 GameObject:
@@ -129830,6 +130579,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1935290719
 GameObject:
@@ -129973,6 +130723,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1942870499
 GameObject:
@@ -130116,6 +130867,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1943823952
 GameObject:
@@ -130259,6 +131011,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1944878985
 GameObject:
@@ -130402,6 +131155,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1946361901
 GameObject:
@@ -130545,6 +131299,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1948019438
 GameObject:
@@ -130688,6 +131443,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1948545755
 GameObject:
@@ -130831,6 +131587,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1952249129
 GameObject:
@@ -130974,6 +131731,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1954736358
 GameObject:
@@ -131117,6 +131875,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1957105090
 GameObject:
@@ -131260,6 +132019,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1959432874
 GameObject:
@@ -131403,6 +132163,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1964145984
 GameObject:
@@ -131546,6 +132307,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1966985261
 GameObject:
@@ -131689,6 +132451,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1969268614
 GameObject:
@@ -131832,6 +132595,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1971874988
 GameObject:
@@ -131975,6 +132739,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1974746706
 GameObject:
@@ -132118,6 +132883,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1975628387
 GameObject:
@@ -132261,6 +133027,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1981189776
 GameObject:
@@ -132404,6 +133171,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1981213496
 GameObject:
@@ -132547,6 +133315,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1982437835
 GameObject:
@@ -132690,6 +133459,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1986593933
 GameObject:
@@ -132833,6 +133603,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1988193722
 GameObject:
@@ -132976,6 +133747,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &1989467469
 GameObject:
@@ -133119,6 +133891,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1992836091
 GameObject:
@@ -133262,6 +134035,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &1998177478
 GameObject:
@@ -133405,6 +134179,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2001619984
 GameObject:
@@ -133548,6 +134323,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2004870767
 GameObject:
@@ -133691,6 +134467,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2010492885
 GameObject:
@@ -133834,6 +134611,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2011875094
 GameObject:
@@ -133977,6 +134755,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2017417236
 GameObject:
@@ -134120,6 +134899,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2019896871
 GameObject:
@@ -134263,6 +135043,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2020967054
 GameObject:
@@ -134406,6 +135187,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2021204757
 GameObject:
@@ -134549,6 +135331,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &2021793957
 GameObject:
@@ -134692,6 +135475,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &2022996707
 GameObject:
@@ -134835,6 +135619,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2023584857
 GameObject:
@@ -134978,6 +135763,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2026242425
 GameObject:
@@ -135121,6 +135907,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2026891150
 GameObject:
@@ -135264,6 +136051,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2028241062
 GameObject:
@@ -135407,6 +136195,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2030186189
 GameObject:
@@ -135550,6 +136339,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2030973250
 GameObject:
@@ -135693,6 +136483,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2031900608
 GameObject:
@@ -135836,6 +136627,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2032732283
 GameObject:
@@ -135979,6 +136771,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2039275664
 GameObject:
@@ -136122,6 +136915,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2042402075
 GameObject:
@@ -136265,6 +137059,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2043219774
 GameObject:
@@ -136408,6 +137203,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2044119666
 GameObject:
@@ -136551,6 +137347,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2048942499
 GameObject:
@@ -136694,6 +137491,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2050986677
 GameObject:
@@ -136837,6 +137635,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2054385703
 GameObject:
@@ -136980,6 +137779,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2055492687
 GameObject:
@@ -137123,6 +137923,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &2061178233
 GameObject:
@@ -137266,6 +138067,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2061497092
 GameObject:
@@ -137409,6 +138211,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2063458707
 GameObject:
@@ -137552,6 +138355,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2063616571
 GameObject:
@@ -137695,6 +138499,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2072169512
 GameObject:
@@ -137838,6 +138643,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2073903320
 GameObject:
@@ -137981,6 +138787,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2077329390
 GameObject:
@@ -138124,6 +138931,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2077803013
 GameObject:
@@ -138267,6 +139075,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2078435091
 GameObject:
@@ -138410,6 +139219,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2078523356
 GameObject:
@@ -138553,6 +139363,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2082511042
 GameObject:
@@ -138696,6 +139507,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2083192154
 GameObject:
@@ -138839,6 +139651,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2091441149
 GameObject:
@@ -138982,6 +139795,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2095453971
 GameObject:
@@ -139125,6 +139939,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2096850681
 GameObject:
@@ -139268,6 +140083,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2104624925
 GameObject:
@@ -139411,6 +140227,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2104960848
 GameObject:
@@ -139554,6 +140371,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2107349212
 GameObject:
@@ -139697,6 +140515,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2107391081
 GameObject:
@@ -139840,6 +140659,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2107994026
 GameObject:
@@ -139983,6 +140803,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2108146282
 GameObject:
@@ -140126,6 +140947,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2110472033
 GameObject:
@@ -140269,6 +141091,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2111876651
 GameObject:
@@ -140412,6 +141235,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2113130786
 GameObject:
@@ -140555,6 +141379,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2119858487
 GameObject:
@@ -140698,6 +141523,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2122951690
 GameObject:
@@ -140841,6 +141667,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2124076481
 GameObject:
@@ -140984,6 +141811,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2132769119
 GameObject:
@@ -141127,6 +141955,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2132787924
 GameObject:
@@ -141270,6 +142099,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!1 &2137291729
 GameObject:
@@ -141413,6 +142243,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2138978625
 GameObject:
@@ -141556,6 +142387,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2139224579
 GameObject:
@@ -141593,6 +142425,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 1
   exitCell: {fileID: 0}
 --- !u!212 &2139224581
 SpriteRenderer:
@@ -141842,6 +142675,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2143432337
 GameObject:
@@ -141985,6 +142819,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1 &2145034489
 GameObject:
@@ -142128,6 +142963,7 @@ MonoBehaviour:
   G: 0
   H: 0
   Walkable: 1
+  DontSpawnDotHere: 0
   exitCell: {fileID: 0}
 --- !u!1001 &27085968649612927
 PrefabInstance:
@@ -142782,3 +143618,4 @@ SceneRoots:
   - {fileID: 93799178}
   - {fileID: 945607077}
   - {fileID: 1521732399}
+  - {fileID: 918158429}

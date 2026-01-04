@@ -331,12 +331,12 @@ public class EnemyBehavior : MonoBehaviour
         else if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log($"{gameObject.name} hit {collision.gameObject.name}");
-            if(state == State.Frightened)
+            if (state == State.Frightened)
             {
                 ForceGhostIntoEatenState();
             }
 
-            else if(state == State.Scatter || state == State.Chase)
+            else if ((state == State.Scatter || state == State.Chase) && GameScript.CanDie)
             {
                 collision.gameObject.GetComponent<PacmanBehavior>().PerformDeath();
             }
@@ -389,7 +389,14 @@ public class EnemyBehavior : MonoBehaviour
         StartCoroutine(GameScript.EatenRoutine());
     }
 
-    
+    public void TurnGhostOff()
+    {
+        SpriteRenderer[] ghostSprites = GetComponentsInChildren<SpriteRenderer>();
+        for(int i = 0; i < ghostSprites.Length; i++)
+        {
+            ghostSprites[i].enabled = false;
+        }
+    }
 
    
 }

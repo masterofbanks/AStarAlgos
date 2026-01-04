@@ -137,6 +137,12 @@ If the intended move direction checks out, the player is re-aligned to the grid 
             Destroy(collision.gameObject);
         }
 
+        else if (collision.gameObject.CompareTag("NormalPellet"))
+        {
+            GameScript.NumberOfDots--;
+            Destroy(collision.gameObject);
+        }
+
        
     }
 
@@ -226,6 +232,8 @@ If the intended move direction checks out, the player is re-aligned to the grid 
     {
         anime.speed = speed;
     }
+
+    
 
 
 
