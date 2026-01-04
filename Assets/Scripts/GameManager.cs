@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [Header("Ghosts")]
+    [Header("Entities")]
     public EnemyBehavior[] Ghosts;
+    public PacmanBehavior Pacman;
+    public bool CharactersAreMoveable;
 
     [Header("Power Pellet Stuff")]
     public GameObject PowerPellet;
@@ -12,6 +14,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         InitializeLevel();
+        CharactersAreMoveable = true;
     }
 
     public void MakeEveryGhostScared()

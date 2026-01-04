@@ -8,11 +8,13 @@ public class EnemyBehavior : MonoBehaviour
     {
         Scatter,
         Chase,
-        Frightened
+        Frightened,
+        Eaten
     }
     [Header("State")]
     public State state;
     public float time;
+    public GameManager GameScript;
 
     [Header("Scatter Parameters")]
     public float TimeInScatterState = 7f;
@@ -25,6 +27,11 @@ public class EnemyBehavior : MonoBehaviour
     [Header("Frightened Parameters")]
     public float TimeInFrightenedState = 6f;
 
+    [Header("Eaten Parameters")]
+    public float EatenSpeed;
+    public CellStats HomeCell;
+    public float EatenPauseTime = 0.5f;
+
     [Header("Walkable Grid")]
     public Griddy GridScript;
     public Transform currentTarget;
@@ -33,7 +40,7 @@ public class EnemyBehavior : MonoBehaviour
     public List<Transform> TestPath;
 
     [Header("Physics values")]
-    public float Speed;
+    public float NormalSpeed;
 
     [Header("Path Construction")]
     public CellStats StartingCell;
@@ -46,10 +53,12 @@ public class EnemyBehavior : MonoBehaviour
     Rigidbody2D _rb2D;
     Animator anime;
     bool _isTurningAround = false;
+    float _speed;
     private void Awake()
     {
         _rb2D = GetComponent<Rigidbody2D>();
         anime = GetComponent<Animator>();
+        _speed = NormalSpeed;
 
     }
 
@@ -77,7 +86,8 @@ public class EnemyBehavior : MonoBehaviour
     private void FixedUpdate()
     {
         CalculateTarget();
-        MoveToPoint(currentTarget);
+        if(GameScript.CharactersAreMoveable)
+            MoveToPoint(currentTarget);
         anime.SetInteger("state", (int)state);
 
 
@@ -86,7 +96,7 @@ public class EnemyBehavior : MonoBehaviour
     public void MoveToPoint(Transform target)
     {
         Vector2 directionOfMovement = ((Vector2)target.position - _rb2D.position).normalized;
-        _rb2D.MovePosition(_rb2D.position + directionOfMovement * Speed * Time.fixedDeltaTime);
+        _rb2D.MovePosition(_rb2D.position + directionOfMovement * _speed * Time.fixedDeltaTime);
     }
 
 
@@ -132,6 +142,11 @@ public class EnemyBehavior : MonoBehaviour
                 time = 0f;
                 state = State.Chase;
             }
+        }
+
+        else if(state == State.Eaten)
+        {
+            currentTargetCell = HomeCell;
         }
 
         EndingCell = currentTargetCell;
@@ -287,6 +302,7 @@ public class EnemyBehavior : MonoBehaviour
             {
                 TestCalculationOfPath(_isTurningAround);
             }
+
             if (_isTurningAround)
             {
                 _isTurningAround = false;
@@ -313,6 +329,15 @@ public class EnemyBehavior : MonoBehaviour
 
         }
 
+        else if (collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log($"{gameObject.name} hit {collision.gameObject.name}");
+            if(state == State.Frightened)
+            {
+                ForceGhostIntoEatenState();
+            }
+        }
+
 
     }
 
@@ -337,6 +362,12 @@ public class EnemyBehavior : MonoBehaviour
         {
             RandomCell = GridScript.FindARandomWalkableGridPoint(StartingCell, ScatterPosition);
         }
+
+        else if(state == State.Eaten)
+        {
+            state = State.Chase;
+            _speed = NormalSpeed;
+        }
         CalculateTarget();
     }
 
@@ -345,6 +376,20 @@ public class EnemyBehavior : MonoBehaviour
         time = 0;
         state = State.Frightened;
         _isTurningAround = true;
+    }
+
+    private void ForceGhostIntoEatenState()
+    {
+        state = State.Eaten;
+        StartCoroutine(EatenRoutine());
+    }
+
+    IEnumerator EatenRoutine()
+    {
+        _speed = EatenSpeed;
+        GameScript.CharactersAreMoveable = false;
+        yield return new WaitForSeconds(EatenPauseTime);
+        GameScript.CharactersAreMoveable = true;
     }
 
    

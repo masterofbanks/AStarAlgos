@@ -50,7 +50,12 @@ If the intended move direction checks out, the player is re-aligned to the grid 
     {
         /*Vector2 new_XY_Pos = CurrentDirection * _currentMoveSpeed * Time.fixedDeltaTime;
         transform.position += new Vector3(new_XY_Pos.x, new_XY_Pos.y, 0);*/
-        _rb2D.linearVelocity = CurrentDirection * MovementSpeed;
+        if(GameScript.CharactersAreMoveable)
+            _rb2D.linearVelocity = CurrentDirection * MovementSpeed;
+        else
+        {
+            _rb2D.linearVelocity = Vector2.zero;
+        }
     }
 
     private void MoveRight(InputAction.CallbackContext cxt)
@@ -115,7 +120,7 @@ If the intended move direction checks out, the player is re-aligned to the grid 
 
         else if (collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log($"Pacman hit an enemy named {collision.gameObject.name}");
+            //Debug.Log($"Pacman hit an enemy named {collision.gameObject.name}");
         }
 
         else if (collision.gameObject.CompareTag("PowerPellet"))
