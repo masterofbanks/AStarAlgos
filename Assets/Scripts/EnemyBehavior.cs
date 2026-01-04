@@ -30,7 +30,6 @@ public class EnemyBehavior : MonoBehaviour
     [Header("Eaten Parameters")]
     public float EatenSpeed;
     public CellStats HomeCell;
-    public float EatenPauseTime = 0.5f;
 
     [Header("Walkable Grid")]
     public Griddy GridScript;
@@ -65,7 +64,7 @@ public class EnemyBehavior : MonoBehaviour
 
     void Start()
     {
-        //state = State.Scatter;
+        state = State.Scatter;
         CalculateTarget();
         CurrentMovementDirection = new Tuple<int, int>(0, 0);
         EndingCell = currentTargetCell;
@@ -336,6 +335,11 @@ public class EnemyBehavior : MonoBehaviour
             {
                 ForceGhostIntoEatenState();
             }
+
+            else if(state == State.Scatter || state == State.Chase)
+            {
+                collision.gameObject.GetComponent<PacmanBehavior>().PerformDeath();
+            }
         }
 
 
@@ -381,16 +385,11 @@ public class EnemyBehavior : MonoBehaviour
     private void ForceGhostIntoEatenState()
     {
         state = State.Eaten;
-        StartCoroutine(EatenRoutine());
+        _speed = EatenSpeed;
+        StartCoroutine(GameScript.EatenRoutine());
     }
 
-    IEnumerator EatenRoutine()
-    {
-        _speed = EatenSpeed;
-        GameScript.CharactersAreMoveable = false;
-        yield return new WaitForSeconds(EatenPauseTime);
-        GameScript.CharactersAreMoveable = true;
-    }
+    
 
    
 }

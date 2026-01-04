@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -6,6 +7,8 @@ public class GameManager : MonoBehaviour
     public EnemyBehavior[] Ghosts;
     public PacmanBehavior Pacman;
     public bool CharactersAreMoveable;
+    public float EatenPauseTime = 0.5f;
+
 
     [Header("Power Pellet Stuff")]
     public GameObject PowerPellet;
@@ -31,6 +34,15 @@ public class GameManager : MonoBehaviour
         {
             Instantiate(PowerPellet, PowerPelletSpawnLocations[i].transform.position, Quaternion.identity);
         }
+    }
+
+    public IEnumerator EatenRoutine()
+    {
+        CharactersAreMoveable = false;
+        Pacman.SetPacmanAnimatorSpeed(0f);
+        yield return new WaitForSeconds(EatenPauseTime);
+        CharactersAreMoveable = true;
+        Pacman.SetPacmanAnimatorSpeed(1f);
     }
 
 

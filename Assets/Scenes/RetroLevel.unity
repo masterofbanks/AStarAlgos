@@ -142592,6 +142592,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2139224580}
     - target: {fileID: 3210557887628431717, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
+      propertyPath: PacDeathClip
+      value: 
+      objectReference: {fileID: 7400000, guid: 2c071af78f5a3824c8028247770a5ec2, type: 2}
+    - target: {fileID: 3210557887628431717, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
       propertyPath: GridReference
       value: 
       objectReference: {fileID: 1654363480}

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 public class PacmanBehavior : MonoBehaviour
@@ -39,18 +40,24 @@ If the intended move direction checks out, the player is re-aligned to the grid 
     private InputAction _left;
     private InputAction _up;
     private InputAction _down;
+
+    //important fields
+    [Header("Death Stuff")]
+    public AnimationClip PacDeathClip;
+    private bool _isAlive;
     private void Awake()
     {
         ISAs = new InputSystem_Actions();
         _rb2D = GetComponent<Rigidbody2D>();
         anime = GetComponent<Animator>();
+        _isAlive = true;
     }
 
     private void FixedUpdate()
     {
         /*Vector2 new_XY_Pos = CurrentDirection * _currentMoveSpeed * Time.fixedDeltaTime;
         transform.position += new Vector3(new_XY_Pos.x, new_XY_Pos.y, 0);*/
-        if(GameScript.CharactersAreMoveable)
+        if(GameScript.CharactersAreMoveable && _isAlive)
             _rb2D.linearVelocity = CurrentDirection * MovementSpeed;
         else
         {
@@ -194,6 +201,31 @@ If the intended move direction checks out, the player is re-aligned to the grid 
 
     }
 
+    public void PerformDeath()
+    {
+        _isAlive = false;
+        GameScript.CharactersAreMoveable = false;
+        anime.SetBool("alive", _isAlive);
+        CircleCollider2D[] pacColliders = GetComponents<CircleCollider2D>();
+        for(int i = 0; i < pacColliders.Length; i++)
+        {
+            pacColliders[i].enabled = false;
+        }
+        StartCoroutine(DestroyPacman());
+    }
+
+    IEnumerator DestroyPacman()
+    {
+        float bufferBetweenDeath = 0.1f;
+        yield return new WaitForSeconds(PacDeathClip.length + bufferBetweenDeath);
+        Destroy(gameObject);
+
+    }
+
+    public void SetPacmanAnimatorSpeed(float speed)
+    {
+        anime.speed = speed;
+    }
 
 
 
