@@ -30,6 +30,7 @@ public class EnemyBehavior : MonoBehaviour
     [Header("Eaten Parameters")]
     public float EatenSpeed;
     public CellStats HomeCell;
+    public GameObject EatenSFX;
 
     [Header("Walkable Grid")]
     public Griddy GridScript;
@@ -386,6 +387,7 @@ public class EnemyBehavior : MonoBehaviour
     {
         state = State.Eaten;
         _speed = EatenSpeed;
+        Instantiate(EatenSFX, transform.position, Quaternion.identity);
         StartCoroutine(GameScript.EatenRoutine());
     }
 

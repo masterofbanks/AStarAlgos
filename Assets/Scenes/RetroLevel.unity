@@ -143114,6 +143114,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5098464281356387354, guid: efd35dbe0fe18814a8ed2b4cded0d178, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526761341447063808, guid: efd35dbe0fe18814a8ed2b4cded0d178, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818279984848222045, guid: efd35dbe0fe18814a8ed2b4cded0d178, type: 3}
+      propertyPath: EatenSFX
+      value: 
+      objectReference: {fileID: 2190612984733184636, guid: 379692f864c66b649844ab558952071c, type: 3}
     - target: {fileID: 6818279984848222045, guid: efd35dbe0fe18814a8ed2b4cded0d178, type: 3}
       propertyPath: HomeCell
       value: 
@@ -143180,6 +143192,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 43039297838543072, guid: dbf769a1aed098443ae5893c491dcd83, type: 3}
+      propertyPath: EatenSFX
+      value: 
+      objectReference: {fileID: 2190612984733184636, guid: 379692f864c66b649844ab558952071c, type: 3}
+    - target: {fileID: 43039297838543072, guid: dbf769a1aed098443ae5893c491dcd83, type: 3}
       propertyPath: HomeCell
       value: 
       objectReference: {fileID: 1470147330}
@@ -143227,6 +143243,14 @@ PrefabInstance:
       propertyPath: 'ScatterPosition.Array.data[3]'
       value: 
       objectReference: {fileID: 546864871}
+    - target: {fileID: 1347857968637710013, guid: dbf769a1aed098443ae5893c491dcd83, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1785377937345151911, guid: dbf769a1aed098443ae5893c491dcd83, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8134680093443707749, guid: dbf769a1aed098443ae5893c491dcd83, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.47
@@ -143288,6 +143312,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2324135574690928870, guid: e4261a12fde39e141b105425b4d8e630, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3040667065483433468, guid: e4261a12fde39e141b105425b4d8e630, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633447571547350715, guid: e4261a12fde39e141b105425b4d8e630, type: 3}
+      propertyPath: EatenSFX
+      value: 
+      objectReference: {fileID: 2190612984733184636, guid: 379692f864c66b649844ab558952071c, type: 3}
     - target: {fileID: 3633447571547350715, guid: e4261a12fde39e141b105425b4d8e630, type: 3}
       propertyPath: HomeCell
       value: 
@@ -143450,6 +143486,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4906677444400252026, guid: 33a0da1d27661144f8a678589e01cc0e, type: 3}
+      propertyPath: EatenSFX
+      value: 
+      objectReference: {fileID: 2190612984733184636, guid: 379692f864c66b649844ab558952071c, type: 3}
+    - target: {fileID: 4906677444400252026, guid: 33a0da1d27661144f8a678589e01cc0e, type: 3}
       propertyPath: HomeCell
       value: 
       objectReference: {fileID: 1761458920}
@@ -143497,10 +143537,18 @@ PrefabInstance:
       propertyPath: 'ScatterPosition.Array.data[3]'
       value: 
       objectReference: {fileID: 405519797}
+    - target: {fileID: 6211695951665363495, guid: 33a0da1d27661144f8a678589e01cc0e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6649005089655453501, guid: 33a0da1d27661144f8a678589e01cc0e, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1359674866251954181, guid: 8d615f937f07d0f4fb3af2e0ccbc69b5, type: 3}
+    - target: {fileID: 6649005089655453501, guid: 33a0da1d27661144f8a678589e01cc0e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -143574,6 +143622,10 @@ PrefabInstance:
       propertyPath: currentCell
       value: 
       objectReference: {fileID: 2139224580}
+    - target: {fileID: 3210557887628431717, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
+      propertyPath: EatPelletSfx
+      value: 
+      objectReference: {fileID: 2190612984733184636, guid: bf9e803304b274241a9d42e73484255e, type: 3}
     - target: {fileID: 3210557887628431717, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
       propertyPath: PacDeathClip
       value: 
