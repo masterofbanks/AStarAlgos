@@ -19,6 +19,7 @@ If the intended move direction checks out, the player is re-aligned to the grid 
     [Header("Movement Fields")]
     public float MovementSpeed;
     public GameObject EatPelletSfx;
+    public Transform PelletSFXParent;
 
     private Vector2 CurrentDirection = Vector2.right;
     private Vector2 IntendedDirection = Vector2.right;
@@ -140,9 +141,9 @@ If the intended move direction checks out, the player is re-aligned to the grid 
         else if (collision.gameObject.CompareTag("NormalPellet"))
         {
             GameScript.NumberOfDots--;
-            if(GameObject.FindWithTag("PelletSFX") == null)
+            if(PelletSFXParent.childCount < 1)
             {
-                Instantiate(EatPelletSfx, transform.position, Quaternion.identity);
+                Instantiate(EatPelletSfx, transform.position, Quaternion.identity, PelletSFXParent);
             }
             Destroy(collision.gameObject);
         }

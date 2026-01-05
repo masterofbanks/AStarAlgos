@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
         InitializeLevel();
         CharactersAreMoveable = true;
         gameHasEnded = false;
-        SoundManager.PlaySound(SoundType.MOVE);
+        SoundManager.PlaySound(SoundType.MOVE, 0.5f);
         StartCoroutine(SpawnInDots());
     }
 
@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
         if (TestForAnyNormalGhosts() && !_soundLock)
         {
             _soundLock = true;
-            SoundManager.PlaySound(SoundType.MOVE);
+            SoundManager.PlaySound(SoundType.MOVE, 0.5f);
         }
 
         if(NumberOfDots == 0 && !gameHasEnded)
@@ -102,7 +102,7 @@ public class GameManager : MonoBehaviour
         {
             Ghosts[i].ForceGhostIntoFrightenedState();
         }
-        SoundManager.PlaySound(SoundType.FRIGHTENED, 1f, 0.1f);
+        SoundManager.PlaySound(SoundType.FRIGHTENED, 0.667f, 0.1f);
         _soundLock = false;
     }
 

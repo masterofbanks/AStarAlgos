@@ -76438,7 +76438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NumberOfDots: 9999
-  CanDie: 0
+  CanDie: 1
   gameHasEnded: 1
   WinAdmirationTime: 2.5
   Ghosts:
@@ -118514,6 +118514,37 @@ MonoBehaviour:
   Walkable: 1
   DontSpawnDotHere: 0
   exitCell: {fileID: 0}
+--- !u!1 &1707716011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1707716012}
+  m_Layer: 0
+  m_Name: PelletSFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1707716012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707716011}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.95106965, y: 4.5497227, z: -0.05599549}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1709406889
 GameObject:
   m_ObjectHideFlags: 0
@@ -143159,6 +143190,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 659772624}
     - target: {fileID: 6818279984848222045, guid: efd35dbe0fe18814a8ed2b4cded0d178, type: 3}
+      propertyPath: TimeInFlickerMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818279984848222045, guid: efd35dbe0fe18814a8ed2b4cded0d178, type: 3}
       propertyPath: 'ScatterPosition.Array.data[0]'
       value: 
       objectReference: {fileID: 1314716180}
@@ -143227,6 +143262,10 @@ PrefabInstance:
       propertyPath: VisualOfPath
       value: 
       objectReference: {fileID: 459510977}
+    - target: {fileID: 43039297838543072, guid: dbf769a1aed098443ae5893c491dcd83, type: 3}
+      propertyPath: TimeInFlickerMode
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 43039297838543072, guid: dbf769a1aed098443ae5893c491dcd83, type: 3}
       propertyPath: 'ScatterPosition.Array.data[0]'
       value: 
@@ -143356,6 +143395,10 @@ PrefabInstance:
       propertyPath: VisualOfPath
       value: 
       objectReference: {fileID: 1199990015}
+    - target: {fileID: 3633447571547350715, guid: e4261a12fde39e141b105425b4d8e630, type: 3}
+      propertyPath: TimeInFlickerMode
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3633447571547350715, guid: e4261a12fde39e141b105425b4d8e630, type: 3}
       propertyPath: 'ScatterPosition.Array.data[0]'
       value: 
@@ -143522,6 +143565,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1585253149}
     - target: {fileID: 4906677444400252026, guid: 33a0da1d27661144f8a678589e01cc0e, type: 3}
+      propertyPath: TimeInFlickerMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906677444400252026, guid: 33a0da1d27661144f8a678589e01cc0e, type: 3}
       propertyPath: 'ScatterPosition.Array.data[0]'
       value: 
       objectReference: {fileID: 696012654}
@@ -143634,6 +143681,10 @@ PrefabInstance:
       propertyPath: GridReference
       value: 
       objectReference: {fileID: 1654363480}
+    - target: {fileID: 3210557887628431717, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
+      propertyPath: PelletSFXParent
+      value: 
+      objectReference: {fileID: 1707716012}
     - target: {fileID: 5015106610938098253, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
       propertyPath: m_Name
       value: Pacman
@@ -143675,3 +143726,4 @@ SceneRoots:
   - {fileID: 945607077}
   - {fileID: 1521732399}
   - {fileID: 918158429}
+  - {fileID: 1707716012}

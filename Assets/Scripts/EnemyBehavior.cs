@@ -26,6 +26,7 @@ public class EnemyBehavior : MonoBehaviour
 
     [Header("Frightened Parameters")]
     public float TimeInFrightenedState = 6f;
+    public float TimeInFlickerMode = 2f;
 
     [Header("Eaten Parameters")]
     public float EatenSpeed;
@@ -141,6 +142,12 @@ public class EnemyBehavior : MonoBehaviour
             {
                 time = 0f;
                 state = State.Chase;
+                anime.SetBool("flicker", false);
+            }
+
+            else if(time > TimeInFrightenedState - TimeInFlickerMode)
+            {
+                anime.SetBool("flicker", true);
             }
         }
 

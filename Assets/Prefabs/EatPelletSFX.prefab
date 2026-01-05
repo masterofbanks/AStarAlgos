@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5236865713194649427}
   - component: {fileID: 1286032224702485995}
   - component: {fileID: 268287381202084744}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EatPelletSFX
   m_TagString: PelletSFX
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832a960f61742934c9bba5d0396400b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeAlive: 0.21
+  TimeAlive: 0.25
 --- !u!82 &268287381202084744
 AudioSource:
   m_ObjectHideFlags: 0
