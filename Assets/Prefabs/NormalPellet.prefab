@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8740386229810950101}
   - component: {fileID: 745649232044929519}
   - component: {fileID: 4212819296234788360}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: NormalPellet
   m_TagString: NormalPellet
   m_Icon: {fileID: 0}

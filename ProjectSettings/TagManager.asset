@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - PowerPellet
   - NormalPellet
+  - PelletSFX
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - UI
   - Terrain
   - Pac
-  - 
+  - Pellet
   - 
   - 
   - 
