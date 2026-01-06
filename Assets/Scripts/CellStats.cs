@@ -8,6 +8,7 @@ public class CellStats : MonoBehaviour
     public float H;
     public bool Walkable;
     public bool DontSpawnDotHere;
+    public bool PacmanCantWalkHere;
     public CellStats exitCell;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -16,6 +17,7 @@ public class CellStats : MonoBehaviour
         {
             //GetComponent<SpriteRenderer>().enabled = true;
             Walkable = false;
+            PacmanCantWalkHere = false;
         }
     }
 

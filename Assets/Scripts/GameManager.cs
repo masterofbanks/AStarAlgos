@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 {
     [Header("Game Control")]
     public int NumberOfDots = 9999;
+    public int NumberOfDotsCollected = 0;
     public int NumberOfLives = 3;
     public bool CanDie = true;
     public bool gameHasEnded;
@@ -102,7 +103,7 @@ public class GameManager : MonoBehaviour
     {
         for(int i = 0; i < Ghosts.Length; i++)
         {
-            if (Ghosts[i].state != EnemyBehavior.State.Eaten)
+            if (Ghosts[i].state != EnemyBehavior.State.Eaten && Ghosts[i].state != EnemyBehavior.State.Idle)
                 Ghosts[i].ForceGhostIntoFrightenedState();
         }
         SoundManager.PlaySound(SoundType.FRIGHTENED, 0.1f, 0.1f);

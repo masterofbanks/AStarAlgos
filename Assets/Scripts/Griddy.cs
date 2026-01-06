@@ -132,6 +132,16 @@ public class Griddy : MonoBehaviour
         return GetCellData(xCoord, yCoord).Walkable;
     }
 
+    public bool IsWalkableForPacman(int xCoord, int yCoord)
+    {
+        if (!IsValidCoordinate(xCoord, yCoord))
+        {
+            return false;
+        }
+
+        return !GetCellData(xCoord, yCoord).PacmanCantWalkHere;
+    }
+
     private bool IsValidCoordinate(int xCoord, int yCoord)
     {
         return (xCoord >= 0 && xCoord < cellGrid.GetLength(0)) && (yCoord >= 0 && yCoord < cellGrid.GetLength(1));

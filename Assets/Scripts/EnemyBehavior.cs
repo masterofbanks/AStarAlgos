@@ -35,6 +35,9 @@ public class EnemyBehavior : MonoBehaviour
     public CellStats HomeCell;
     public GameObject EatenSFX;
 
+    [Header("Idle Parameters")]
+    public int DotsToActivate = 1;
+
     [Header("Walkable Grid")]
     public Griddy GridScript;
     public Transform currentTarget;
@@ -69,13 +72,11 @@ public class EnemyBehavior : MonoBehaviour
 
     void Start()
     {
-        state = State.Scatter;
+        state = State.Idle;
         CalculateTarget();
         CurrentMovementDirection = new Tuple<int, int>(0, 0);
         EndingCell = currentTargetCell;
-        TestCalculationOfPath();
-        currentTarget = TestPath[0];
-        UpdateCurrentMovementDirection();
+        
         StartCoroutine(FindRandomRoutine());
         
     }
@@ -83,6 +84,9 @@ public class EnemyBehavior : MonoBehaviour
     IEnumerator FindRandomRoutine()
     {
         yield return new WaitForSeconds(Time.fixedDeltaTime);
+        TestCalculationOfPath();
+        currentTarget = TestPath[0];
+        UpdateCurrentMovementDirection();
         RandomCell = GridScript.FindARandomWalkableGridPoint(StartingCell, ScatterPosition);
 
     }
@@ -90,7 +94,7 @@ public class EnemyBehavior : MonoBehaviour
     private void FixedUpdate()
     {
         CalculateTarget();
-        if(GameScript.CharactersAreMoveable)
+        if(GameScript.CharactersAreMoveable && state != State.Idle)
             MoveToPoint(currentTarget);
         anime.SetInteger("state", (int)state);
 
@@ -158,6 +162,16 @@ public class EnemyBehavior : MonoBehaviour
         else if(state == State.Eaten)
         {
             currentTargetCell = HomeCell;
+        }
+
+        else if(state == State.Idle)
+        {
+            currentTargetCell = ScatterPosition[0];
+            if(GameScript.NumberOfDotsCollected >= DotsToActivate)
+            {
+                time = 0;
+                state = State.Scatter;
+            }
         }
 
         EndingCell = currentTargetCell;
@@ -287,56 +301,8 @@ public class EnemyBehavior : MonoBehaviour
         {
             
             StartingCell = collision.gameObject.GetComponent<CellStats>();
-            if(StartingCell.exitCell != null)
-            {
-                transform.position = StartingCell.exitCell.transform.position;
-            }
-
-            //the ghost has reached its target cell
-            if(StartingCell == EndingCell)
-            {
-                ChooseNewEndingCell();
-            }
-
-            if(state == State.Frightened)
-            {
-                TestPath = null; 
-                while(TestPath == null)
-                {
-                    RandomCell = GridScript.FindARandomWalkableGridPoint(StartingCell, ScatterPosition);
-                    EndingCell = RandomCell;
-                    TestCalculationOfPath(_isTurningAround);
-                }
-
-            }
-            else
-            {
-                TestCalculationOfPath(_isTurningAround);
-            }
-
-            if (_isTurningAround)
-            {
-                _isTurningAround = false;
-            }
-
-
-            //in the edge case where no path can be found to a target, force the ghost into its scatter state and direct the ghost to the next available scatter position
-            if (TestPath == null)
-            {
-                Debug.Log($"{gameObject.name}'s TestPath is null after trying to find a new path");
-                state = State.Scatter;
-                CurrentScatterIndex++;
-                if (CurrentScatterIndex == ScatterPosition.Length)
-                {
-                    CurrentScatterIndex = 0;
-                }
-                CalculateTarget();
-                TestCalculationOfPath();
-            }
-
-
-            currentTarget = TestPath[0];
-            UpdateCurrentMovementDirection();
+            if(state != State.Idle)
+                ProgressToNextCell();
 
         }
 
@@ -355,6 +321,60 @@ public class EnemyBehavior : MonoBehaviour
         }
 
 
+    }
+
+    private void ProgressToNextCell()
+    {
+        if (StartingCell.exitCell != null)
+        {
+            transform.position = StartingCell.exitCell.transform.position;
+        }
+
+        //the ghost has reached its target cell
+        if (StartingCell == EndingCell)
+        {
+            ChooseNewEndingCell();
+        }
+
+        if (state == State.Frightened)
+        {
+            TestPath = null;
+            while (TestPath == null)
+            {
+                RandomCell = GridScript.FindARandomWalkableGridPoint(StartingCell, ScatterPosition);
+                EndingCell = RandomCell;
+                TestCalculationOfPath(_isTurningAround);
+            }
+
+        }
+        else
+        {
+            TestCalculationOfPath(_isTurningAround);
+        }
+
+        if (_isTurningAround)
+        {
+            _isTurningAround = false;
+        }
+
+
+        //in the edge case where no path can be found to a target, force the ghost into its scatter state and direct the ghost to the next available scatter position
+        if (TestPath == null)
+        {
+            Debug.Log($"{gameObject.name}'s TestPath is null after trying to find a new path");
+            state = State.Scatter;
+            CurrentScatterIndex++;
+            if (CurrentScatterIndex == ScatterPosition.Length)
+            {
+                CurrentScatterIndex = 0;
+            }
+            CalculateTarget();
+            TestCalculationOfPath();
+        }
+
+
+        currentTarget = TestPath[0];
+        UpdateCurrentMovementDirection();
     }
 
     private void ChooseNewEndingCell()

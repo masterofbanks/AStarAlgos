@@ -144,6 +144,7 @@ If the intended move direction checks out, the player is re-aligned to the grid 
         else if (collision.gameObject.CompareTag("NormalPellet"))
         {
             GameScript.NumberOfDots--;
+            GameScript.NumberOfDotsCollected++;
             if(PelletSFXParent.childCount < 1)
             {
                 Instantiate(EatPelletSfx, transform.position, Quaternion.identity, PelletSFXParent);
@@ -204,7 +205,7 @@ If the intended move direction checks out, the player is re-aligned to the grid 
         }
 
 
-        if(IntendedDirection != CurrentDirection && GridReference.IsWalkable(coordsOfNewCell.Item1, coordsOfNewCell.Item2))
+        if (IntendedDirection != CurrentDirection && GridReference.IsWalkable(coordsOfNewCell.Item1, coordsOfNewCell.Item2) && GridReference.IsWalkableForPacman(coordsOfNewCell.Item1, coordsOfNewCell.Item2))
         {
             transform.position = currentCell.gameObject.transform.position;
             CurrentDirection = IntendedDirection;
