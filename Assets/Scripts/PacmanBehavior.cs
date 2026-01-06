@@ -34,7 +34,7 @@ If the intended move direction checks out, the player is re-aligned to the grid 
     public CellStats currentCell;
     private Rigidbody2D _rb2D;
     private Animator anime;
-
+    private SpriteRenderer rend;
 
     //Input Actions
     private InputAction _right;
@@ -45,12 +45,15 @@ If the intended move direction checks out, the player is re-aligned to the grid 
     //important fields
     [Header("Death Stuff")]
     public AnimationClip PacDeathClip;
+    public float TimeBetweenDeathAndRestart;
+    public CellStats PacmanStartingCell;
     private bool _isAlive;
     private void Awake()
     {
         ISAs = new InputSystem_Actions();
         _rb2D = GetComponent<Rigidbody2D>();
         anime = GetComponent<Animator>();
+        rend = GetComponent<SpriteRenderer>();
         _isAlive = true;
     }
 
@@ -222,6 +225,7 @@ If the intended move direction checks out, the player is re-aligned to the grid 
         {
             pacColliders[i].enabled = false;
         }
+        SoundManager.PlaySound(SoundType.DEAD, 0.5f, 0, false);
         StartCoroutine(DestroyPacman());
     }
 
@@ -229,7 +233,9 @@ If the intended move direction checks out, the player is re-aligned to the grid 
     {
         float bufferBetweenDeath = 0.1f;
         yield return new WaitForSeconds(PacDeathClip.length + bufferBetweenDeath);
-        Destroy(gameObject);
+        rend.enabled = false;
+        yield return new WaitForSeconds(TimeBetweenDeathAndRestart - (PacDeathClip.length + bufferBetweenDeath));
+        GameScript.PerformLoseState();
 
     }
 
@@ -238,7 +244,21 @@ If the intended move direction checks out, the player is re-aligned to the grid 
         anime.speed = speed;
     }
 
-    
+    public void ResetPacman()
+    {
+        transform.position = PacmanStartingCell.transform.position;
+        rend.enabled = true;
+        CircleCollider2D[] pacColliders = GetComponents<CircleCollider2D>();
+        for (int i = 0; i < pacColliders.Length; i++)
+        {
+            pacColliders[i].enabled = true;
+        }
+        _isAlive = true;
+        anime.SetBool("alive", _isAlive);
+        CurrentDirection = Vector2.right;
+    }
+
+
 
 
 

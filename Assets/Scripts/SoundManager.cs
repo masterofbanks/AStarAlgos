@@ -4,7 +4,8 @@ public enum SoundType
 { 
     MOVE,
     FRIGHTENED,
-    EATEN
+    EATEN,
+    DEAD
 }
 
 [RequireComponent(typeof(AudioSource))]
@@ -24,10 +25,11 @@ public class SoundManager : MonoBehaviour
         audioSrc = GetComponent<AudioSource>();
     }
 
-    public static void PlaySound(SoundType type, float volume = 1f, float delay = 0f)
+    public static void PlaySound(SoundType type, float volume = 1f, float delay = 0f, bool loop = true)
     {
         //instance.audioSrc.PlayOneShot(instance.soundList[(int)type], volume);
         instance.audioSrc.clip = instance.soundList[(int)type];
+        instance.audioSrc.loop = loop;
         instance.audioSrc.volume = volume;
         instance.audioSrc.PlayDelayed(delay);
     }

@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 {
     [Header("Game Control")]
     public int NumberOfDots = 9999;
+    public int NumberOfLives = 3;
     public bool CanDie = true;
     public bool gameHasEnded;
     public float WinAdmirationTime = 2.5f;
@@ -37,7 +38,7 @@ public class GameManager : MonoBehaviour
         InitializeLevel();
         CharactersAreMoveable = true;
         gameHasEnded = false;
-        SoundManager.PlaySound(SoundType.MOVE, 0.5f);
+        SoundManager.PlaySound(SoundType.MOVE, 0.1f);
         StartCoroutine(SpawnInDots());
     }
 
@@ -60,7 +61,7 @@ public class GameManager : MonoBehaviour
         if (TestForAnyNormalGhosts() && !_soundLock)
         {
             _soundLock = true;
-            SoundManager.PlaySound(SoundType.MOVE, 0.5f);
+            SoundManager.PlaySound(SoundType.MOVE, 0.1f);
         }
 
         if(NumberOfDots == 0 && !gameHasEnded)
@@ -103,7 +104,7 @@ public class GameManager : MonoBehaviour
             if (Ghosts[i].state != EnemyBehavior.State.Eaten)
                 Ghosts[i].ForceGhostIntoFrightenedState();
         }
-        SoundManager.PlaySound(SoundType.FRIGHTENED, 0.667f, 0.1f);
+        SoundManager.PlaySound(SoundType.FRIGHTENED, 0.1f, 0.1f);
         _soundLock = false;
     }
 
@@ -140,6 +141,34 @@ public class GameManager : MonoBehaviour
         }
 
         yield return new WaitForSeconds(WinAdmirationTime - 1.0f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void PerformLoseState()
+    {
+        NumberOfLives--;
+        if(NumberOfLives == 0)
+        {
+            StartCoroutine(RestartLevelRoutine());
+            return;
+        }
+
+        else
+        {
+            Pacman.ResetPacman();
+            for(int i = 0; i < Ghosts.Length; i++)
+            {
+                Ghosts[i].ResetGhost();
+
+            }
+            CharactersAreMoveable = true;
+            SoundManager.PlaySound(SoundType.MOVE, 0.1f);
+        }
+    }
+
+    IEnumerator RestartLevelRoutine()
+    {
+        yield return new WaitForSeconds(3.8f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

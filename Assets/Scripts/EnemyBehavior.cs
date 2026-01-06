@@ -426,5 +426,12 @@ public class EnemyBehavior : MonoBehaviour
         }
     }
 
+    public void ResetGhost()
+    {
+        transform.position = HomeCell.transform.position;
+        state = State.Scatter;
+        time = 0f;
+    }
+
    
 }

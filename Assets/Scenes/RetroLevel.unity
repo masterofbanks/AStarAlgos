@@ -48513,6 +48513,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 08f87d94bdefa6a45a40d0e1d9f2ff97, type: 3}
   - {fileID: 8300000, guid: d54ae8339cdd7c94fafa3ea787f2fad2, type: 3}
   - {fileID: 0}
+  - {fileID: 8300000, guid: 516a600d6ed07e8439e3647bd6668671, type: 3}
 --- !u!1 &919999774
 GameObject:
   m_ObjectHideFlags: 0
@@ -76474,7 +76475,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NumberOfDots: 9999
-  CanDie: 0
+  NumberOfLives: 3
+  CanDie: 1
   gameHasEnded: 1
   WinAdmirationTime: 2.5
   Ghosts:
@@ -143807,25 +143809,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2139224580}
     - target: {fileID: 3210557887628431717, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
-      propertyPath: EatPelletSfx
-      value: 
-      objectReference: {fileID: 2190612984733184636, guid: bf9e803304b274241a9d42e73484255e, type: 3}
-    - target: {fileID: 3210557887628431717, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
-      propertyPath: PacDeathClip
-      value: 
-      objectReference: {fileID: 7400000, guid: 2c071af78f5a3824c8028247770a5ec2, type: 2}
-    - target: {fileID: 3210557887628431717, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
       propertyPath: GridReference
       value: 
       objectReference: {fileID: 1654363480}
     - target: {fileID: 3210557887628431717, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
-      propertyPath: MovementSpeed
-      value: 7.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3210557887628431717, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
       propertyPath: PelletSFXParent
       value: 
       objectReference: {fileID: 1707716012}
+    - target: {fileID: 3210557887628431717, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
+      propertyPath: PacmanStartingCell
+      value: 
+      objectReference: {fileID: 995773652}
+    - target: {fileID: 3210557887628431717, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
+      propertyPath: TimeBetweenDeathAndRestart
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5015106610938098253, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
       propertyPath: m_Name
       value: Pacman
@@ -143834,11 +143832,32 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5381080085248933854, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381080085248933854, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
+      propertyPath: m_Volume
+      value: 0.306
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381080085248933854, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: b57bdcf15656d534ca6068b11f69967e, type: 3}
+    - target: {fileID: 5381080085248933854, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b57bdcf15656d534ca6068b11f69967e, type: 3}
+    - target: {fileID: 5381080085248933854, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8688670601807042206, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
       value: 256
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5381080085248933854, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
