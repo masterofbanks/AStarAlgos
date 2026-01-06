@@ -454,5 +454,10 @@ public class EnemyBehavior : MonoBehaviour
         time = 0f;
     }
 
+    public void SetSpeed(float newSpeed)
+    {
+        _speed = newSpeed;
+    }
+
    
 }

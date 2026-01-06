@@ -21989,6 +21989,11 @@ MonoBehaviour:
   DontSpawnDotHere: 0
   PacmanCantWalkHere: 0
   exitCell: {fileID: 0}
+--- !u!212 &410303096 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2324135574690928870, guid: e4261a12fde39e141b105425b4d8e630, type: 3}
+  m_PrefabInstance: {fileID: 5906798887886556745}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &411206161
 GameObject:
   m_ObjectHideFlags: 0
@@ -67197,6 +67202,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89395f2248e475742b31a9ac3e5673e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameScript: {fileID: 1420019613}
+  EnemyScript: {fileID: 1220804414}
+  Pacman: {fileID: 1711093579}
+  DotsLeftToActivateElroy: 10
+  HowMuchFasterThanPacman: 0.5
+  AngryFace: {fileID: -812222809955802293, guid: 250d6df89e55b9d4ca8a292d83784f5c, type: 3}
+  FaceRenderer: {fileID: 410303096}
 --- !u!1 &1227049749
 GameObject:
   m_ObjectHideFlags: 0
@@ -144523,6 +144535,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2324135574690928870, guid: e4261a12fde39e141b105425b4d8e630, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4374692485647864456, guid: 250d6df89e55b9d4ca8a292d83784f5c, type: 3}
     - target: {fileID: 2324135574690928870, guid: e4261a12fde39e141b105425b4d8e630, type: 3}
       propertyPath: m_SortingLayer
       value: 3
