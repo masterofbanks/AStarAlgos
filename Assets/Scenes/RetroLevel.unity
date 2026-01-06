@@ -23991,7 +23991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3475157744390847949, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -54696,9 +54696,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 919456993}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: PauseSound
+      - m_Target: {fileID: 1420019613}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: MakeEveryGhostScared
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -104227,7 +104227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3475157744390847949, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -118861,7 +118861,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3475157744390847949, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -143157,7 +143157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3475157744390847949, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'

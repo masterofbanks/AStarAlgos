@@ -9,7 +9,8 @@ public class EnemyBehavior : MonoBehaviour
         Scatter,
         Chase,
         Frightened,
-        Eaten
+        Eaten,
+        Idle
     }
     [Header("State")]
     public State state;
