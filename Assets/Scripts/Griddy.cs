@@ -36,7 +36,7 @@ public class Griddy : MonoBehaviour
     {
         if (!IsValidCoordinate(xCoord, yCoord))
         {
-            Debug.Log($"There is no cell at coordinate ({xCoord}, {yCoord})");
+            //Debug.Log($"There is no cell at coordinate ({xCoord}, {yCoord})");
             return null;
         }
 
@@ -143,6 +143,17 @@ public class Griddy : MonoBehaviour
         return new Tuple<int, int>(t1.Item1 + t2.Item1, t1.Item2 + t2.Item2);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="t1"></param>
+    /// <param name="t2"></param>
+    /// <returns>t1 - t2</returns>
+    public Tuple<int, int> SubTuples(Tuple<int, int> t1, Tuple<int, int> t2)
+    {
+        return new Tuple<int, int>(t1.Item1 - t2.Item1, t1.Item2 - t2.Item2);
+    }
+
     public CellStats FindARandomWalkableGridPoint(CellStats currentCell, CellStats[] ScatterCells)
     {
         HashSet<CellStats> scatterSet = new();
@@ -181,5 +192,43 @@ public class Griddy : MonoBehaviour
         }
 
         return ans;
+    }
+
+    public CellStats FindNearestWalkableCell(CellStats startingCell, CellStats walkable)
+    {
+        List<CellStats> openSet = new();
+        List<CellStats> closedSet = new();
+        openSet.Add(startingCell);
+        CellStats currentNode = null;
+
+        while(openSet.Count > 0)
+        {
+            currentNode = openSet[0];
+            openSet.RemoveAt(0);
+            closedSet.Add(currentNode);
+
+            if (currentNode.Walkable)
+            {
+                return currentNode;
+            }
+
+            List<CellStats> neighbors = GetNeighborsOfCell(currentNode);
+            foreach(CellStats neighbor in neighbors)
+            {
+                if (closedSet.Contains(neighbor))
+                {
+                    continue;
+                }
+
+                if (!openSet.Contains(neighbor))
+                {
+                    openSet.Add(neighbor);
+                }
+            }
+
+            neighbors.Clear();
+        }
+
+        return walkable;
     }
 }

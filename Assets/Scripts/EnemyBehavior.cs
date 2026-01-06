@@ -23,6 +23,7 @@ public class EnemyBehavior : MonoBehaviour
 
     [Header("Chase Parameters")]
     public float TimeInChaseState = 20f;
+    public GhostChaseBehavior ChaseScript;
 
     [Header("Frightened Parameters")]
     public float TimeInFrightenedState = 6f;
@@ -59,6 +60,7 @@ public class EnemyBehavior : MonoBehaviour
     {
         _rb2D = GetComponent<Rigidbody2D>();
         anime = GetComponent<Animator>();
+        ChaseScript = GetComponent<GhostChaseBehavior>();
         _speed = NormalSpeed;
 
     }
@@ -125,7 +127,8 @@ public class EnemyBehavior : MonoBehaviour
 
         else if(state == State.Chase)
         {
-            currentTargetCell = PlayerTarget.currentCell;
+            //currentTargetCell = PlayerTarget.currentCell;
+            currentTargetCell =  ChaseScript.Chase(PlayerTarget);
             time += Time.fixedDeltaTime;
             if(time > TimeInChaseState)
             {
@@ -388,6 +391,7 @@ public class EnemyBehavior : MonoBehaviour
         time = 0;
         state = State.Frightened;
         _isTurningAround = true;
+        anime.SetBool("flicker", false);
     }
 
     private void ForceGhostIntoEatenState()
@@ -404,6 +408,21 @@ public class EnemyBehavior : MonoBehaviour
         for(int i = 0; i < ghostSprites.Length; i++)
         {
             ghostSprites[i].enabled = false;
+        }
+    }
+
+    public void ForceGhostIntoScatterState()
+    {
+        time = 0;
+        state = State.Scatter;
+        _isTurningAround = true;
+        if(StartingCell == ScatterPosition[CurrentScatterIndex])
+        {
+            CurrentScatterIndex++;
+            if(CurrentScatterIndex == ScatterPosition.Length)
+            {
+                CurrentScatterIndex = 0;
+            }
         }
     }
 

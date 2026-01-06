@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
     {
         for(int i = 0; i < Ghosts.Length; i++)
         {
-            if (Ghosts[i].state == EnemyBehavior.State.Frightened || Ghosts[i].state == EnemyBehavior.State.Eaten)
+            if (Ghosts[i].state == EnemyBehavior.State.Frightened)
             {
                 return false;
             }
@@ -100,7 +100,8 @@ public class GameManager : MonoBehaviour
     {
         for(int i = 0; i < Ghosts.Length; i++)
         {
-            Ghosts[i].ForceGhostIntoFrightenedState();
+            if (Ghosts[i].state != EnemyBehavior.State.Eaten)
+                Ghosts[i].ForceGhostIntoFrightenedState();
         }
         SoundManager.PlaySound(SoundType.FRIGHTENED, 0.667f, 0.1f);
         _soundLock = false;

@@ -52,6 +52,9 @@ TagManager:
   - name: Midground
     uniqueID: 2632570087
     locked: 0
+  - name: Ghosts
+    uniqueID: 881485015
+    locked: 0
   - name: Foreground
     uniqueID: 542722777
     locked: 0

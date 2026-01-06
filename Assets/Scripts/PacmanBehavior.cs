@@ -21,7 +21,7 @@ If the intended move direction checks out, the player is re-aligned to the grid 
     public GameObject EatPelletSfx;
     public Transform PelletSFXParent;
 
-    private Vector2 CurrentDirection = Vector2.right;
+    public Vector2 CurrentDirection { get; private set; } = Vector2.right ;
     private Vector2 IntendedDirection = Vector2.right;
     private Vector3 CurrentOrientation = Vector3.zero;
     private Vector3 IntendedOrientation = Vector3.zero;
