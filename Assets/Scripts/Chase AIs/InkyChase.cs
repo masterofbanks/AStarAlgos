@@ -6,6 +6,7 @@ public class InkyChase : GhostChaseBehavior
     public int NumberOfCellsInFront = 2;
     public Griddy GridReference;
     public EnemyBehavior Blinky;
+    
     public override CellStats Chase(PacmanBehavior pacman)
     {
         Tuple<int, int> coordsOfCellInFront = GridReference.AddTuples(GridReference.GetCoordsOfCell(pacman.currentCell), new Tuple<int, int>((int)pacman.CurrentDirection.y * NumberOfCellsInFront, (int)pacman.CurrentDirection.x * NumberOfCellsInFront));

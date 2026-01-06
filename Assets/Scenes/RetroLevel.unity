@@ -28820,6 +28820,93 @@ MonoBehaviour:
   Walkable: 1
   DontSpawnDotHere: 0
   exitCell: {fileID: 0}
+--- !u!1 &554191981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 554191983}
+  - component: {fileID: 554191982}
+  m_Layer: 0
+  m_Name: BlackOutScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!212 &554191982
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554191981}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 542722777
+  m_SortingLayer: 4
+  m_SortingOrder: 4
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &554191983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554191981}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.7877, y: 3.2569, z: 0}
+  m_LocalScale: {x: 49.9135, y: 19.488558, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &555762409
 GameObject:
   m_ObjectHideFlags: 0
@@ -45600,6 +45687,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NumberOfCellsInFront: 3
   GridReference: {fileID: 1654363480}
+  EnemyScript: {fileID: 0}
 --- !u!1 &869301845
 GameObject:
   m_ObjectHideFlags: 0
@@ -54608,9 +54696,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1420019613}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: MakeEveryGhostScared
+      - m_Target: {fileID: 919456993}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PauseSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -76476,9 +76564,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NumberOfDots: 9999
   NumberOfLives: 3
-  CanDie: 1
+  CanDie: 0
   gameHasEnded: 1
   WinAdmirationTime: 2.5
+  ResetScreen: {fileID: 554191981}
   Ghosts:
   - {fileID: 1220804414}
   - {fileID: 255127857}
@@ -143822,7 +143911,7 @@ PrefabInstance:
       objectReference: {fileID: 995773652}
     - target: {fileID: 3210557887628431717, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
       propertyPath: TimeBetweenDeathAndRestart
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5015106610938098253, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
       propertyPath: m_Name
@@ -143867,6 +143956,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1420019612}
+  - {fileID: 554191983}
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 919456991}

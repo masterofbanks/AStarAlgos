@@ -225,7 +225,7 @@ If the intended move direction checks out, the player is re-aligned to the grid 
         {
             pacColliders[i].enabled = false;
         }
-        SoundManager.PlaySound(SoundType.DEAD, 0.5f, 0, false);
+        SoundManager.PlaySound(SoundType.DEAD, 0.065f, 0, false);
         StartCoroutine(DestroyPacman());
     }
 
@@ -256,6 +256,9 @@ If the intended move direction checks out, the player is re-aligned to the grid 
         _isAlive = true;
         anime.SetBool("alive", _isAlive);
         CurrentDirection = Vector2.right;
+        IntendedDirection = Vector2.right;
+        _rb2D.linearVelocity = CurrentDirection * MovementSpeed;
+        transform.eulerAngles = new Vector3(0,0,0);
     }
 
 

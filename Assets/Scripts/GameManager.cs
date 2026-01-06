@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public bool CanDie = true;
     public bool gameHasEnded;
     public float WinAdmirationTime = 2.5f;
+    public GameObject ResetScreen;
 
     [Header("Ghosts")]
     public EnemyBehavior[] Ghosts;
@@ -38,7 +39,7 @@ public class GameManager : MonoBehaviour
         InitializeLevel();
         CharactersAreMoveable = true;
         gameHasEnded = false;
-        SoundManager.PlaySound(SoundType.MOVE, 0.1f);
+        SoundManager.PlaySound(SoundType.MOVE, 0.04f);
         StartCoroutine(SpawnInDots());
     }
 
@@ -61,7 +62,7 @@ public class GameManager : MonoBehaviour
         if (TestForAnyNormalGhosts() && !_soundLock)
         {
             _soundLock = true;
-            SoundManager.PlaySound(SoundType.MOVE, 0.1f);
+            SoundManager.PlaySound(SoundType.MOVE, 0.04f);
         }
 
         if(NumberOfDots == 0 && !gameHasEnded)
@@ -134,13 +135,17 @@ public class GameManager : MonoBehaviour
 
     IEnumerator EndWinStateRoutine()
     {
+        SoundManager.PauseSound();
         yield return new WaitForSeconds(1.0f);
         for(int i = 0; i < Ghosts.Length; i++)
         {
             Ghosts[i].TurnGhostOff();
         }
 
-        yield return new WaitForSeconds(WinAdmirationTime - 1.0f);
+        yield return new WaitForSeconds(1.0f);
+        ResetScreen.SetActive(true);
+
+        yield return new WaitForSeconds(WinAdmirationTime - 2.0f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -155,15 +160,23 @@ public class GameManager : MonoBehaviour
 
         else
         {
-            Pacman.ResetPacman();
-            for(int i = 0; i < Ghosts.Length; i++)
-            {
-                Ghosts[i].ResetGhost();
-
-            }
-            CharactersAreMoveable = true;
-            SoundManager.PlaySound(SoundType.MOVE, 0.1f);
+            StartCoroutine(ResetLevelRoutine());
         }
+    }
+
+    IEnumerator ResetLevelRoutine()
+    {
+        ResetScreen.SetActive(true);
+        Pacman.ResetPacman();
+        for (int i = 0; i < Ghosts.Length; i++)
+        {
+            Ghosts[i].ResetGhost();
+
+        }
+        yield return new WaitForSeconds(1.0f);
+        CharactersAreMoveable = true;
+        ResetScreen.SetActive(false);
+        SoundManager.PlaySound(SoundType.MOVE, 0.04f);
     }
 
     IEnumerator RestartLevelRoutine()

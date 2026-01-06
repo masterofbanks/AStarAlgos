@@ -4,8 +4,8 @@ public enum SoundType
 { 
     MOVE,
     FRIGHTENED,
-    EATEN,
-    DEAD
+    DEAD,
+    WIN
 }
 
 [RequireComponent(typeof(AudioSource))]
@@ -32,5 +32,10 @@ public class SoundManager : MonoBehaviour
         instance.audioSrc.loop = loop;
         instance.audioSrc.volume = volume;
         instance.audioSrc.PlayDelayed(delay);
+    }
+
+    public static void PauseSound()
+    {
+        instance.audioSrc.Pause();
     }
 }
