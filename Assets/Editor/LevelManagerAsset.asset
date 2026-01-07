@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e70033365a1a2784c89688684d806391, type: 3}
+  m_Name: LevelManagerAsset
+  m_EditorClassIdentifier: 
+  Levels:
+  - Fruit: {fileID: 4199579749077932603, guid: 55c6f4436c9396c4197bafbdcda6fa53, type: 3}
+    EnemySpeed: 5
+    TimeInFrightenedMode: 10
+  - Fruit: {fileID: 4199579749077932603, guid: 5380b658d2b219a44b32cc7c7ec4b966, type: 3}
+    EnemySpeed: 5.29
+    TimeInFrightenedMode: 9
+  - Fruit: {fileID: 4199579749077932603, guid: d7f8c79595d4408499585e71e760329c, type: 3}
+    EnemySpeed: 5.57
+    TimeInFrightenedMode: 8
+  - Fruit: {fileID: 4199579749077932603, guid: 300c5276d1f02b24199b2dc0462d03b0, type: 3}
+    EnemySpeed: 5.86
+    TimeInFrightenedMode: 7
+  - Fruit: {fileID: 4199579749077932603, guid: 268eabf167b9519429e1b1e0e1628fdf, type: 3}
+    EnemySpeed: 6.14
+    TimeInFrightenedMode: 6
+  - Fruit: {fileID: 4199579749077932603, guid: f5e27437c2ab634499d076dd1583c18c, type: 3}
+    EnemySpeed: 6.42
+    TimeInFrightenedMode: 5
+  - Fruit: {fileID: 4199579749077932603, guid: da88ab9b90f0d814396c8dd3759d0421, type: 3}
+    EnemySpeed: 6.71
+    TimeInFrightenedMode: 4
+  - Fruit: {fileID: 4199579749077932603, guid: d570650d020a7db4aa16b3f8472bdbea, type: 3}
+    EnemySpeed: 7
+    TimeInFrightenedMode: 4

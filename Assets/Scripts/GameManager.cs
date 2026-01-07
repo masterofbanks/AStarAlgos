@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [Header("Game Control")]
+    public LevelLoader LoadScript;
     public int NumberOfDots = 9999;
     public int NumberOfDotsCollected = 0;
     public int NumberOfLives = 3;
@@ -129,7 +130,7 @@ public class GameManager : MonoBehaviour
             if (Ghosts[i].state != EnemyBehavior.State.Eaten && Ghosts[i].state != EnemyBehavior.State.Idle)
                 Ghosts[i].ForceGhostIntoFrightenedState();
         }
-        SoundManager.PlaySound(SoundType.FRIGHTENED, 0.1f, 0.1f);
+        SoundManager.PlaySound(SoundType.FRIGHTENED, 0.05f, 0.3f);
         _soundLock = false;
     }
 
@@ -138,6 +139,17 @@ public class GameManager : MonoBehaviour
         for(int i = 0; i < PowerPelletSpawnLocations.Length; i++)
         {
             Instantiate(PowerPellet, PowerPelletSpawnLocations[i].transform.position, Quaternion.identity);
+        }
+
+        FruitToSpawn = LoadScript.GetCurrentLevelStats().Fruit;
+
+        for(int i = 0; i < Ghosts.Length; i++)
+        {
+            float newEnemySpeed = LoadScript.GetCurrentLevelStats().EnemySpeed;
+            Ghosts[i].NormalSpeed = newEnemySpeed;
+            Ghosts[i].SetSpeed(newEnemySpeed);
+
+            Ghosts[i].TimeInFrightenedState = LoadScript.GetCurrentLevelStats().TimeInFrightenedMode;
         }
     }
 
@@ -159,6 +171,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator EndWinStateRoutine()
     {
+        LoadScript.IncramentCurrentLevel();
         SoundManager.PauseSound();
         yield return new WaitForSeconds(1.0f);
         for(int i = 0; i < Ghosts.Length; i++)

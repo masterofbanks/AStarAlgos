@@ -19,6 +19,7 @@ If the intended move direction checks out, the player is re-aligned to the grid 
     [Header("Movement Fields")]
     public float MovementSpeed;
     public GameObject EatPelletSfx;
+    public GameObject EatFruitSfx;
     public Transform PelletSFXParent;
 
     public Vector2 CurrentDirection { get; private set; } = Vector2.right ;
@@ -150,6 +151,7 @@ If the intended move direction checks out, the player is re-aligned to the grid 
         else if (collision.gameObject.CompareTag("Fruit"))
         {
             Debug.Log($"Pacman hit a {collision.gameObject.name}");
+            Instantiate(EatFruitSfx, transform.position, Quaternion.identity);
             Destroy(collision.gameObject);
         }
 
