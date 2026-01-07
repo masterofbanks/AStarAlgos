@@ -121,7 +121,7 @@ public class Griddy : MonoBehaviour
         return answer;
     }
 
-    //3. determing whether a given cell stat is walkable (exists within the bounds of the grid or is considered blocked 
+    //3. determining whether a given cell stat is walkable (exists within the bounds of the grid or is considered blocked 
     public bool IsWalkable(int xCoord, int yCoord)
     {
         if (!IsValidCoordinate(xCoord, yCoord))
@@ -149,7 +149,6 @@ public class Griddy : MonoBehaviour
 
     public Tuple<int, int> AddTuples(Tuple<int, int> t1, Tuple<int, int> t2)
     {
-        //Debug.Log($"{t1.Item1 + t2.Item1}, {t1.Item2 + t2.Item2}");
         return new Tuple<int, int>(t1.Item1 + t2.Item1, t1.Item2 + t2.Item2);
     }
 

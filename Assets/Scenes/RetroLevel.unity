@@ -49097,7 +49097,7 @@ MonoBehaviour:
   soundList:
   - {fileID: 8300000, guid: 08f87d94bdefa6a45a40d0e1d9f2ff97, type: 3}
   - {fileID: 8300000, guid: d54ae8339cdd7c94fafa3ea787f2fad2, type: 3}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 516a600d6ed07e8439e3647bd6668671, type: 3}
   - {fileID: 8300000, guid: 516a600d6ed07e8439e3647bd6668671, type: 3}
 --- !u!1 &919999774
 GameObject:
@@ -77282,6 +77282,9 @@ MonoBehaviour:
   NormalPellet: {fileID: 3355742673899311330, guid: 933fa45920972cd4bb5574e267b1d145, type: 3}
   PelletParent: {fileID: 918158429}
   CellGrid: {fileID: 1654363480}
+  FruitCell: {fileID: 345615074}
+  FruitToSpawn: {fileID: 4199579749077932603, guid: 55c6f4436c9396c4197bafbdcda6fa53, type: 3}
+  TimeToSpawnFruit: 10
 --- !u!1 &1422689841
 GameObject:
   m_ObjectHideFlags: 0
@@ -144947,6 +144950,10 @@ PrefabInstance:
     - target: {fileID: 5381080085248933854, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688670601807042206, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8688670601807042206, guid: 300cb2728d0469d45bc0fe11e17599d5, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits

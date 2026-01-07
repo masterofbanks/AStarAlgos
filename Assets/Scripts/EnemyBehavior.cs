@@ -450,7 +450,7 @@ public class EnemyBehavior : MonoBehaviour
     public void ResetGhost()
     {
         transform.position = HomeCell.transform.position;
-        state = State.Scatter;
+        state = State.Idle;
         time = 0f;
     }
 

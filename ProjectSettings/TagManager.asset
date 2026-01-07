@@ -9,6 +9,7 @@ TagManager:
   - PowerPellet
   - NormalPellet
   - PelletSFX
+  - Fruit
   layers:
   - Default
   - TransparentFX

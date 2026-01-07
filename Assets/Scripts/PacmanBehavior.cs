@@ -129,11 +129,6 @@ If the intended move direction checks out, the player is re-aligned to the grid 
 
         }
 
-        else if (collision.gameObject.CompareTag("Enemy"))
-        {
-            //Debug.Log($"Pacman hit an enemy named {collision.gameObject.name}");
-        }
-
         else if (collision.gameObject.CompareTag("PowerPellet"))
         {
             Debug.Log($"Pacman hit {collision.gameObject.name}");
@@ -149,6 +144,12 @@ If the intended move direction checks out, the player is re-aligned to the grid 
             {
                 Instantiate(EatPelletSfx, transform.position, Quaternion.identity, PelletSFXParent);
             }
+            Destroy(collision.gameObject);
+        }
+
+        else if (collision.gameObject.CompareTag("Fruit"))
+        {
+            Debug.Log($"Pacman hit a {collision.gameObject.name}");
             Destroy(collision.gameObject);
         }
 

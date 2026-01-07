@@ -33,8 +33,14 @@ public class GameManager : MonoBehaviour
     public Transform PelletParent;
     public Griddy CellGrid;
 
-    bool _soundLock = true;
+    [Header("Fruit Values")]
+    public CellStats FruitCell;
+    public GameObject FruitToSpawn;
+    public float TimeToSpawnFruit = 45f;
 
+    bool _soundLock = true;
+    float fruitTimer = 0f;
+    bool spawnedFruit = false;
     private void Start()
     {
         InitializeLevel();
@@ -70,6 +76,23 @@ public class GameManager : MonoBehaviour
         {
             PerformWinState();
         }
+
+        UpdateFruitTimer();
+    }
+
+    private void UpdateFruitTimer()
+    {
+        if (!spawnedFruit)
+        {
+            fruitTimer += Time.fixedDeltaTime;
+            if (fruitTimer > TimeToSpawnFruit)
+            {
+                Instantiate(FruitToSpawn, FruitCell.transform.position, Quaternion.identity);
+                fruitTimer = 0f;
+                spawnedFruit = true;
+            }
+        }
+        
     }
 
     //normal ghosts are ones in scatter or cha
@@ -167,6 +190,8 @@ public class GameManager : MonoBehaviour
 
     IEnumerator ResetLevelRoutine()
     {
+        fruitTimer = 0f;
+        spawnedFruit = false;
         ResetScreen.SetActive(true);
         Pacman.ResetPacman();
         for (int i = 0; i < Ghosts.Length; i++)
@@ -182,7 +207,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator RestartLevelRoutine()
     {
-        yield return new WaitForSeconds(3.8f);
+        yield return new WaitForSeconds(3f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
