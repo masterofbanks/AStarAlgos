@@ -379,7 +379,7 @@ public class EnemyBehavior : MonoBehaviour
 
     private void ChooseNewEndingCell()
     {
-        Debug.Log("Target Reached!");
+        //Debug.Log("Target Reached!");
         if (state == State.Scatter)
         {
             CurrentScatterIndex++;

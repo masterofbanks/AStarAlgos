@@ -35,5 +35,5 @@ MonoBehaviour:
     EnemySpeed: 6.71
     TimeInFrightenedMode: 4
   - Fruit: {fileID: 4199579749077932603, guid: d570650d020a7db4aa16b3f8472bdbea, type: 3}
-    EnemySpeed: 7
+    EnemySpeed: 6.87
     TimeInFrightenedMode: 4
