@@ -16,6 +16,11 @@ public class GameManager : MonoBehaviour
     public bool gameHasEnded;
     public float WinAdmirationTime = 2.5f;
     public GameObject ResetScreen;
+    public UIManager UIManagementScript;
+
+    [Header("Score")]
+    public int Score;
+    public int NumberOfEatenGhosts;
 
     [Header("Ghosts")]
     public EnemyBehavior[] Ghosts;
@@ -67,10 +72,11 @@ public class GameManager : MonoBehaviour
     private void FixedUpdate()
     {
         
-        if (TestForAnyNormalGhosts() && !_soundLock)
+        if (TestForAnyNormalGhosts() && !_soundLock && Pacman.IsAlive)
         {
             _soundLock = true;
             SoundManager.PlaySound(SoundType.MOVE, 0.04f);
+            NumberOfEatenGhosts = 0;
         }
 
         if(NumberOfDots == 0 && !gameHasEnded)
@@ -110,19 +116,43 @@ public class GameManager : MonoBehaviour
         return true;
     }
 
-    private bool TestForEatenGhosts()
+
+    public void InstantiateEatScoreUI(Vector3 position)
     {
-        for(int i = 0; i < Ghosts.Length; i++)
+        NumberOfEatenGhosts++;
+        int eatScore = 0;
+        switch (NumberOfEatenGhosts)
         {
-            if (Ghosts[i].state == EnemyBehavior.State.Eaten)
-            {
-                return true;
-            }
+            case 1:
+                eatScore = 200;
+                break;
+            case 2:
+                eatScore = 400;
+                break;
+
+            case 3:
+                eatScore = 800;
+                break;
+
+            case 4:
+                eatScore = 1600;
+                break;
+
+            default:
+                eatScore = 0;
+                break;
+
         }
 
-        return false;
+        AddScore(eatScore);
+        UIManagementScript.MakeScoreNotif(eatScore, position);
+        Debug.Log(eatScore);
     }
 
+    public void MakeFruitScoreUI(int amount, Vector3 position)
+    {
+        UIManagementScript.MakeScoreNotif(amount, position);
+    }
     public void MakeEveryGhostScared()
     {
         for(int i = 0; i < Ghosts.Length; i++)
@@ -136,6 +166,9 @@ public class GameManager : MonoBehaviour
 
     public void InitializeLevel()
     {
+        Score = 0;
+        UIManagementScript.UpdateScoreUI(Score);
+
         for(int i = 0; i < PowerPelletSpawnLocations.Length; i++)
         {
             Instantiate(PowerPellet, PowerPelletSpawnLocations[i].transform.position, Quaternion.identity);
@@ -203,6 +236,8 @@ public class GameManager : MonoBehaviour
 
     IEnumerator ResetLevelRoutine()
     {
+        UIManagementScript.RemoveLife();
+        NumberOfEatenGhosts = 0;
         fruitTimer = 0f;
         spawnedFruit = false;
         ResetScreen.SetActive(true);
@@ -224,5 +259,10 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void AddScore(int amount)
+    {
+        Score += amount;
+        UIManagementScript.UpdateScoreUI(Score);
+    }
 
 }

@@ -48,21 +48,21 @@ If the intended move direction checks out, the player is re-aligned to the grid 
     public AnimationClip PacDeathClip;
     public float TimeBetweenDeathAndRestart;
     public CellStats PacmanStartingCell;
-    private bool _isAlive;
+    public bool IsAlive { get; private set; }
     private void Awake()
     {
         ISAs = new InputSystem_Actions();
         _rb2D = GetComponent<Rigidbody2D>();
         anime = GetComponent<Animator>();
         rend = GetComponent<SpriteRenderer>();
-        _isAlive = true;
+        IsAlive = true;
     }
 
     private void FixedUpdate()
     {
         /*Vector2 new_XY_Pos = CurrentDirection * _currentMoveSpeed * Time.fixedDeltaTime;
         transform.position += new Vector3(new_XY_Pos.x, new_XY_Pos.y, 0);*/
-        if(GameScript.CharactersAreMoveable && _isAlive)
+        if(GameScript.CharactersAreMoveable && IsAlive)
             _rb2D.linearVelocity = CurrentDirection * MovementSpeed;
         else
         {
@@ -134,6 +134,7 @@ If the intended move direction checks out, the player is re-aligned to the grid 
         {
             Debug.Log($"Pacman hit {collision.gameObject.name}");
             GameScript.MakeEveryGhostScared();
+            GameScript.AddScore(50);
             Destroy(collision.gameObject);
         }
 
@@ -145,6 +146,7 @@ If the intended move direction checks out, the player is re-aligned to the grid 
             {
                 Instantiate(EatPelletSfx, transform.position, Quaternion.identity, PelletSFXParent);
             }
+            GameScript.AddScore(10);
             Destroy(collision.gameObject);
         }
 
@@ -152,6 +154,9 @@ If the intended move direction checks out, the player is re-aligned to the grid 
         {
             Debug.Log($"Pacman hit a {collision.gameObject.name}");
             Instantiate(EatFruitSfx, transform.position, Quaternion.identity);
+            int amountOfPointsToAdd = collision.gameObject.GetComponent<FruitBehavior>().NumberOfPoints;
+            GameScript.AddScore(amountOfPointsToAdd);
+            GameScript.MakeFruitScoreUI(amountOfPointsToAdd, collision.gameObject.transform.position);
             Destroy(collision.gameObject);
         }
 
@@ -221,9 +226,9 @@ If the intended move direction checks out, the player is re-aligned to the grid 
 
     public void PerformDeath()
     {
-        _isAlive = false;
+        IsAlive = false;
         GameScript.CharactersAreMoveable = false;
-        anime.SetBool("alive", _isAlive);
+        anime.SetBool("alive", IsAlive);
         CircleCollider2D[] pacColliders = GetComponents<CircleCollider2D>();
         for(int i = 0; i < pacColliders.Length; i++)
         {
@@ -257,8 +262,8 @@ If the intended move direction checks out, the player is re-aligned to the grid 
         {
             pacColliders[i].enabled = true;
         }
-        _isAlive = true;
-        anime.SetBool("alive", _isAlive);
+        IsAlive = true;
+        anime.SetBool("alive", IsAlive);
         CurrentDirection = Vector2.right;
         IntendedDirection = Vector2.right;
         _rb2D.linearVelocity = CurrentDirection * MovementSpeed;

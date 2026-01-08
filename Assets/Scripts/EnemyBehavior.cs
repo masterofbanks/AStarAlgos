@@ -272,7 +272,7 @@ public class EnemyBehavior : MonoBehaviour
 
         }
 
-        return null;
+        return new();
 
     }
 
@@ -312,6 +312,7 @@ public class EnemyBehavior : MonoBehaviour
             if (state == State.Frightened)
             {
                 ForceGhostIntoEatenState();
+                GameScript.InstantiateEatScoreUI(transform.position);
             }
 
             else if ((state == State.Scatter || state == State.Chase) && GameScript.CanDie)
@@ -357,9 +358,7 @@ public class EnemyBehavior : MonoBehaviour
             _isTurningAround = false;
         }
 
-
-        //in the edge case where no path can be found to a target, force the ghost into its scatter state and direct the ghost to the next available scatter position
-        if (TestPath == null)
+        while(TestPath.Count == 0)
         {
             Debug.Log($"{gameObject.name}'s TestPath is null after trying to find a new path");
             state = State.Scatter;
