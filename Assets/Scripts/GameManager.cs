@@ -255,6 +255,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator RestartLevelRoutine()
     {
+        UIManagementScript.UpdateHighScore(Score);
         yield return new WaitForSeconds(3f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

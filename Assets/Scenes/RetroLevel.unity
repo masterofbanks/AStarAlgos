@@ -59310,9 +59310,11 @@ MonoBehaviour:
   LifeUIImagesParent: {fileID: 382538762}
   LifeImage: {fileID: 4187574262078065398, guid: 840d7767a78f74b429bbc53aafda6ea0, type: 3}
   CurrentScoreText: {fileID: 1763091058}
-  DefaultStringMessage: 'Current Score: '
+  DefaultCurrentScoreMessage: 'Current Score: '
   EatScoreUINotif: {fileID: 6111942991944737816, guid: fd8b71269634d674b8bfa0abd126a386, type: 3}
   OffScreenLocation: {fileID: 191042441}
+  HighScoreText: {fileID: 913714203}
+  DefaultHighScoreMessage: 'High Score: '
 --- !u!1 &1071432980
 GameObject:
   m_ObjectHideFlags: 0
@@ -78101,7 +78103,7 @@ MonoBehaviour:
   NumberOfDots: 9999
   NumberOfDotsCollected: 0
   NumberOfLives: 3
-  CanDie: 0
+  CanDie: 1
   gameHasEnded: 1
   WinAdmirationTime: 3.2
   ResetScreen: {fileID: 554191981}
