@@ -64,6 +64,7 @@ public class UIManager : MonoBehaviour
         {
             PlayerPrefs.SetInt($"{SceneManager.GetActiveScene().name} High Score", newHighScore);
             HighScoreText.text = $"{DefaultHighScoreMessage}{PlayerPrefs.GetInt($"{SceneManager.GetActiveScene().name} High Score")}";
+            PlayerPrefs.SetInt("New High Score", 1);
         }
         
     }

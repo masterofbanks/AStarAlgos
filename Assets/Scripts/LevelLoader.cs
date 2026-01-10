@@ -36,5 +36,6 @@ public class LevelLoader : MonoBehaviour
         {
             CurrentLevel = LevelManagerScript.Levels.Count - 1;
         }
+
     }
 }

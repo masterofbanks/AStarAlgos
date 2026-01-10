@@ -17,7 +17,9 @@ public class GameManager : MonoBehaviour
     public float WinAdmirationTime = 2.5f;
     public GameObject ResetScreen;
     public UIManager UIManagementScript;
-
+    public Transform CanvasParent;
+    public GameObject Fader;
+    
     [Header("Score")]
     public int Score;
     public int NumberOfEatenGhosts;
@@ -166,7 +168,7 @@ public class GameManager : MonoBehaviour
 
     public void InitializeLevel()
     {
-        Score = 0;
+        Score = PlayerPrefs.GetInt("Current Score");
         UIManagementScript.UpdateScoreUI(Score);
 
         for(int i = 0; i < PowerPelletSpawnLocations.Length; i++)
@@ -199,12 +201,12 @@ public class GameManager : MonoBehaviour
     {
         gameHasEnded = true;
         CharactersAreMoveable = false;
+        PlayerPrefs.SetInt("Current Score", Score);
         StartCoroutine(EndWinStateRoutine());
     }
 
     IEnumerator EndWinStateRoutine()
     {
-        LoadScript.IncramentCurrentLevel();
         SoundManager.PauseSound();
         yield return new WaitForSeconds(1.0f);
         for(int i = 0; i < Ghosts.Length; i++)
@@ -256,8 +258,11 @@ public class GameManager : MonoBehaviour
     IEnumerator RestartLevelRoutine()
     {
         UIManagementScript.UpdateHighScore(Score);
-        yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        PlayerPrefs.SetInt("Current Score", Score);
+        yield return new WaitForSeconds(1.0f);
+        Instantiate(Fader, CanvasParent);
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("GameOver");
     }
 
     public void AddScore(int amount)

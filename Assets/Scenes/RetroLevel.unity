@@ -55952,7 +55952,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1016502590
 RectTransform:
   m_ObjectHideFlags: 0
@@ -78108,6 +78108,8 @@ MonoBehaviour:
   WinAdmirationTime: 3.2
   ResetScreen: {fileID: 554191981}
   UIManagementScript: {fileID: 1066015671}
+  CanvasParent: {fileID: 945607077}
+  Fader: {fileID: 7228900186919571307, guid: ad552d53c69fff348a4aff37e1c14103, type: 3}
   Score: 0
   NumberOfEatenGhosts: 0
   Ghosts:
