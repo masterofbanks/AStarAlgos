@@ -2,21 +2,21 @@ using UnityEngine;
 
 public class LevelLoader : MonoBehaviour
 {
-    public int CurrentLevel = 0;
+    public int CurrentLevel;
     public LevelManager LevelManagerScript;
     public static LevelLoader LevelLoadInstance { get; private set; }
     private void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
 
         if (LevelLoadInstance == null)
         {
             LevelLoadInstance = this;
+            DontDestroyOnLoad(gameObject);
         }
 
         else
         {
-            Destroy(LevelLoadInstance.gameObject);
+            Destroy(gameObject);
         }
     }
 

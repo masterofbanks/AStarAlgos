@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [Header("Game Control")]
-    public LevelLoader LoadScript;
     public int NumberOfDots = 9999;
     public int NumberOfDotsCollected = 0;
     public int NumberOfLives = 3;
@@ -21,7 +20,9 @@ public class GameManager : MonoBehaviour
     public GameObject Fader;
     public GameObject[] Lines;
     bool linesAreOn = false;
-    
+    LevelLoader LoadScript;
+
+
     [Header("Score")]
     public int Score;
     public int LifeUpScore = 10000;
@@ -56,6 +57,7 @@ public class GameManager : MonoBehaviour
     bool spawnedFruit = false;
     private void Start()
     {
+        LoadScript = GameObject.FindWithTag("GameController").GetComponent<LevelLoader>();
         InitializeLevel();
         PtsToGetALife = 0;
         gameHasEnded = false;
@@ -214,6 +216,7 @@ public class GameManager : MonoBehaviour
     {
         gameHasEnded = true;
         CharactersAreMoveable = false;
+        LoadScript.IncramentCurrentLevel();
         PlayerPrefs.SetInt("Current Score", Score);
         StartCoroutine(EndWinStateRoutine());
     }
