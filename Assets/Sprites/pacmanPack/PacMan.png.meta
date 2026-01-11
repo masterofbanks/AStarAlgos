@@ -117,6 +117,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -309,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PacMan_0: -3321498941453827467
+      PacMan_1: -4846512288533807152
+      PacMan_2: -4965534678816845940
+      PacMan_3: 2147333226481060340
+      PacMan_4: -7941566741350543336
+      PacMan_5: -936092538008283822
+      PacMan_6: 1501646484948059919
+      PacMan_7: -6276541738860905737
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

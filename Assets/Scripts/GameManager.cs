@@ -57,6 +57,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         InitializeLevel();
+        PtsToGetALife = 0;
         gameHasEnded = false;
         StartCoroutine(SpawnInDots());
     }
@@ -236,6 +237,7 @@ public class GameManager : MonoBehaviour
     public void PerformLoseState()
     {
         NumberOfLives--;
+        PtsToGetALife = 0;
         if(NumberOfLives == 0)
         {
             StartCoroutine(RestartLevelRoutine());
