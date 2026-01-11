@@ -53,7 +53,10 @@ public class EnemyBehavior : MonoBehaviour
     public CellStats EndingCell;
     public CellStats RandomCell;
     public LineRenderer VisualOfPath;
+    public LineRenderer SecondaryLine;
+    public Transform[] ExitPoints;
     public PacmanBehavior PlayerTarget;
+    private HashSet<Transform> ExitPointSet = new();
 
 
     Rigidbody2D _rb2D;
@@ -66,6 +69,10 @@ public class EnemyBehavior : MonoBehaviour
         anime = GetComponent<Animator>();
         ChaseScript = GetComponent<GhostChaseBehavior>();
         _speed = NormalSpeed;
+        for(int i = 0; i < ExitPoints.Length; i++)
+        {
+            ExitPointSet.Add(ExitPoints[i]);
+        }
 
     }
 
@@ -182,14 +189,56 @@ public class EnemyBehavior : MonoBehaviour
     {
         if(TestPath != null)
         {
-            VisualOfPath.positionCount = TestPath.Count + 1;
-            for (int i = 0; i < TestPath.Count; i++)
+            int indexOfPotentialExit = BreakLine();
+            if(indexOfPotentialExit == -1)
             {
-                VisualOfPath.SetPosition(i + 1, TestPath[i].position);
+                VisualOfPath.positionCount = TestPath.Count;
+                for (int i = 0; i < TestPath.Count; i++)
+                {
+                    VisualOfPath.SetPosition(i, TestPath[i].position);
+                }
+                SecondaryLine.positionCount = 0;
             }
-            VisualOfPath.SetPosition(0, StartingCell.gameObject.transform.position);
+
+            else
+            {
+                int firstVisualLength = indexOfPotentialExit + 1;
+                int secondVisualLength = TestPath.Count - indexOfPotentialExit - 1;
+
+                VisualOfPath.positionCount = firstVisualLength + 1;
+                for(int i = 0; i < firstVisualLength; i++)
+                {
+                    VisualOfPath.SetPosition(i + 1, TestPath[i].position);
+                }
+                VisualOfPath.SetPosition(0, StartingCell.gameObject.transform.position);
+
+                SecondaryLine.positionCount = secondVisualLength - 1;
+                for(int i = 0; i < secondVisualLength - 1; i++)
+                {
+                    SecondaryLine.SetPosition(i, TestPath[i + indexOfPotentialExit + 1].position);
+                }
+
+            }
+            
         }
         
+    }
+
+    private int BreakLine()
+    {
+        if(TestPath.Count == 0 || TestPath.Count == 1)
+        {
+            return -1;
+        }
+        for(int i = 0; i < TestPath.Count - 1; i++)
+        {
+            if (ExitPointSet.Contains(TestPath[i]))
+            {
+                return i;
+            }
+        }
+
+        return -1;
     }
     private List<Transform> CalculatePath(CellStats start, CellStats end, bool turnAround = false)
     {
