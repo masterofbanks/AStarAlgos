@@ -24518,7 +24518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3475157744390847949, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: m_SortingLayer
@@ -29880,7 +29880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3475157744390847949, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: m_SortingLayer
@@ -31624,10 +31624,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Path Trace
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -31651,13 +31651,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 22.1
+  m_fontSizeBase: 22.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
   m_fontSizeMax: 0
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -44416,6 +44416,11 @@ MonoBehaviour:
   DontSpawnDotHere: 0
   PacmanCantWalkHere: 0
   exitCell: {fileID: 0}
+--- !u!1 &819346113 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
+  m_PrefabInstance: {fileID: 1648134395}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &822985622
 GameObject:
   m_ObjectHideFlags: 0
@@ -48666,7 +48671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3475157744390847949, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: m_SortingLayer
@@ -49764,6 +49769,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913714201}
   m_CullTransparentMesh: 1
+--- !u!1 &915110516 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
+  m_PrefabInstance: {fileID: 1714890797}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &918158428
 GameObject:
   m_ObjectHideFlags: 0
@@ -50087,6 +50097,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d54ae8339cdd7c94fafa3ea787f2fad2, type: 3}
   - {fileID: 8300000, guid: 516a600d6ed07e8439e3647bd6668671, type: 3}
   - {fileID: 8300000, guid: 516a600d6ed07e8439e3647bd6668671, type: 3}
+  - {fileID: 8300000, guid: 79b7436b76baf784f8b3fb3a5ea14c94, type: 3}
 --- !u!1 &919999774
 GameObject:
   m_ObjectHideFlags: 0
@@ -54543,6 +54554,11 @@ MonoBehaviour:
   DontSpawnDotHere: 0
   PacmanCantWalkHere: 0
   exitCell: {fileID: 0}
+--- !u!1 &987463549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
+  m_PrefabInstance: {fileID: 557671642}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &989077751
 GameObject:
   m_ObjectHideFlags: 0
@@ -56143,6 +56159,11 @@ MonoBehaviour:
   DontSpawnDotHere: 0
   PacmanCantWalkHere: 0
   exitCell: {fileID: 0}
+--- !u!1 &1016237225 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
+  m_PrefabInstance: {fileID: 27085968649612927}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1016502589
 GameObject:
   m_ObjectHideFlags: 0
@@ -56156,12 +56177,12 @@ GameObject:
   - component: {fileID: 1016502592}
   - component: {fileID: 1016502591}
   m_Layer: 5
-  m_Name: FrightenedButton
+  m_Name: PathTrace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1016502590
 RectTransform:
   m_ObjectHideFlags: 0
@@ -56180,7 +56201,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 1.9998779, y: -0.000030517578}
-  m_SizeDelta: {x: 193.20642, y: 105.573395}
+  m_SizeDelta: {x: 173.4664, y: 26.239}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1016502591
 MonoBehaviour:
@@ -56228,7 +56249,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1420019613}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: MakeEveryGhostScared
+        m_MethodName: FlickerLines
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -57296,6 +57317,11 @@ MonoBehaviour:
   DontSpawnDotHere: 0
   PacmanCantWalkHere: 0
   exitCell: {fileID: 0}
+--- !u!1 &1033091560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
+  m_PrefabInstance: {fileID: 2143827254}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1040706740
 GameObject:
   m_ObjectHideFlags: 0
@@ -75944,6 +75970,11 @@ MonoBehaviour:
   DontSpawnDotHere: 0
   PacmanCantWalkHere: 0
   exitCell: {fileID: 0}
+--- !u!1 &1368890161 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
+  m_PrefabInstance: {fileID: 459510976}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1370740558
 GameObject:
   m_ObjectHideFlags: 0
@@ -78319,8 +78350,19 @@ MonoBehaviour:
   UIManagementScript: {fileID: 1066015671}
   CanvasParent: {fileID: 945607077}
   Fader: {fileID: 7228900186919571307, guid: ad552d53c69fff348a4aff37e1c14103, type: 3}
+  Lines:
+  - {fileID: 1016237225}
+  - {fileID: 1033091560}
+  - {fileID: 1368890161}
+  - {fileID: 819346113}
+  - {fileID: 915110516}
+  - {fileID: 987463549}
+  - {fileID: 1764535836}
+  - {fileID: 1650719408}
   Score: 0
+  LifeUpScore: 10000
   NumberOfEatenGhosts: 0
+  LifeUpSFX: {fileID: 2190612984733184636, guid: bbc3def5a6640f544a52868251b81315, type: 3}
   Ghosts:
   - {fileID: 1220804414}
   - {fileID: 1704369199}
@@ -106150,7 +106192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3475157744390847949, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: m_SortingLayer
@@ -118847,7 +118889,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3475157744390847949, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: m_SortingLayer
@@ -118938,6 +118980,11 @@ PrefabInstance:
 LineRenderer:
   m_CorrespondingSourceObject: {fileID: 3475157744390847949, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
   m_PrefabInstance: {fileID: 1648134395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1650719408 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
+  m_PrefabInstance: {fileID: 893356126}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1654307261
 GameObject:
@@ -121015,7 +121062,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3475157744390847949, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: m_SortingLayer
@@ -122978,6 +123025,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763091056}
   m_CullTransparentMesh: 1
+--- !u!1 &1764535836 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
+  m_PrefabInstance: {fileID: 1585253148}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1766014401
 GameObject:
   m_ObjectHideFlags: 0
@@ -145671,7 +145723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3475157744390847949, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: m_SortingLayer
@@ -145922,7 +145974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3187945187747067385, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3475157744390847949, guid: a79a6d15848b1c1408ed85a437f19991, type: 3}
       propertyPath: m_SortingLayer
@@ -146788,7 +146840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6211695951665363495, guid: 33a0da1d27661144f8a678589e01cc0e, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6211695951665363495, guid: 33a0da1d27661144f8a678589e01cc0e, type: 3}
       propertyPath: m_SortingLayerID

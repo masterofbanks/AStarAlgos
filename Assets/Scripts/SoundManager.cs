@@ -5,7 +5,8 @@ public enum SoundType
     MOVE,
     FRIGHTENED,
     DEAD,
-    WIN
+    WIN,
+    START
 }
 
 [RequireComponent(typeof(AudioSource))]

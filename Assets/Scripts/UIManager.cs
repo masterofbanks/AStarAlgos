@@ -68,4 +68,10 @@ public class UIManager : MonoBehaviour
         }
         
     }
+
+    public void AddLifeUI()
+    {
+        Instantiate(LifeImage, LifeUIImagesParent);
+    }
+
 }

@@ -19,10 +19,15 @@ public class GameManager : MonoBehaviour
     public UIManager UIManagementScript;
     public Transform CanvasParent;
     public GameObject Fader;
+    public GameObject[] Lines;
+    bool linesAreOn = false;
     
     [Header("Score")]
     public int Score;
+    public int LifeUpScore = 10000;
     public int NumberOfEatenGhosts;
+    public GameObject LifeUpSFX;
+    private int PtsToGetALife = 0;
 
     [Header("Ghosts")]
     public EnemyBehavior[] Ghosts;
@@ -52,9 +57,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         InitializeLevel();
-        CharactersAreMoveable = true;
         gameHasEnded = false;
-        SoundManager.PlaySound(SoundType.MOVE, 0.04f);
         StartCoroutine(SpawnInDots());
     }
 
@@ -62,6 +65,8 @@ public class GameManager : MonoBehaviour
 
     IEnumerator SpawnInDots()
     {
+        CharactersAreMoveable = false;
+        Pacman.SetPacmanAnimatorSpeed(0);
         yield return new WaitForSeconds(Time.fixedDeltaTime);
         List<Transform> SpawnDotLocations = CellGrid.FindDotSpawnLocations();
         for (int i = 0; i < SpawnDotLocations.Count; i++)
@@ -69,6 +74,13 @@ public class GameManager : MonoBehaviour
             Instantiate(NormalPellet, SpawnDotLocations[i].position, Quaternion.identity, PelletParent);
         }
         NumberOfDots = SpawnDotLocations.Count;
+        SoundManager.PlaySound(SoundType.START, 0.25f, 0, false);
+        yield return new WaitForSeconds(4.3f);
+        SoundManager.PlaySound(SoundType.MOVE, 0.2f);
+        CharactersAreMoveable = true;
+        Pacman.SetPacmanAnimatorSpeed(1);
+
+
     }
 
     private void FixedUpdate()
@@ -268,7 +280,24 @@ public class GameManager : MonoBehaviour
     public void AddScore(int amount)
     {
         Score += amount;
+        PtsToGetALife += amount;
+        if(PtsToGetALife > LifeUpScore)
+        {
+            PtsToGetALife = 0;
+            NumberOfLives++;
+            UIManagementScript.AddLifeUI();
+            Instantiate(LifeUpSFX);
+        }
         UIManagementScript.UpdateScoreUI(Score);
+    }
+
+    public void FlickerLines()
+    {
+        linesAreOn = !linesAreOn;
+        for(int i = 0; i < Lines.Length; i++)
+        {
+            Lines[i].SetActive(linesAreOn);
+        }
     }
 
 }
