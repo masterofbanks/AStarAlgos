@@ -134,6 +134,7 @@ public class EnemyBehavior : MonoBehaviour
             {
                 time = 0f;
                 state = State.Chase;
+                _speed = NormalSpeed;
             }
         }
 
@@ -146,6 +147,7 @@ public class EnemyBehavior : MonoBehaviour
             {
                 time = 0f;
                 state = State.Scatter;
+                _speed = NormalSpeed;
             }
         }
 
@@ -157,6 +159,7 @@ public class EnemyBehavior : MonoBehaviour
             {
                 time = 0f;
                 state = State.Chase;
+                _speed = NormalSpeed;
                 anime.SetBool("flicker", false);
             }
 
@@ -178,6 +181,7 @@ public class EnemyBehavior : MonoBehaviour
             {
                 time = 0;
                 state = State.Scatter;
+                _speed = NormalSpeed;
             }
         }
 
@@ -411,6 +415,7 @@ public class EnemyBehavior : MonoBehaviour
         {
             Debug.Log($"{gameObject.name}'s TestPath is null after trying to find a new path");
             state = State.Scatter;
+            _speed = NormalSpeed;
             CurrentScatterIndex++;
             if (CurrentScatterIndex == ScatterPosition.Length)
             {
@@ -440,6 +445,7 @@ public class EnemyBehavior : MonoBehaviour
         else if (state == State.Chase)
         {
             state = State.Scatter;
+            _speed = NormalSpeed;
         }
 
         else if (state == State.Frightened)
